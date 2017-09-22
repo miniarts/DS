@@ -1177,6 +1177,7 @@ html body #t3-content .item-page .page-header {
   margin: 0px;
   border-bottom: none !important;
 }
+.t3-content .page-desc,
 .t3-content .category-desc {
   padding: 0px 50px 90px;
 }
@@ -1502,9 +1503,6 @@ body #t3-mainbody .mnwall_iso_container .mnwall-item {
   padding: 0px !important;
   z-index: 2;
 }
-.mnwall_container .mnwall-item-inner * {
-  font-size: 1em;
-}
 .mnwall_container .mnwall-item-inner-cont,
 .mnwall_container .mnwall-item-inner-cont .mnwall-cover,
 .mnwall_container .mnwall-item-inner-cont .mnwall-img-div {
@@ -1554,12 +1552,6 @@ body #t3-mainbody .mnwall_iso_container .mnwall-item {
 }
 .mnwall_iso_container .mnwall-item .mnwall-item-img a img {
   height: auto;
-}
-body #t3-mainbody .mnwall_container.exhibitor-list .mnwall-item-inner .mnwall-title {
-  display: table-cell;
-  width: 100%;
-  vertical-align: bottom;
-  height: 100%;
 }
 body #t3-mainbody .mnwall_iso_container .mnwall-item .mnwall-item-img .corner-icon {
   color: #fff;
@@ -1616,10 +1608,6 @@ body #t3-mainbody .mnwall_container.home-sections .mnwall-item .mnwall-item-oute
   right: 0;
   bottom: 0;
 }
-body #t3-mainbody .mnwall_container.home-sections .mnwall-cover,
-body #t3-mainbody .mnwall_container.home-sections .mnwall-cover * {
-  height: 100%;
-}
 body #t3-mainbody .mnwall_container.home-sections .mnwall-item-inner {
   display: table;
 }
@@ -1651,48 +1639,6 @@ body #t3-mainbody .mnwall_container.home-sections .mnwall-item-inner .mnwall-tit
 --------------- */
 .exhibitor-list {
   padding-top: 30px;
-}
-body #t3-mainbody .mnwall_container.exhibitor-list .mnwall-item {
-  width: 25% !important;
-  padding-top: 300px !important;
-  position: relative !important;
-}
-body #t3-mainbody .mnwall_container.exhibitor-list .mnwall-item .mnwall-item-outer-cont {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
-body #t3-mainbody .mnwall_container.exhibitor-list .mnwall-cover,
-body #t3-mainbody .mnwall_container.exhibitor-list .mnwall-cover * {
-  height: 100%;
-}
-body #t3-mainbody .mnwall_container.exhibitor-list .mnwall-item-inner {
-  padding: 19px !important;
-  display: table;
-}
-body #t3-mainbody .mnwall_container.exhibitor-list .mnwall-item-inner * {
-  height: auto;
-  display: table-row-group;
-  vertical-align: bottom;
-  line-height: 1;
-}
-body #t3-mainbody .mnwall_container.exhibitor-list .mnwall-item-inner .mnwall-title {
-  padding: 0px;
-}
-body #t3-mainbody .mnwall_container.exhibitor-list .mnwall-item-inner .mnwall-title a {
-  text-transform: capitalize !important;
-  font-size: 2em !important;
-  line-height: 1 !important;
-  color: #fff !important;
-  font-weight: 300;
-  display: block;
-  padding-bottom: 5px;
-}
-body #t3-mainbody .mnwall_container.exhibitor-list .mnwall-item-inner .mnwall-item-category a {
-  color: rgba(255, 255, 255, 0.4) !important;
-  font-size: 1.4em !important;
 }
 /* scroller icon for lists*/
 .scroll-wrapper {

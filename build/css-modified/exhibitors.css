@@ -251,8 +251,13 @@ body #t3-mainbody .mnwall_container.exhibitor-list .mnwall-item-inner * {
   vertical-align: bottom;
   line-height: 1;
 }
-body #t3-mainbody .mnwall_container.exhibitor-list .mnwall-item-inner .mnwall-title {
+body #t3-mainbody .mnwall_container.exhibitor-list .mnwall-item-inner h3.mnwall-title {
+  display: table-cell;
+  width: 100%;
+  vertical-align: bottom;
+  height: 100%;
   padding: 0px;
+  font-size: 1em;
 }
 body #t3-mainbody .mnwall_container.exhibitor-list .mnwall-item-inner .mnwall-title a {
   text-transform: capitalize !important;

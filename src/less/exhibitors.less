@@ -188,8 +188,13 @@ body #t3-mainbody .mnwall_container.exhibitor-list .mnwall-item-inner * {
     vertical-align: bottom;
     line-height: 1;
 }
-body #t3-mainbody .mnwall_container.exhibitor-list .mnwall-item-inner .mnwall-title {
-	padding:0px;
+body #t3-mainbody .mnwall_container.exhibitor-list .mnwall-item-inner h3.mnwall-title {
+	display: table-cell;
+	width: 100%;
+	vertical-align: bottom;
+	height: 100%;
+	padding: 0px;
+	font-size: 1em;
 }
 body #t3-mainbody .mnwall_container.exhibitor-list .mnwall-item-inner .mnwall-title a {
 	text-transform: capitalize !important;
@@ -204,10 +209,7 @@ body #t3-mainbody .mnwall_container.exhibitor-list .mnwall-item-inner .mnwall-it
 	color: rgba(255,255,255,0.4) !important;
     font-size: 1.4em !important;
 }
-body #t3-mainbody .mnwall_container.exhibitor-list .mnwall-item-inner .mnwall-item-category a:hover {
-
-}
-
+	
 
 /* LOADER
 -------------------- */
@@ -435,18 +437,58 @@ h6.noResults {
 .pagination li.active{position: relative;padding: 6px 12px;line-height: 1.42857143;text-decoration: none;background: #d0043c;color: #fff;border: 1px solid #dddddd;   margin-left: -1px;}
 
 
-
+@media (max-width: 991px) {
+	.mnwall_iso_filters_cont {
+		margin:0 30px;
+	}
+	.mnwall_iso_filters:after {
+		right: -30px;
+	}
+	.mnwall_iso_filters .button-group-category {
+		margin-right: -30px;
+	}
+}
 
 @media (max-width: 600px) {
+	.mnwall_iso_filters_cont {
+		margin:0 25px;
+	}
+	.mnwall_iso_filters:after {
+		right: -25px;
+	}
+	.mnwall_iso_filters .button-group-category {
+		margin-right: -25px;
+	}
+	.mnwall_iso_filters .button-group-category {
+		 max-width: calc(100% + 25px);
+		 float: left;
+	}
 	.search_filter {
 		padding-bottom: 0px;
+	}
+	.mnwall_iso_filters:after {
+		top:50px;
 	}
 	.button-group-category > ul li a {
     	padding: 25px 9px;
     }
 }
 
-
+@media (max-width: 374px) {
+	.mnwall_iso_filters_cont {
+		margin:0 20px;
+	}
+	.mnwall_iso_filters:after {
+		right: -20px;
+	}
+	.mnwall_iso_filters .button-group-category {
+		margin-right: -20px;
+	}
+	.mnwall_iso_filters .button-group-category {
+	    max-width: calc(100% + 20px);
+	    float: left;
+	}
+}
 
 .mnwall_container{
     .chzn-container-single .chzn-single{
