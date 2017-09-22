@@ -1,0 +1,1851 @@
+/* GENERAL
+-------------------------------------------------*/
+body {color: #8f8f8f;font-family: source-sans-pro,sans-serif;font-size: 15px;line-height: 20px;margin: 0;height: 100vh; background: url('../images/bg2017.jpg'); background-size: cover;background-position: center top;background-repeat: no-repeat;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;}
+#bg_image {height: 100vh;width: 100%;z-index: -5;position: fixed;top: 0px;bottom: 0px;overflow-y: hidden !important;}
+html.itemid-101 body{background-position: center 50vh;}
+html.itemid-541 body{background-position: center 50vh;}
+.London a {color: #c30d24;text-decoration: none;}
+.Manchester a {color: #c30d24;text-decoration: none;}
+.page-header {border-bottom: 0;padding-bottom: 0;mar1gin: 0;}
+#t3-content{vertical-align: top; background-color: #FFF;}
+#system-message{margin: 0;}
+.pull-left.item-image {margin: 0;}
+.t3-mainbody {padding-bottom: 20px;padding-top: 0px;}
+.t3-sl {padding-bottom: 0;padding-top: 0;}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {margin: 10px 0;font-family: source-sans-pro,sans-serif;font-weight: bold;line-height: 1;color: #444;text-rendering: optimizelegibility;}
+/*** Snow Flakes ****/
+#snow{
+	background: none;
+	font-family: Androgyne;
+	background-image: url('../images/s1.png'), url('../images/s2.png'), url('../images/s3.png');
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index:1;
+	-webkit-animation: snow 10s linear infinite;
+	-moz-animation: snow 10s linear infinite;
+	-ms-animation: snow 10s linear infinite;
+	animation: snow 10s linear infinite;
+}
+@keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+@-moz-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 400px 1000px, 200px 400px, 100px 300px;}
+}
+@-webkit-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+@-ms-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+/***** End Snow Flakes *******/
+
+.London h1,
+.London h2 {font-size: 1.4rem;line-height: 29px;color: #c30d24;margin: 0 0 20px;font-weight: 400;}
+.Manchester h1,
+.Manchester h2 {font-size: 1.4rem;line-height: 29px;color: #c30d24;margin: 0 0 20px;font-weight: 400;}
+.item-page h2,
+.item-page h3{padding: 0 15px;}
+p {margin: 0 0 10px;}
+p small,
+p .small {font-size: 12px;color: #999;}
+h3 span a {float: right;color: #888;font-size: .9rem;position: relative;top: 3px;}
+ul, ol {padding-left: 30px;}
+.aidanews2_line{border: none !important;}
+.whtbg{width: 100%; background-color: #fff;float: left;}
+.item-page{min-width: 100%%; display: block;}
+.article {display: block;margin-bottom: 0;padding: 15px;}
+.slideshow{display: inline-block; width: 100%;    }
+html.itemid-101 .slideshow{border-bottom: 4px solid #fff;}
+html.itemid-541 .slideshow{border-bottom: 4px solid #fff;}
+#slider87 {z-index: -1;}
+#bigimage{float: left; margin:0 ;width:100%;}
+#twitter-widget-0 {height:300px !important; background-color: white;}
+.slideshow {margin-bottom: 20px;}
+.logo-image{float: right;margin-right: 40px;}
+.t3-mainbody .item-image {width:100%;}
+.t3-content, .t3-position-block .t3-module, .t3-sidebar, .related-title, .aidanews2_positions, .bottom.booktickets .t3-block, .sharebar .container, .title, .socialbar .flexadvert, #twitter-widget-0, .page-footer_innerwrap, .relatedtitle-block .t3-module, .relatedarticle-block article, .aidanews2_positions_customblock {-webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.22); -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.22); box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.22);}
+.news .whtbg{min-height: 135px;}
+.news .whtbg h2{margin: 15px;}
+.news .whtbg p{margin: 0 15px 15px;}
+.news .whtbg.padding{padding-top: 15px;}
+.number_20 .page-header,
+.number_571 .page-header{margin: 0;}
+.exhibit-button {
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    margin: 10px 10px 0 !important;
+    padding: 0 !important;
+    border-radius: 5px 5px 0 0 !important;
+    overflow: hidden;
+    display: inline-block;
+    max-width: 95% !important;
+}
+
+/* HEADER
+-------------------------------------------------*/
+.t3-contentheader {
+	display: block !important;
+	background-image: url('../images/header_bg.jpg');
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-size: 1920px auto;
+}
+/*
+.London .t3-contentheader {
+    background-image: url(/images/001/IHSC-web-header-Celebs.jpg);
+}
+.Manchester .t3-contentheader {
+    background-image: url(/images/001/IHSC-web-header-Celebs-Manchester.jpg);
+}
+*/
+#t3-header {background-size: contain;background-position: bottom center;background-repeat: no-repeat;height: 168px;padding-bottom: 0px;}
+.head-mainbanner {width: 100%;height: 100%;}
+.head-mainbanner .custom {position: absolute;bottom: 0px;top:0px;left:15px;margin-top: 10px;margin-bottom: 5px;}
+.head-mainbanner .custom p {margin: 0px !important;height: 100%;}
+.head-mainbanner .custom {width: 100%;text-align: center;}
+.head-mainbanner img {max-height: 100%;width: auto;}
+.head-leftblock, .head-rightblock {position: absolute;top:0px;bottom:0px;margin-left: 15px;text-align: center;margin-top: 55px;}
+.head-leftblock {left:0px; z-index: 5;}
+.head-rightblock {right: 0px;}
+/* Logo -------------*/
+.logo {opacity: 0;}
+.logo-image a {background-repeat: no-repeat;width: 100%;height: auto;}
+.logo-image {overflow: hidden;display: flex;}
+/* Header Modules (Social and Buttons) -------------*/
+.head-search {float: right;margin-top: 2px; width: 100%;}
+.head-search p{margin-bottom: 2px;}
+.head-dates {float: left;margin-top: 2px;width: 100%;}
+.head-dates p{margin-bottom: 2px;}
+.head-dates a {margin-top:5px; font-weight: 600; margin-top:5px;}
+.topsocial {float: right;content: " ";display: table;vertical-align: bottom;}
+.topsocial .cw-social-mod-follow{padding: 10px 0 0 0 !important;}
+.t3-header {padding-top: 0;padding-bottom: 0;}
+.cwtest100 {width: auto !important;white-space: nowrap;margin-left: auto;margin-right: auto;}
+/* Book Now / Number Buttons -------------*/
+#t3-header .row {position: relative;height: 100%;}
+#t3-header .head-search h2, #t3-header .head-search h2 a, #t3-header .head-dates h2 {font-size: 1.4rem;max-width: 100%;line-height: 29px;font-weight: 100;text-align: center;margin: 0px 0 0 0 !important;}
+.London #t3-header .head-dates *, .London #t3-header .head-search *  {
+	color: #fff;
+}
+.Manchester #t3-header .head-dates *, .Manchester #t3-header .head-search *  {
+	color: #fff;
+}
+
+#t3-header .head-search h3, #t3-header .head-dates h3 {font-size: 1.4rem;max-width: 100%;line-height: 29px;font-weight: 600;text-align: center;margin: 0px 0 0 0 !important;}
+#t3-header .row .topsocial {position: absolute;bottom: 0px;right: 0px;}
+/* Main Menu -------------*/
+ul.maximenuck {padding-left: 0px !important;}
+.navbar-inner div#maximenuck195 ul.maximenuck li.level1.parent > a:after, .navbar-inner div#maximenuck195 ul.maximenuck li.level1.parent > span.separator:after{border-color: #fff transparent transparent transparent;top: 17px;right: -7px;}
+.navbar-inner div#maximenuck283 ul.maximenuck li.level1.parent > a:after, .navbar-inner div#maximenuck195 ul.maximenuck li.level1.parent > span.separator:after,.navbar-inner div#maximenuck283 ul.maximenuck li.level1.parent > span.separator:after{border-color: #fff transparent transparent transparent;top: 17px;right: -7px;}
+.London .t3-mainnav,.Manchester .t3-mainnav {background: rgba(169,23,26,1);
+background: -moz-linear-gradient(top, rgba(169,23,26,1) 0%, rgba(241,0,11,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(169,23,26,1)), color-stop(100%, rgba(241,0,11,1)));
+background: -webkit-linear-gradient(top, rgba(169,23,26,1) 0%, rgba(241,0,11,1) 100%);
+background: -o-linear-gradient(top, rgba(169,23,26,1) 0%, rgba(241,0,11,1) 100%);
+background: -ms-linear-gradient(top, rgba(169,23,26,1) 0%, rgba(241,0,11,1) 100%);
+background: linear-gradient(to bottom, rgba(169,23,26,1) 0%, rgba(241,0,11,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a9171a', endColorstr='#f1000b', GradientType=0 );border-top: 3px solid #c30d24;}
+/*.Manchester .t3-mainnav {background-color: #3d954a;border-top: 3px solid #2d7a3e;}*/
+.t3-mainnav {
+	background-image: none;width:100%;z-index:9999;
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.42); -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.42); box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.42);}
+.t3-mainnav .nav-collapse.collapse .maximenuckh {display: inline-block;}
+.t3-mainnav .nav-collapse.collapse,  .t3-mainnav .nav-collapse.collapse .maximenuckh, .maximenuckh .maximenuck.level1 {height:40px !important;}
+.maximenuckh .maximenuck.level1, .maximenuckh .maximenuck.level2 {-webkit-transition: background-color ease-out 0.2s;-moz-transition: background-color ease-out 0.2s;-o-transition: background-color ease-out 0.2s;transition: background-color ease-out 0.2s;}
+.London .maximenuckh .maximenuck.active,.Manchester .maximenuckh .maximenuck.active {background: #c30d24;}
+.London .maximenuckh .maximenuck.level1:hover,.Manchester .maximenuckh .maximenuck.level1:hover {background: #e12b37;}
+/*.Manchester .maximenuckh .maximenuck.level1:hover {background: #4da059;}
+.Manchester .maximenuckh .maximenuck.active {background: #2d7a3e;}*/
+#t3-mainnav div#maximenuck283 ul.maximenuck li.maximenuck.level1, #t3-mainnav div#maximenuck195 ul.maximenuck li.maximenuck.level1 {line-height: 40px; padding: 0px 15px; float: left !important;}
+.maximenuckh .maximenuck.level1 a {color:#FFF !important; font-size: 17px; letter-spacing: 1px;}
+.maximenuckh .maximenuck.level1 span.separator{    color: #FFF !important;
+    font-size: 17px;
+    letter-spacing: 1px;}
+/* home icon */
+.maximenuck.item539, .maximenuck.item542 {background-image: url("../images/MobHome.png") !important;background-size: 25px !important;background-position: center center !important;background-repeat: no-repeat !important;}
+.maximenuck.item539 a span, .maximenuck.item542 a span {color: transparent !important;width: 25px;}
+/* menu level2 dropdown */
+.maximenuckh .maximenuck2.first {margin-left: -15px !important;}
+.London .maximenuckh .maximenuck2.first li.maximenuck.level2 {background-color:  #d71623; border-left: 3px #c30d24 solid; border-top: 1px #FFF solid;}
+.Manchester .maximenuckh .maximenuck2.first li.maximenuck.level2 {background-color:  #d71623; border-left: 3px #c30d24 solid; border-top: 1px #FFF solid;}
+.London .maximenuckh .maximenuck2.first li.maximenuck.level2:hover {background: #e12b37;}
+.Manchester .maximenuckh .maximenuck2.first li.maximenuck.level2:hover {background: #e12b37;}
+.maximenuckh .maximenuck2.first li.maximenuck.level2 a {font-size: 14px; padding:10px;}
+/* website search */
+#t3-mainnav .search {display: inline-block;position: absolute; right: 30px; height: 40px; width:15%;}
+#t3-mainnav .search form {margin: 0px;padding: 6px 0px;}
+#t3-mainnav .search form #mod-search-searchword {width:0px; visibility: hidden;border-radius: 7px;border: 0px solid rgb(255, 255, 255);font-family: source-sans-pro,sans-serif;
+font-weight: 600;color: #999;padding: 4px 7px;line-height: 19px;float:right;}
+#t3-mainnav .navsearchBtn {height:40px;position: absolute;right: 0px;display: inline-block;cursor: pointer;}
+#t3-mainnav .navsearchBtn img {height: 23px;width: 23px;padding: 9px 0px;}
+input::-moz-placeholder {font-family: source-sans-pro,sans-serif !important;font-weight: 600 !important;color: #999 !important;opacity: 1;}
+/* Book Tickets */
+.item200,.item582 {background: #c30d24 !important;}
+
+.item200 span:after, .item582 span:after {font-family: FontAwesome;content: "\f145";padding-left:8px;position: relative;top:1px;}
+/* Section Menu -------------*/
+#t3-mainnav {border-bottom:none !important; position: relative;}
+.topnav {z-index: 999;
+position: relative;}
+.topnav{}
+.topnav .responsiveMenuTheme1d.isDesktop span.linker{padding: 15px 0}
+.topnav .responsiveMenuTheme1d.isDesktop #item-605 span.linker,
+.topnav .responsiveMenuTheme1d.isDesktop #item-606 span.linker,
+.topnav .responsiveMenuTheme1d.isDesktop #item-540 span.linker,
+.topnav .responsiveMenuTheme1d.isDesktop #item-544 span.linker,
+.topnav .responsiveMenuTheme1d.isDesktop #item-608 span.linker,
+.topnav .responsiveMenuTheme1d.isDesktop #item-611 span.linker,
+.topnav .responsiveMenuTheme1d.isDesktop #item-547 span.linker,
+.topnav .responsiveMenuTheme1d.isDesktop #item-549 span.linker
+{padding: 5px 0}
+ .topnav .responsiveMenuTheme1d.isDesktop > li{
+	width: 12.5% !important;
+	float: none;
+    display: table-cell;
+    vertical-align: middle;
+    border-left: 1px solid white;
+
+
+ }
+ .London  .topnav .responsiveMenuTheme1d.isDesktop > li {
+	 background: rgba(169,23,26,1) !important;
+background: -moz-linear-gradient(top, rgba(169,23,26,1) 0%, rgba(241,0,11,1) 100%) !important;
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(169,23,26,1)), color-stop(100%, rgba(241,0,11,1))) !important;
+background: -webkit-linear-gradient(top, rgba(169,23,26,1) 0%, rgba(241,0,11,1) 100%) !important;
+background: -o-linear-gradient(top, rgba(169,23,26,1) 0%, rgba(241,0,11,1) 100%) !important;
+background: -ms-linear-gradient(top, rgba(169,23,26,1) 0%, rgba(241,0,11,1) 100%) !important;
+background: linear-gradient(to bottom, rgba(169,23,26,1) 0%, rgba(241,0,11,1) 100%) !important;
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a9171a', endColorstr='#f1000b', GradientType=0 ) !important;
+
+ }
+ .Manchester  .topnav .responsiveMenuTheme1d.isDesktop > li {
+	 /*background-color: #c30d24 !important;*/
+	 background: rgba(169,23,26,1) !important;
+background: -moz-linear-gradient(top, rgba(169,23,26,1) 0%, rgba(241,0,11,1) 100%) !important;
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(169,23,26,1)), color-stop(100%, rgba(241,0,11,1))) !important;
+background: -webkit-linear-gradient(top, rgba(169,23,26,1) 0%, rgba(241,0,11,1) 100%) !important;
+background: -o-linear-gradient(top, rgba(169,23,26,1) 0%, rgba(241,0,11,1) 100%) !important;
+background: -ms-linear-gradient(top, rgba(169,23,26,1) 0%, rgba(241,0,11,1) 100%) !important;
+background: linear-gradient(to bottom, rgba(169,23,26,1) 0%, rgba(241,0,11,1) 100%) !important;
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a9171a', endColorstr='#f1000b', GradientType=0 ) !important;
+
+ }
+
+.topnav .responsiveMenuTheme1d.isDesktop > li.first{ border-left:0 none !important;}
+
+.topnav .responsiveMenuTheme1d.isDesktop > li:hover{opacity: 1;}
+.topnav .responsiveMenuTheme1d.isDesktop > li > a{padding: 0; text-align: center;font-size: 0.9rem; margin-left: 1px; border-bottom: 2px solid; border-left: 0px;}
+.topnav .responsiveMenuTheme1d.isDesktop li a, .topnav .responsiveMenuTheme1d.isDesktop li span.separator, .topnav .responsiveMenuTheme1d.isDesktop li span.navHeader{}
+.London .topnav .responsiveMenuTheme1d.isDesktop li a {
+
+	    border-color: transparent !important;
+	padding:0px 5px;
+}
+.Manchester .topnav .responsiveMenuTheme1d.isDesktop li a {border-color: transparent !important; padding:0px 5px;}
+#responsiveMenu91 a:hover,#responsiveMenu284 a:hover{opacity: 0.8}
+.whtbg .navbar{margin-bottom: 0;}
+.menuFix {position: fixed !important;top:0px;}
+.bodyFix {padding-top: 40px;}
+.fixNav{padding-top: 40px;}
+.fixNav #t3-mainnav{
+  position: fixed !important;top:0px;width:100%;
+}
+/* hidden menus */
+div#maximenuck195 ul.maximenuck li.maximenuck.level1.item543{display: none !important;}
+div#maximenuck195 ul.maximenuck li.maximenuck.level1.item131{display: none !important;}
+div#maximenuck195 ul.maximenuck li.maximenuck.level1.item201{display: none !important;}
+div#maximenuck283 ul.maximenuck li.maximenuck.level1.item583{display: none !important;}
+div#maximenuck283 ul.maximenuck li.maximenuck.level1.item592{display: none !important;}
+div#maximenuck283 ul.maximenuck li.maximenuck.level1.item643{display: none !important;}
+.maximenuck.item645.parent.level1,
+.maximenuck.item644.parent.level1,
+.maximenuck.hidden-menu {
+    width: 0px !important;
+    visibility: hidden;
+    display: none !important;
+}
+
+/* PAGES
+-------------------------------------------------*/
+/* Gallery -------------*/
+#unitegallery_2_1.ug-theme-tiles {margin-left: 15px ;}
+#unitegallery_2_1.ug-theme-tiles .ug-tiletype-columns .ug-tile {-webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.22); -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.22); box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.22);}
+/* Shopping -------------*/
+.shopping h2{color: #9bc9d0; font-size: 1.6rem;}
+.shopping .whtbg{}
+/* London / Manchester */
+.London .shopping .whtbg.padding {padding-bottom: 15px;background: #fff url('../images/Corner4_General_Red.png');background-position: bottom right;background-repeat: no-repeat;}
+.Manchester .shopping .whtbg.padding {padding-bottom: 15px;background: #fff url('../images/Corner4_General_Green.png');background-position: bottom right;background-repeat: no-repeat;}
+/* Search Results -------------*/
+.view-search .t3-mainbody .t3-content #searchForm {border-radius: 0px !important;border:none !important;}
+.view-search .t3-mainbody .t3-content .search-results {margin:15px !important;}
+.London .search .page-title {margin: 15px !important;height: 50px;font-size: 1.6rem;line-height: 29px;color: #c30d24;margin: 0 0 20px;font-weight: 400;}
+.Manchester .search .page-title {margin: 15px !important;height: 50px;font-size: 1.6rem;line-height: 29px;color: #c30d24;margin: 0 0 20px;font-weight: 400;}
+/* Latest News -------------*/
+/* London / Manchester */
+.London #picturebottom, .bloglatestnews{background: #fff url('../images/corner_christmas.png');background-repeat: no-repeat;background-position: 100% 0;background-size: 290px;}
+.Manchester #picturebottom, .bloglatestnews{background: #fff url('../images/corner_christmas.png');background-repeat: no-repeat;background-position: 100% 0;background-size: 290px;}
+#picturebottom h2, .bloglatestnews h2{margin:15px; height: 50px; font-size: 1.6rem;}
+#picturebottom p, .bloglatestnews p{margin: 0 15px 15px; min-height: 40px;}
+/* SECTION PAGES
+-------------------------------------------------*/
+/* Sections Colors -------------*/
+.London .item-page.cat_Interiors {background-image: url('../images/corner_christmas.png') !important;}
+.Manchester .item-page.cat_Interiors {background-image: url('../images/corner_christmas.png') !important;}
+
+.London .t3-content .sweetcorn {background: url('../images/corner_christmas.png');background-repeat: no-repeat;background-position: 100% 0%; background-size: 290px;}
+.Manchester .t3-content .sweetcorn {background: url('../images/corner_christmas.png');background-repeat: no-repeat;background-position: 100% 0%; background-size: 290px; }
+
+.London .t3-mainpositions h2.sweetcorn {background: url('../images/corner_christmas.png');background-repeat: no-repeat;background-position: right top; background-size: 290px;}
+.Manchester .t3-mainpositions h2.sweetcorn {background: url('../images/corner_christmas.png');background-repeat: no-repeat;background-position: right top; background-size: 290px;}
+.t3-position-block .custom {background-size: 100%;}
+.t3-position-block:first-child .custom {position: relative;background-size: cover;}
+.t3-position-block:first-child .custom h1 {color: #FFF;display: block;padding: 55px 0 15px;margin-top: 0px !important;margin-bottom: 20px;font-size: 1.8rem;font-weight: 400;
+background-repeat: no-repeat;background-position: right top;}
+.t3-position-block:first-child .custom p {margin-bottom: 10px !important; color:#FFF !important;}
+.t3-position-block:first-child .custom img.sponsor {max-height: 100px; max-width:200px !important; width:auto; }
+.t3-position-block:first-child .custom img.celeb {margin:0px !important;padding:0px; width: 100%;position: absolute;bottom: 0px; left:0px; display: none;}
+.t3-position-block .custom p {padding:0px 15px; font-size: 15px; color:#a9a9a9; line-height: 21px; text-align: center !important;}
+.t3-position-block .section-block .module-inner {position: relative;padding-top: 168.5%;}
+.t3-position-block .section-block .module-ct {position: absolute;top: 0px;bottom: 0px;width: 100%;}
+.t3-position-block .section-block .module-ct > div {height:100%;}
+
+.category-desc > h2 {
+	margin:15px; height: 50px;
+}
+/* Interiors -------------*/
+
+.bloginteriors_page h2{margin:15px; height: 50px;}
+.bloginteriors_page p{margin: 0 15px 15px;}
+.intmodred {text-align: center;color: #fff;}
+.intmodred h2 {color: #fff;border-bottom: 1px solid rgba(204, 204, 204, 0.43);display: inline-block;padding: 55px 0 15px;margin-bottom: 20px; font-size: 1.5rem; font-weight: 100;}
+.intmodred p{margin: 0 20px 30px;}
+.redleftcorner {background-repeat: no-repeat;background-position: bottom center;background-color: #fff;text-align: center;}
+.redleftcorner h2.interiors {display: block;padding: 50px 0 15px;margin-bottom: 20px;font-size: 1.5rem;font-weight: 100;}
+.redleftcorner p:before{}
+.redleftcorner p:after{}
+.redleftcorner p{padding:0 20px 30px;}
+/* Home Improvement -------------*/
+
+.bloghome-improvementspage p{margin: 0 15px 15px;}
+.hmimpleftcorner {background-repeat: no-repeat;background-position: bottom center;background-color: #fff;text-align: center;}
+.hmimpleftcorner h2.improve {display: block;padding: 50px 0 15px;margin-bottom: 20px;font-size: 1.5rem;font-weight: 100;}
+.hmimpleftcorner p:before{}
+.hmimpleftcorner p:after{}
+.hmimpleftcorner p{0 20px 30px;}
+/* Gardens or Food & Drink-------------*/
+
+.bloggarden_page h2, .blogfoodanddrink_page h2{margin:15px; height: 50px;}
+.bloggarden_page p, .blogfoodanddrink_page p{margin: 0 15px 15px;}
+.gdnleftcorner {background-repeat: no-repeat;background-position: bottom center;background-color: #fff;text-align: center;}
+.gdnleftcorner h2.gardens {display: block;padding: 50px 0 15px;margin-bottom: 20px;font-size: 1.5rem;font-weight: 100;}
+.gdnleftcorner p:before{}
+.gdnleftcorner p:after{}
+.gdnleftcorner p{0 20px 30px;}
+
+body.foodanddrink_page #t3-content{ background-color: transparent !important; box-shadow: none !important;}
+body.foodanddrink_page .t3-content .sweetcorn{ background: none !important;}
+body.foodanddrink_page .t3-sidebar.t3-sidebar-2.span4{ background:transparent !important;box-shadow: none !important;}
+body.foodanddrink_page{background-color: #1f1a16 !important;background-image: url(../images/system/bg_eatanddrink.jpg)!important;background-size: 100%!important;background-repeat: repeat-y!important;background-position: top!important;}
+body.foodanddrink_page .section-block{ background-color: rgba(0, 0, 0, 0.2);}
+body.foodanddrink_page .highlights-img {max-width: 50%!important;margin-top: -10px;cursor: pointer;}
+body.foodanddrink_page .highlight-img-outer{position:absolute;width:100%;bottom:0;width: 100%;}
+body.foodanddrink_page .img-wrap{height: 152px;width: 33.333%;float: left;text-align: center;}
+body.foodanddrink_page .img-wrap img {width: 80%;margin:auto;max-width: 160px !important;}
+body.foodanddrink_page .highlight-header{    margin-top: -7px;position: relative;padding: 25px 0;}
+body.foodanddrink_page .eatandrink_title{margin-top: 80px;}
+body.foodanddrink_page .eatandrink_text{margin-top: -80px;}
+body.foodanddrink_page #t3-content .t3-featuredcontent{ bottom: 11px !important;}
+/* body.foodanddrink_page	.t3-position-block #Mod144 .module-inner{padding-top: 82.6%;} */
+
+/* Food & Houseware or Christmas gifts-------------*/
+
+.blogfood-housewares_page h2, .blogchristmasgifts_page h2{margin:15px; height: 50px;}
+.blogfood-housewares_page p, , .blogchristmasgifts_page p{margin: 0 15px 15px;}
+.fhwleftcorner {background-repeat: no-repeat;background-position: bottom center;background-color: #fff;text-align: center;}
+.fhwleftcorner h2.foodhouse {display: block;padding: 50px 0 15px;margin-bottom: 20px;font-size: 1.5rem;font-weight: 100;}
+.fhwleftcorner p:before{}
+.fhwleftcorner p:after{}
+.fhwleftcorner p{0 20px 30px;}
+/* Technology -------------*/
+
+.blogtechnology_page h2, .blogfood-gadgetsandtech h2{margin:15px; height: 50px;}
+.blogtechnology_page p, .blogfood-gadgetsandtech p{margin: 0 15px 15px;}
+.techleftcorner {background-repeat: no-repeat;background-position: bottom center;background-color: #fff;text-align: center;}
+.techleftcorner h2.techno {display: block;padding: 50px 0 15px;margin-bottom: 20px;font-size: 1.5rem;font-weight: 100;}
+.techleftcorner p:before{}
+.techleftcorner p:after{}
+.techleftcorner p{0 20px 30px;}
+/* Fashion & Beauty -------------*/
+
+.blogfashion-beauty_page h2{margin:15px; height: 50px;}
+.blogfashion-beauty_page p{margin: 0 15px 15px;}
+.fableftcorner {background-repeat: no-repeat;background-position: bottom center;background-color: #fff;text-align: center;}
+.fableftcorner h2.fashion {display: block;padding: 50px 0 15px;margin-bottom: 20px;font-size: 1.5rem;font-weight: 100;}
+.fableftcorner p:before{}
+.fableftcorner p:after{}
+.fableftcorner p{0 20px 30px;}
+/* Shopping Or Christmas Decorations -------------*/
+
+.blogshopping_page h2, .blogchristmasdecoration_page h2{margin:15px; height: 50px;}
+.blogshopping_page p, .blogchristmasdecoration_page p{margin: 0 15px 15px;}
+.shopleftcorner {background-repeat: no-repeat;background-position: bottom center;background-color: #fff;text-align: center;}
+.shopleftcorner h2.shopping {display: block;padding: 50px 0 15px;margin-bottom: 20px;font-size: 1.5rem;font-weight: 100;}
+.shopleftcorner p:before{}
+.shopleftcorner p:after{}
+.shopleftcorner p{0 20px 30px;}
+/* Show Homes or christmas arcades-------------*/
+
+.blogshow-homes_page h2, .blogchristmasarcade_page h2{margin:15px; height: 50px;}
+.blogshow-homes_page p, .blogchristmasarcade_page p{margin: 0 15px 15px;}
+.shleftcorner {background-repeat: no-repeat;background-position: bottom center;background-color: #fff;text-align: center;}
+.shleftcorner h2.showhomes {display: block;padding: 50px 0 15px;margin-bottom: 20px;font-size: 1.5rem;font-weight: 100;background-repeat: no-repeat;background-position: right top;}
+.shleftcorner p:before{}
+.shleftcorner p:after{}
+.shleftcorner p{0 20px 30px;}
+/* FIX NO FULL BG */
+#Mod155 .custom{background-size: auto;}
+/*#Mod269 .custom  p, #Mod306 .custom  p {padding:0px 15px; font-size: 15px; color:#a9a9a9 !important; line-height: 21px; text-align: center !important;}*/
+/* ARTICLE STYLES
+-------------------------------------------------*/
+/*.t3-content {background-color: #FFF;}*/
+.article {display: inline-block; max-width: 100%; width: 100%;background-color: #FFF;}
+.t3-mainbody .article #introtext h1,
+.t3-mainbody .article #introtext h2 {
+    padding: 15px 15px 15px 15px !important;
+    min-height: 40px;
+    font-size: 1.6rem;
+    margin:0px !important;
+    max-width: 100%;
+   /* line-height: 15px; */
+}
+html.itemid-101 .t3-mainbody .article #introtext h2 {
+	min-height: 25px;
+}
+html.itemid-541 .t3-mainbody .article #introtext h2 {
+	min-height: 25px;
+}
+.t3-mainbody .article h3 {
+margin: 0px 15px;
+font-weight: 400;
+font-size: 1.3rem;
+color: rgb(5, 104, 57);
+}
+.t3-mainbody .article #introtext span {
+    display: inline-block;
+height: 100%;
+/*  vertical-align: bottom;  */
+}
+.London .t3-mainbody .article h4 {
+	color:#c30d24;
+}
+.Manchester .t3-mainbody .article h4 {
+	color:#c30d24;
+}
+.t3-mainbody .article h4 {
+padding: 0 15px 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    margin:0px !important;
+    max-width: 100%;
+}
+.t3-mainbody .article p {
+padding: 0 15px 15px;
+margin-bottom: 0px;
+max-width: 100%;
+}
+.t3-mainbody .articleBody img[style="float: left;"] {
+padding: 0 15px 15px 0px;
+margin-bottom: 0px;
+max-width: 100%;
+}
+.t3-mainbody .articleBody img[style="float: right;"] {
+padding: 0 0px 15px 15px;
+margin-bottom: 0px;
+max-width: 100%;
+}
+.t3-mainbody .article table {
+margin-left: 15px;
+max-width: 100%;
+}
+/* Article Form */
+div.formBody {
+    display: block;
+    float: left !important;
+}
+.formResponsive {
+padding:0px 15px;
+}
+.formResponsive .formDescription {
+float: left;
+}
+.formContainer {
+display: block !important;
+}
+.articleBody .formBody input[type="text"], .articleBody .formBody input[type="submit"], .articleBody .formBody textarea {
+width: 97% !important;
+max-width: 300px;
+margin-bottom: 5px !important;
+}
+.formBody input[type="radio"] {
+min-height: 15px;
+clear: left !important;
+}
+.formBody input[type="checkbox"] {
+/*clear:left !important;*/
+min-height: 15px;
+/*float:none !important;*/
+z-index: 10;
+}
+.formResponsive label {
+    float: left !important;
+    margin: 0px 5px 3px 0 !important;
+}
+.formBody > div > div div, .formControls iframe {
+width: 101% !important;
+max-width: 304px !important;
+}
+.formControlLabel {
+/*width: auto !important;*/
+text-align: right !important;
+}
+.formResponsive .formHorizontal p.formDescription {
+padding: 0px 0px 0px 0px !important;
+margin-bottom: 0px !important;
+}
+.formValidation {
+display: block !important;
+}
+.formValidation span {
+padding-left: 0px !important;
+margin: 0px 5px 3px 0;
+}
+/*
+.rsform-block {
+display: block;
+}
+.formResponsive {
+max-width: 100%:
+}
+.formControlLabel {
+}
+.formControls {
+margin: 0px !important;
+width: 100%;
+}
+*/
+.articleBody {max-width: 100%;display: inline-block; padding: 0px 0px 15px 0px;}
+.t3-mainbody .article p img {max-width: 100%;}
+.t3-mainbody .article .item-image {margin-bottom: 15px;max-width: 100%;}
+.t3-mainbody .article .item-image img { width:100% !important;}
+.article {padding:0px !important}
+.pull-left {margin: 0px 15px;}
+/* Sponsored by -------------*/
+.sponsorby img {max-height: 50px;width: auto !important;}
+/* Category List pages -------------*/
+.bloglatestnews .category-desc #introtext p {
+min-height: 40px;
+}
+#introtext p {
+min-height: 40px;
+}
+/* Related News -------------*/
+.t3-relatedArticles .relatedtitle-block {margin: 0px;}
+.London .bloglatestnews{background: #fff url('../images/Corner4_General_Red.png');background-repeat: no-repeat;background-position: 100% 0;}
+.Manchester .bloglatestnews{background: #fff url('../images/Corner4_General_Green.png');background-repeat: no-repeat;background-position: 100% 0;}
+.bloglatestnews h2{margin:15px; height: 50px; font-size: 1.6rem;}
+.bloglatestnews p{margin: 0 15px 15px;}
+.relatedarticle-block {overflow: hidden !important;display: inline-block; height: 100%; padding: 0px !important;margin-left: -15px !important;}
+.relatedarticle-block article {
+width:389px ;
+margin-left: 15px;
+background-color: #FFF;
+}
+.related_innerwrap {
+position: relative;
+padding-top: 64% !important;
+overflow: hidden;
+background: #FFF;
+}
+.related_innerwrap .image-feat {
+position: absolute !important;
+top:0px;
+margin-bottom: 0px !important;
+}
+.related_innerwrap .relatedcontent {
+margin-top: -57px;
+background-color: rgb(255, 255, 255);
+position: relative;
+width: 100%;
+}
+.London .relatedarticle-block article header {
+border-top: 3px solid #c30d24 !important;
+}
+.Manchester .relatedarticle-block article header {
+border-top: 3px solid #c30d24 !important;
+}
+.relatedarticle-block article h3 {
+margin: 0px !important;
+  display: inline-block;
+}
+.London .relatedarticle-block article h3 a {
+	color: #c30d24;
+}
+.Manchester .relatedarticle-block article h3 a {
+	color: #c30d24;
+}
+
+.relatedarticle-block article h3 a {
+font-weight: 400 !important;
+    font-size: 1.2rem;
+    line-height: 1;
+    display: inline-block;
+    margin: 15px;
+
+    text-decoration: none;
+    overflow: hidden;
+  max-width: 318px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+ }
+.London .relatedarticle-block article .ra-readon {
+background-image: url('../images/arrow_right_red.png');
+}
+.Manchester .relatedarticle-block article .ra-readon {
+background-image: url('../images/arrow_right_green.png');
+}
+.relatedarticle-block article .ra-readon {
+display: inline-block;
+position: relative;
+float: right;
+text-indent: -4000px;
+background-repeat: no-repeat;
+background-size: 25px 25px;
+height: 25px;
+width: 25px;
+margin: 15px 15px 0px 0px;
+}
+.ac.two-column > *, .ac.three-column > *, .ac.thumb > *, .ac.thumb.image-banner > *{border-left: none !important;}
+.related .ac.image-banner .image-feat{overflow: hidden; margin-bottom: 0px !important;}
+/* Sponsor Article Template Styles
+----------------------------*/
+.sponsorlogo {
+height: 50px !important;
+padding: 15px;
+}
+.sponsorlogo img {
+height: 100%;
+}
+.sponsor-img-bottom {
+display: inline-block;
+height: 290px;
+background-position: center center;
+background-repeat: no-repeat;
+background-size: cover;
+margin-top: 15px;
+float: left;
+width: 50%;
+}
+/* GENERAL MODULES
+-------------------------------------------------*/
+/* Home Slideshow -------------*/
+/*#unitegallery_11_1 {position: relative; -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.42); -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.42); box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.42);}*/
+/*#unitegallery_11_1 div {display: inline-block !important; height: auto !important;}*/
+/*#unitegallery_11_1 img {top:0px;position: relative !important; display: block !important}*/
+#unitegallery_11_2.ug-theme-slider, #unitegallery_16_2.ug-theme-slider {
+    height: auto !important;
+}
+#unitegallery_11_2 .ug-slider-wrapper, #unitegallery_16_2 .ug-slider-wrapper {
+  min-width: 100%;
+  padding-bottom: 26.1% !important;
+  height: auto !important;
+  position: relative !important;
+  background-color: transparent !important;
+}
+#unitegallery_11_2 .ug-slider-inner, #unitegallery_16_2 .ug-slider-inner {
+  top:0px !important;
+  bottom:0px !important;
+  height: 100% !important;
+}
+#unitegallery_11_2 .ug-slide-wrapper, #unitegallery_16_2 .ug-slide-wrapper {
+  display: inline-block !important;
+  height: auto !important;
+  background-color: transparent !important;
+  min-height: 300px !important;
+}
+#unitegallery_11_2 .ug-item-wrapper, #unitegallery_16_2 .ug-item-wrapper {
+  display: inline-block !important;
+  position: relative !important;
+  height: auto !important;
+}
+#unitegallery_11_2 .ug-item-wrapper img, #unitegallery_16_2 .ug-item-wrapper img {
+  display: block !important;
+  position: relative !important;
+  height: 100% !important;
+  left: 0px !important;
+  width: 100% !important;
+}
+/* Page Slider -------------*/
+.ug-slider-preloader, .ug-gallery-wrapper .ug-slider-wrapper {background-color:#FFF !important; border: none !important;}
+.ug-theme-slider div:not(.ug-slider-control, .ug-bullet) {height:100% !important;}
+.ug-arrow-right, .ug-arrow-left {top:45% !important;}
+.t3-module {background: transparent;color: inherit;margin-bottom: 15px;}
+/* Side bar 2 -------------*/
+.t3-sidebar.t3-sidebar-2.span4 {background: rgba(255, 255, 255, 0.8); text-align: center;}
+.t3-sidebar.t3-sidebar-2.span4 .t3-module {margin: -2px 0px;}
+/* Side bar 3 -------------*/
+.t3-sidebar.t3-sidebar-3 {margin-top: 15px; background: #FFF;}
+.t3-sidebar.t3-sidebar-3 .nav {margin-bottom: 0px !important;}
+.t3-sidebar.t3-sidebar-3 .module-title {
+font-size: 1.6rem;
+    line-height: 29px;
+    color: #c30d24;
+    font-weight: 400;
+}
+.Manchester .t3-sidebar.t3-sidebar-3 .module-title {
+    color: #c30d24;
+}
+/* Highlights Menu -------------*/
+.otherhighlightsmenu {background: url('../images/Corner1_General.png');padding: 15px !important;background-size: 290px;background-position: right top;background-repeat: no-repeat;}
+.London .otherhighlightsmenu ul li a {color: #c30d24;font-size: 1.1rem;margin: 10px 0 0 0;}
+.Manchester .otherhighlightsmenu ul li a {color: #c30d24;font-size: 1.1rem;margin: 10px 0 0 0;}
+
+.otherhighlightsmenu ul li.active a {color:#d71623; }
+.otherhighlightsmenu ul li a:hover {background: none; color:#d71623; }
+
+.Manchester .otherhighlightsmenu ul li.active a {color:#3d954a; }
+.Manchester .otherhighlightsmenu ul li a:hover {background: none; color:#3d954a; }
+/* Show Highlights Block - Home Page -------------*/
+#Mod107 .module-ct .custom_sh, #Mod296 .module-ct .custom_sh {text-align: center;background: #fff;background-position: 100% 0;background-repeat: no-repeat; background-size: cover;}
+#Mod107 .module-ct .custom_sh h2, #Mod296 .module-ct .custom_sh h2 {color: #d71623;font-weight: 100;border-bottom: 1px solid #ddd;display: inline-block;font-size: 1.5rem; padding: 15% 10px 5px 10px;}
+#Mod107 .module-ct .custom_sh p, #Mod296 .module-ct .custom_sh p{padding:0px; margin: 0px !important;height: 100%;}
+#Mod107 .module-ct, #Mod173 .module-ct, #Mod296 .module-ct {padding-top: 82.2%;position: relative;}
+#Mod107 .module-ct .custom_sh, #Mod173 .module-ct .custom_sh, #Mod296 .module-ct .custom_sh {position:absolute; top:0; bottom:0;}
+#Mod107 p, #Mod296 p {font-size: 19px;line-height: 26px;font-weight: 100;color: #a9a9a9;margin-top: 10px;}
+#Mod107 a, #Mod296 a {font-size: 1.4rem; height: 100%; display: block;}
+/* Book Tickets Block - Highlights Page -------------*/
+.aidanews2_positions_customblock h2 {color: #A31722;font-weight: 100;border-bottom: 1px solid #ddd;display: inline-block;font-size: 1.5rem; padding: 15% 10px 5px 10px;}
+.aidanews2_positions_customblock p {padding:0px 15px;}
+.aidanews2_positions_customblock {padding: 0 !important;
+position: relative;
+padding-top: 82.2% !important;
+overflow: hidden; text-align: center;background-color:#fff;background-position: 100% 0;background-repeat: no-repeat;}
+.aidanews2_positions_customblock .highlightblk {position:absolute; top:0; bottom:0;}
+.aidanews2_positions_customblock p {font-size: 19px;line-height: 26px;font-weight: 100;color: #a9a9a9;margin-top: 10px;}
+/* SOCIAL BAR - Home Page -------------*/
+.socialbar{}
+.socialbar .title {width: 100%; margin-bottom: 5px;}
+.socialbar .title h3 {font-family: source-sans-pro,sans-serif;font-weight: 400;color: #888;font-size: 1.12rem;padding: 15px 10px;margin: 0;}
+.socialbar .title span{}
+.socialbar .title span a {float: right;color: #888;font-size: .9rem; position: relative; top:3px;}
+.socialbar .moduletable:nth-child(1){}
+.socialbar .moduletable:nth-child(2){margin: 0px; text-align: center;}
+.socialbar .moduletable:nth-child(2) iframe{background-color: #fff;}
+.socialbar .moduletable:nth-child(3){}
+/* latest news */
+.socialbar .moduletable .aidanews2_positions{padding: 0 !important;}
+.socialbar .moduletable .aidanews2 img{margin: 0 !important;}
+.socialbar .aidanews2_positions{padding: 0 !important;}
+.socialbar .col_2{margin: 0 15px;}
+.socialbar .aidanews2_mainC{background-color: #fff;min-height: 300px;}
+.socialbar .readon {margin: 10px 15px 0 0 !important;display: inline-block;float: right;}
+.London .socialbar .aidanews2 img{border-bottom: 3px solid #c30d24 !important; margin: 0;}
+.Manchester .socialbar .aidanews2 img{border-bottom: 3px solid #c30d24 !important; margin: 0;}
+.socialbar .aidanews2_title a {font-weight: 400 !important;font-size: 1.2rem;line-height: 1;display: inline-block;margin: 15px;}
+.socialbar .aidanews2_text {margin: 0 15px;display: inline-block;font-size: .9rem;line-height: 1.4; min-height: 43px;}
+.socialbar .readon{}
+.London .socialbar .aidanews2_readmore,.Manchester .socialbar .aidanews2_readmore {background-image: url('../images/arrow_right_red.png');}
+.socialbar .aidanews2_readmore {display: block;position: relative;float: right;text-indent: -4000px;background-repeat: no-repeat;background-size:25px 25px;height: 25px;width: 25px;}
+.socialbar .moduletable .banneritem {background-color: #fff;display: inline-block;width: 100%; text-align: center;}
+.socialbar .moduletable .banneritem .flexadvert p{margin: 0;}
+.socialbar .moduletable .banneritem .flexadvert {width: 300px;height: 250px;margin: 30px auto;}
+.t3-sidebar .advertcenter {width: 300px;height: 250px;margin: 30px auto;}
+/* headline sponsor */
+.socialbar .flexadvert, #Mod226 .custom {margin-top:53px;height: 300px; background-color: white; text-align: center;}
+.socialbar .flexadvert p {top: 50%;-webkit-transform: translateY(-50%);-ms-transform: translateY(-50%);transform: translateY(-50%);position: relative;}
+/* Zoopla Property Search */
+#Mod226 .custom {
+width:auto !important;
+margin: auto !important;
+display: inline-block;
+background-color: #FFF;
+width: 100% !important;
+}
+#Mod226 #zoopla_search {
+top: 50%;
+left:50%;
+position: relative;
+-webkit-transform: translate(-50%, -50%);-ms-transform: translate(-50%, -50%);transform: translate(-50%, -50%);
+}
+#zoopla_sections div:not(#zoopla_type_prices) {
+width:79px !important;
+}
+#zoopla_type_prices {width:101px !important;}
+.zoopla_header {margin-top: 5px !important;}
+#zoopla_search .zoopla_seperator {
+    margin: 0 0 5px 0 !important;
+}
+#zoopla_search .zoopla_select {margin:0px !important;}
+#zoopla_search #zoopla_submit {
+    margin: 5px 0 0 0 !important;
+    text-align: right;
+}
+#Mod226 #zoopla_search {
+    padding: 0 0 5px 0;
+    height: 263px;
+}
+#Mod226 .zoopla_header a {
+    color: #5F1F65 !important;
+    font-weight: 600;
+    font-size: 17px;
+}
+/* Book Tickets Bottom -------------*/
+.booktickets{display: block; margin-bottom: 15px;}
+.booktickets p{margin: 0;}
+/* Hover Blocks -------------*/
+.teaser-title {
+    line-height: 25px !important;
+    margin: 11px 45px 11px 15px !important;
+    font-weight: 100 !important;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.teaser-title:after {
+	content: '';
+	float: right;
+	width: 25px;
+	height: 25px;
+	background: url('../images/arrow_link.png');
+	background-color:inherit;
+	background-repeat: no-repeat;
+	background-position: right;
+	background-size:25px 25px;
+	position: absolute;
+	right: 15px;
+}
+
+.London .boxgrid .boxcaption {border-top-width: 3px !important; background: rgba(169,23,26,1) !important;
+background: -moz-linear-gradient(top, rgba(169,23,26,1) 0%, rgba(241,0,11,1) 25%) !important;
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(169,23,26,1)), color-stop(25%, rgba(241,0,11,1))) !important;
+background: -webkit-linear-gradient(top, rgba(169,23,26,1) 0%, rgba(241,0,11,1) 25%) !important;
+background: -o-linear-gradient(top, rgba(169,23,26,1) 0%, rgba(241,0,11,1) 25%) !important;
+background: -ms-linear-gradient(top, rgba(169,23,26,1) 0%, rgba(241,0,11,1) 25%) !important;
+background: linear-gradient(to bottom, rgba(169,23,26,1) 0%, rgba(241,0,11,1) 25%) !important;
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a9171a', endColorstr='#f1000b', GradientType=0 ) !important;border-top: 3px solid #c30d24 !important;}
+.Manchester .boxgrid .boxcaption {border-top-width: 3px !important; background: rgba(169,23,26,1) !important;
+background: -moz-linear-gradient(top, rgba(169,23,26,1) 0%, rgba(241,0,11,1) 25%) !important;
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(169,23,26,1)), color-stop(25%, rgba(241,0,11,1))) !important;
+background: -webkit-linear-gradient(top, rgba(169,23,26,1) 0%, rgba(241,0,11,1) 25%) !important;
+background: -o-linear-gradient(top, rgba(169,23,26,1) 0%, rgba(241,0,11,1) 25%) !important;
+background: -ms-linear-gradient(top, rgba(169,23,26,1) 0%, rgba(241,0,11,1) 25%) !important;
+background: linear-gradient(to bottom, rgba(169,23,26,1) 0%, rgba(241,0,11,1) 25%) !important;
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a9171a', endColorstr='#f1000b', GradientType=0 ) !important;border-top: 3px solid #c30d24 !important;}
+.module-ct{}
+.module-ct > div{width: 100% !important;}
+.module-ct .boxgrid{width: 100% !important;}
+.boxgrid .teaser-text {
+padding:0px !important;
+background-color: #FFF;
+color:#a9a9a9 !important;
+position: absolute;
+top: 50px;
+bottom: 0px;
+}
+.boxgrid .teaser-text p {
+padding:10px 15px 0px 15px;
+font-size: 15px;
+}
+.boxgrid .teaser-text img {
+position: static !important;
+max-height: 50px;
+margin: auto;
+display: block;
+}
+.t3-position-block .module-ct .hover-block .boxgrid {
+position: absolute !important;
+top: 0px !important;
+height: 100% !important;
+}
+.t3-position-block .module-ct .hover-block {
+padding-top: 82.2%;
+position: relative;
+}
+/* Related Blocks -------------*/
+/* Related Highlights Title */
+.relatedtitle-block .t3-module {background-color: #FFF;}
+.relatedtitle-block h3 {color:#8f8f8f; font-weight: 100; padding:5px 15px;}
+.t3-relatedArticles .relatedtitle-block {margin-left: 0px;}
+.t3-relatedHighlights .aidaHighlightsLayout {
+margin-left: -15px;
+}
+/* Related Highlights Title */
+/* AIDANEWS2
+-------------------------------------------------*/
+.aidanews2_table .aidanews2_tabrow .aidanews2_art{border: none !important;}
+.aidanews2 .even{background: none !important;}
+.aidanews2 img{padding: 0 !important;border: none !important;}
+.aidanews2_mainC{overflow: hidden !important;}
+.custom.title { color:#8f8f8f !important; background-color: #FFF; margin-top: 20px; margin-bottom: 20px;}
+.custom.title h3 {
+margin: 10px 0px;
+font-weight: 400;
+color:#8f8f8f !important;
+font-weight: 100;
+padding: 5px 15px;
+}
+/* Pagination -------------*/
+.paginationstyle .flatview a, .paginationstyle .next, .paginationstyle .previous {
+  background-color: transparent !important;
+  border:none !important;
+  color:#d71623 !important;
+  font-weight: 600 !important;
+}
+.paginationstyle .next, .paginationstyle .previous {
+}
+body .paginationstyle .selected {
+color: #00613B !important;
+}
+.paginationstyle .next:after {
+  font-family: FontAwesome;
+  content: "\f054";
+  padding-left: 5px;
+  position: relative;
+  top: 1px;
+  font-weight: 100 !important;
+}
+.paginationstyle .previous:before {
+  font-family: FontAwesome;
+  content: "\f053";
+  padding-right: 5px;
+  position: relative;
+  top: 1px;
+  font-weight: 100 !important;
+}
+/* List Layout -------------*/
+.aidaListLayout {}
+.aidaListLayout .aidanews2_art {width:389px; margin-left: 15px;}
+.aidaListLayout .aidanews2_positions{padding: 0 !important;}
+.aidaListLayout .col_2{margin: 0 15px;}
+.aidaListLayout .aidanews2_table .aidanews2_tabrow .aidanews2_art{width: 32.445% !important;}
+.aidaListLayout .aidanews2_mainC{background-color: #fff;margin-bottom: 15px; min-height:320px;}
+.aidaListLayout .aidanews2 img{ margin: 0;}
+.aidaListLayout .aidanews2_title a {font-weight: 400 !important;font-size: 1.2rem;line-height: 1;display: inline-block;margin: 15px;}
+.aidaListLayout .aidanews2_text {margin: 0 15px;display: inline-block;font-size: .9rem;line-height: 1.4;}
+.aidaListLayout .readon {margin: 10px 15px 0 0 !important;display: inline-block;float: right;}
+.London .aidaListLayout .aidanews2_readmore {background-image: url('../images/arrow_right_red.png');}
+.Manchester .aidaListLayout .aidanews2_readmore {background-image: url('../images/arrow_right_red.png');}
+.aidaListLayout .aidanews2_readmore {display: block;position: relative;float: right;text-indent: -4000px;background-repeat: no-repeat;background-size: 25px 25px; height: 25px;width: 25px;}
+.aidaListLayout .aidanews2_img1 {
+display: block;
+overflow: hidden;
+border-bottom: 3px solid #c30d24 !important;
+margin-left: auto;
+margin-right: auto;
+position: relative;
+padding-top: 47%;
+}
+.aidaListLayout .aidanews2_img1 img {
+position: absolute;
+top: 0px;
+width: 100%;
+top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+}
+/* Highlights Layout -------------*/
+.t3-related .aidaHighlightsLayout {margin-left: -15px;}
+.aidaHighlightsLayout .aidanews2_art {width:389px; margin-left: 15px;margin-bottom: 15px; display: inline-block;}
+.aidaHighlightsLayout .aidanews2_positions{padding: 0 !important;position: relative;padding-top: 82.2% !important;overflow: hidden;background: #FFF;}
+.aidaHighlightsLayout .col_2{margin: 0 15px;}
+.aidaHighlightsLayout .aidanews2_table .aidanews2_tabrow .aidanews2_art{width: 32.445% !important;}
+.aidaHighlightsLayout .aidanews2_main {background-color: #FFF !important; background-position: right top; background-repeat: no-repeat; background-size: 305px !important}
+.aidaHighlightsLayout .aidanews2_mainC{display: inline-block;}
+.aidaHighlightsLayout .aidanews2 img{ margin: 0;}
+.aidaHighlightsLayout .aidanews2_title a {font-weight: 400 !important;font-size: 1.2rem;line-height: 1;display: inline-block;margin: 15px 10px;}
+.aidaHighlightsLayout .aidanews2_text {margin: 0 15px;display: inline-block;font-size: 15px;line-height: 1.4;}
+.aidaHighlightsLayout .readon {margin: 10px 15px 0 0 !important;display: inline-block;float: right;}
+.London .aidaHighlightsLayout .aidanews2_readmore {
+	background-image: url('../images/arrow_right_red.png');
+}
+.Manchester .aidaHighlightsLayout .aidanews2_readmore {
+	background-image: url('../images/arrow_right_red.png');
+}
+.aidaHighlightsLayout .aidanews2_readmore {display: block;position: relative;float: right;text-indent: -4000px;background-repeat: no-repeat;background-size: 25px 25px; height: 25px;width: 25px;}
+/*
+.aidaHighlightsLayout .aidanews2_img1 {
+display: block;
+overflow: hidden;
+margin-left: auto;
+margin-right: auto;
+position: relative;
+padding-top: 68%;
+}
+.aidaHighlightsLayout .aidanews2_img1 img {
+position: absolute;
+top: 0px;
+width: auto;
+height: 100%;
+object-fit: cover;
+}
+*/
+.aidaHighlightsLayout .aidanews2_img1 {display: block;overflow: hidden;margin-left: -25%;position: relative;height: 100%;width: 560px;}
+.aidaHighlightsLayout .aidanews2_img1 img{min-height: 264px;}
+/* IE9 HACK
+.aidaHighlightsLayout .aidanews2_img1 img:root img {
+    height:auto;
+    width:auto;
+}   */
+ /* IE10+ HACK
+.aidaHighlightsLayout .aidanews2_img1 img_:-ms-lang(x), img {
+    height:auto;
+    width:auto;
+} */
+.aidaHighlightsLayout .aidanews2_img2 {
+display: flex;
+width: 100%;
+text-align: center;
+padding-bottom: 15px;
+height:75px;
+}
+.aidaHighlightsLayout .aidanews2_mainC .sponsored_by {
+	font-size: 13px !important;
+	display:block; width:100%; margin-top:5px;
+}
+.aidaHighlightsLayout .aidanews2_img2 img {
+height:61px;
+margin:auto;
+display: block;
+float: none !important;
+/*max-width: 150px !important;
+height: auto;*/
+}
+.aidaHighlightsLayout .aidanews2_head {
+position: absolute;
+top: 0px;
+width: 100%;
+}
+.London .aidaHighlightsLayout .aidanews2_main {
+border-top: 3px solid #c30d24 !important;
+}
+.Manchester .aidaHighlightsLayout .aidanews2_main {
+border-top: 3px solid #c30d24 !important;
+}
+/* shared by Sponsors, Highlights */
+.aidaSponsorsLayout .aidanews2_main,
+.aidaHighlightsLayout .aidanews2_main {
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    transform: translateY(100%);
+-webkit-transform: translateY(100%);
+-ms-transform: translateY(100%);
+margin-bottom: 56px;
+    height: 100%;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+}
+.aidaSponsorsLayout .aidanews2_art:hover .aidanews2_main,
+.aidaHighlightsLayout .aidanews2_art:hover .aidanews2_main{
+  transform: translateY(0%);
+    margin: 0;
+}
+.aidaHighlightsLayout  .aidanews2_img2 img[src="/"]{
+  display: none;
+}
+.aidaHighlightsLayout .aidanews2_text {
+display: block;
+height:60px;
+}
+/* Highlight Colors ---*/
+.aidaHighlightsLayout .aidanews2_art.aidacat_Interiors .aidanews2_title a {color:#c30d24 !important;}
+.aidaHighlightsLayout .aidanews2_art.aidacat_Home .aidanews2_title a {color:#2869b8 !important;}
+.aidaHighlightsLayout .aidanews2_art.aidacat_Gardens .aidanews2_title a {color:#779550 !important;}
+.aidaHighlightsLayout .aidanews2_art.aidacat_Food .aidanews2_title a {color:#5f4ba4 !important;}
+.aidaHighlightsLayout .aidanews2_art.aidacat_Technology .aidanews2_title a {color:#807c85 !important;}
+.aidaHighlightsLayout .aidanews2_art.aidacat_Fashion .aidanews2_title a {color:#b84089 !important;}
+.aidaHighlightsLayout .aidanews2_art.aidacat_Shopping .aidanews2_title a {color:#9bc9d0 !important;}
+.aidaHighlightsLayout .aidanews2_art.aidacat_Show .aidanews2_title a {color:#3a338d !important;}
+.aidaHighlightsLayout .aidanews2_art.aidacat_Interiors .aidanews2_main {background-image: url('../images/Corner4_General.png') !important; border-color:#c30d24 !important;}
+.aidaHighlightsLayout .aidanews2_art.aidacat_Home .aidanews2_main {background-image: url('../images/Corner4_General.png') !important; border-color:#2869b8 !important;}
+.aidaHighlightsLayout .aidanews2_art.aidacat_Gardens .aidanews2_main {background-image: url('../images/Corner4_General.png') !important; border-color:#779550 !important;}
+.aidaHighlightsLayout .aidanews2_art.aidacat_Food .aidanews2_main {background-image: url('../images/Corner4_General.png') !important; border-color:#5f4ba4 !important;}
+.aidaHighlightsLayout .aidanews2_art.aidacat_Technology .aidanews2_main {background-image: url('../images/Corner4_General.png') !important; border-color:#807c85 !important;}
+.aidaHighlightsLayout .aidanews2_art.aidacat_Fashion .aidanews2_main {background-image: url('../images/Corner4_General.png') !important; border-color:#b84089 !important;}
+.aidaHighlightsLayout .aidanews2_art.aidacat_Shopping .aidanews2_main {background-image: url('../images/Corner4_General.png') !important; border-color:#9bc9d0 !important;}
+.aidaHighlightsLayout .aidanews2_art.aidacat_Show .aidanews2_main {background-image: url('../images/Corner4_General.png') !important; border-color:#3a338d !important;}
+/* Sponsors Layout -------------*/
+.t3-related .aidaHighlightsLayout {margin-left: -15px;}
+.aidaSponsorsLayout .aidanews2_title {float: left;}
+.aidaSponsorsLayout .aidanews2_art {width:389px; margin-left: 15px;margin-bottom: 15px; display: inline-block;}
+.aidaSponsorsLayout .aidanews2_positions{padding: 0 !important;position: relative;padding-top: 64% !important;overflow: hidden;background: #FFF;}
+.aidaSponsorsLayout .col_2{margin: 0 15px;}
+.aidaSponsorsLayout .aidanews2_table .aidanews2_tabrow .aidanews2_art{width: 32.445% !important;}
+.aidaSponsorsLayout .aidanews2_main {background-color: #FFF !important; background-position: right top; background-repeat: no-repeat; background-size: 305px !important}
+.aidaSponsorsLayout .aidanews2_mainC{display: inline-block;width:100%;}
+.aidaSponsorsLayout .aidanews2 img{ margin: 0;}
+.aidaSponsorsLayout .aidanews2_title a {font-weight: 400 !important;font-size: 1.2rem;line-height: 1;display: inline-block;margin: 15px;}
+.aidaSponsorsLayout .aidanews2_text {margin: 0 15px;display: block;font-size: 15px;line-height: 1.4;}
+.aidaSponsorsLayout .readon {margin: 10px 15px 0 0 !important;display: inline-block;float: right;}
+.London .aidaSponsorsLayout .aidanews2_readmore {background-image: url('../images/arrow_right_red.png');}
+.Manchester .aidaSponsorsLayout .aidanews2_readmore {background-image: url('../images/arrow_right_red.png');}
+.aidaSponsorsLayout .aidanews2_readmore {display: block;position: relative;float: right;text-indent: -4000px;background-repeat: no-repeat;background-size: 25px 25px; height: 25px;width: 25px;}
+.aidaSponsorsLayout .aidanews2_img1 {
+display: block;
+overflow: hidden;
+margin-left: auto;
+margin-right: auto;
+position: relative;
+padding-top: 50%;
+}
+.aidaSponsorsLayout .aidanews2_img1 img {
+position: absolute;
+top: 0px;
+width: auto;
+height: 100%;
+object-fit: cover;
+}
+/* IE9 HACK */
+.aidaSponsorsLayout .aidanews2_img1 img:root img {
+    height:auto;
+    width:auto;
+}
+ /* IE10+ HACK */
+.aidaSponsorsLayout .aidanews2_img1 img_:-ms-lang(x), img {
+    height:auto;
+    width:auto;
+}
+.aidaSponsorsLayout .aidanews2_img2 {
+display: flex;
+width: 100%;
+text-align: center;
+padding-bottom: 15px;
+height:51px;
+}
+.aidaSponsorsLayout .aidanews2_img2 img {
+max-height:51px;
+margin:auto;
+display: block;
+}
+.aidaSponsorsLayout .aidanews2_head {
+position: absolute;
+top: 0px;
+width: 100%;
+}
+.London .aidaSponsorsLayout .aidanews2_main {
+border-top: 3px solid #c30d24 !important;
+}
+.Manchester .aidaSponsorsLayout .aidanews2_main {
+border-top: 3px solid #c30d24 !important;
+}
+.aidaSponsorsLayout .aidanews2_main {
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    transform: translateY(100%);
+-webkit-transform: translateY(100%);
+-ms-transform: translateY(100%);
+margin-bottom: 56px;
+}
+.aidaSponsorsLayout .aidanews2_text {
+display: inline-block;
+height:60px;
+}
+/* Custom Block */
+.aidanews2_positions_customblock .highlightblk img {
+float:none;
+}
+/* Featued Content Layout -------------*/
+.t3-featuredcontent .t3-module, .t3-featuredcontent .aidanews2_positions {
+margin-bottom: 0px; padding: 0px !important;
+}
+.t3-featuredcontent .aidanews2_featuredC-Article {
+overflow: hidden;
+}
+.t3-featuredcontent .aidanews2_featuredC-Article .aidanews2_positions {
+position: relative;
+z-index: 0;
+}
+.t3-featuredcontent .aidanews2_featuredC-Article .aidanews2_title {
+margin: 10px 15px;
+display: inline-block;
+}
+.t3-featuredcontent .aidanews2_featuredC-Article .aidanews2_title a {
+color:#FFF;
+font: 18px droid sans,Arial,sans-serif;
+font-weight: 100;
+}
+.t3-featuredcontent .aidanews2_featuredC-Article .readon {margin: 10px 15px 0px 0px !important;display: inline-block;float: right;}
+.t3-featuredcontent .aidanews2_featuredC-Article .aidanews2_readmore {background: url('../images/arrow_link.png');display: block;position: relative;float: right;text-indent: -4000px;background-repeat: no-repeat;background-size: 25px 25px; height: 25px;width: 25px;}
+.t3-featuredcontent .aidanews2_featuredC-Article .aidanews2_head a {display: block;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&amp;0+0,0.65+100 */
+background: -moz-linear-gradient(top,  rgba(0,0,0,0) 50%, rgba(0,0,0,0.55) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 50%,rgba(0,0,0,0.55) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(0,0,0,0) 50%,rgba(0,0,0,0.55) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 ); /* IE6-9 */
+}
+.t3-featuredcontent .aidanews2_featuredC-Article .aidanews2_head img {
+    position: relative;
+    z-index: -1;
+}
+.t3-featuredcontent .aidanews2_featuredC-Article .aidanews2_main {
+width: 100%;
+position: absolute;
+bottom:0px;
+ transform: translateY(100%);
+-webkit-transform: translateY(100%);
+-ms-transform: translateY(100%);
+margin-bottom: 45px;
+}
+.t3-featuredcontent .aidanews2_featuredC-Article .aidanews2_mainC {
+overflow: visible !important;
+}
+.t3-featuredcontent .aidanews2_main .aidanews2_text {
+display: block;
+padding:0px 15px 15px;
+color:#FFF;
+}
+.t3-featuredcontent .aidanews2_featuredC-Article .aidanews2_head .aidanews2_img1 img {
+    margin: auto;
+    position: relative;
+    height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+    width:auto;
+}
+.t3-featuredcontent .aidanews2_featuredC-Article .aidanews2_head .aidanews2_img1 img.fa-fullHeight {
+min-height: 100% !important;
+min-width: 100% !important;
+}
+.t3-featuredcontent .aidanews2_featuredC-Article .aidanews2_head .aidanews2_img1 img.fa-fullWidth{
+min-width: 100% !important;
+}
+.t3-featuredcontent .aidanews2_featuredC-Article .aidanews2_title a {
+overflow: hidden;
+white-space: nowrap;
+text-overflow: ellipsis;
+display: inline-block;
+}
+/* PAGE BOTTOM - (back to top & social links)
+-------------------------------------------------*/
+.container.page-footer {
+margin-bottom: 15px;
+}
+.page-footer_innerwrap {background-color: #FFF;}
+.container.page-footer .pageshare, .container.page-footer .backtotop {display: inline-block; width:50%;float:left;}
+.container.page-footer .pageshare .cw-social-mod-bookmark {padding:10px 15px;margin-bottom: 0px !important}
+.container.page-footer .pageshare #sblk, .container.page-footer .pageshare .cw-social-mod-icon-al {display: inline-block; margin-top:auto;margin-bottom: auto;}
+.container.page-footer .pageshare #sblk {
+margin: 8px 10px;
+float:left;
+}
+.container.page-footer .backtotop .btt-wrap {
+display: inline-block;
+float: right;
+padding: 3px 0px;
+cursor: pointer;
+}
+.container.page-footer .pageshare .cw-social-mod-icon-al {
+float:left;
+}
+.btt-wrap img {
+width:33px;
+height:20px;
+padding: 15px;
+position: relative;
+bottom:0px;
+}
+.container.page-footer .backtotop .btt-wrap p {
+margin: 0px;
+top: 2px;
+position: relative;
+}
+.container.page-footer .backtotop .moduletable {margin-right: 0px;}
+.container.page-footer .backtotop .btt-wrap p, .container.page-footer .backtotop .btt-wrap img {display: inline-block;}
+/* FOOTER
+-------------------------------------------------*/
+/* General -------------*/
+footer {
+border-bottom: 3px solid #8f8f8f;
+}
+.t3-spotlight.t3-footnav {
+padding: 15px 0px;
+}
+.t3-spotlight.t3-footnav h3 {
+font-size: 1.1rem;line-height: 30px;color: #8f8f8f;font-family: source-sans-pro,sans-serif;font-weight: 100;text-transform: uppercase;margin: 0px !important;
+}
+.t3-spotlight.t3-footnav .cw-social-mod-follow {padding:10px 0px;}
+.t3-spotlight.t3-footnav #ftr {margin-bottom: 0px !important;}
+.t3-spotlight.t3-footnav #ftr li {display: inline-block;padding:3px 15px 0px 0px;}
+.t3-spotlight.t3-footnav #ftr li > a {display: inline-block;}
+.t3-spotlight.t3-footnav #ftr li:after {
+content: '\2022';
+padding-left:15px;
+opacity: 0.4;
+}
+.t3-spotlight.t3-footnav #ftr li:last-child:after {
+content: '';
+}
+.t3-spotlight.t3-footnav #ftr li a:hover {
+opacity: 0.5;
+color:inherit;
+text-decoration: underline;
+background-color: transparent !important;
+}
+.t3-spotlight.t3-footnav .t3-module {margin-bottom: 0px !important;}
+.t3-footer {
+  background: #f2f1ef;
+  color: #666;
+}
+.topgreen .sponsors {
+-webkit-box-sizing:border-box;
+-moz-box-sizing:border-box;
+-ms-box-sizing:border-box;
+box-sizing:border-box;
+/*border-right: 1px solid rgba(143, 143, 152, 0.3);*/
+}
+#footCR {background: url('../images/m10_logo.png');height: 80px;background-repeat: no-repeat;background-position: right;display: block;}
+#footCR p {margin: 0;position: relative;right: 75px;text-align: right;top: 65px; color: #8f8f8f;}
+.t3-copyright {border-top: 1px solid #b4b4b4;font-size: 12px;padding: 25px 0;*zoom: 1;}
+.t3-copyright:before,
+.t3-copyright:after {display: table;content: "";line-height: 0;}
+.t3-copyright:after {clear: both;}
+/* Sponsors -------------*/
+.London .topgreen{
+border-top: 2px solid #c30d24;
+}
+.Manchester .topgreen{
+border-top: 2px solid #c30d24;
+}
+.topgreen{
+padding: 15px 0 25px 0;
+-webkit-box-shadow: 0px -6px 5px -6px rgba(0,0,0,0.22);
+-moz-box-shadow: 0px -6px 5px -6px rgba(0,0,0,0.22);
+box-shadow:0px -6px 5px -6px rgba(0,0,0,0.22);
+}
+.fifty {display: inline-block;width: 50%;vertical-align: top;}
+.sponsors{}
+.sponsors .bannergroup {display: table;}
+.sponsors .bannergroup > .banneritem {
+display: inline-block;
+margin: 0px 20px 20px 0px;
+}
+.sponsors .banneritem{
+vertical-align: top;
+flex: none !important;
+height: 100%;
+}
+.sponsors .banneritem img{}
+.sponsors .moduletable {
+display: inline-block;
+float: left;
+}
+.sponosors .bannergroup p {
+width: 100%;
+display: block;
+}
+/* More From -------------*/
+.sponsors h3, .morefrom h3{font-size: 1.1rem;line-height: 40px;color: #8f8f8f;font-family: source-sans-pro,sans-serif;font-weight: 100;text-transform: uppercase;margin: 0;}
+.IHSothershows {
+display: inline-block;
+width: 100%;
+}
+.IHSothershows.moduletable {
+margin-top:15px;
+}
+.moduletable.mediapartners{float: left;}
+.custom.IHSothershows {}
+.IHSothershows .show_wrap {
+width: calc(97%/3);
+float: left;
+-webkit-box-sizing:border-box;
+-moz-box-sizing:border-box;
+-ms-box-sizing:border-box;
+box-sizing:border-box;
+border: 1px solid rgba(143, 143, 152, 0.3);
+border-radius: 5px;
+margin-left: 1%;
+padding: 0px 5px;
+text-align: center;
+}
+.IHSothershows .show_wrap h6 {
+color: #7A3E5A;
+}
+.IHSothershows .show_wrap a {
+margin: 0px -5px;
+}
+.IHSothershows .show_wrap a:last-child {
+padding:5px;
+color: #FFF !important;
+border-radius: 0px 0px 5px 5px;
+width: 100%;
+display: block;
+}
+.IHSothershows .show_wrap p {
+min-height: 35px;
+padding:0px 15px;
+}
+/* IHS Shop */
+#IHS_Shop.show_wrap h6 {color: #7A3E5A;}
+#IHS_Shop.show_wrap a:last-child {background-color: #7A3E5A;}
+#IHS_Shop.show_wrap p {
+height: 35px;
+}
+
+#Eat_Drink.show_wrap h6 {color: #e9b500;}
+#Eat_Drink.show_wrap a:last-child {background-color: #e9b500;}
+#Eat_Drink.show_wrap p {
+height: 35px;
+}
+
+/* IHS Xmas */
+#IHS_Xmas.show_wrap h6 {color: #0B5838;}
+#IHS_Xmas.show_wrap a:last-child {background-color: #0B5838;}
+/* IHS Scotland */
+#IHS_Scotland.show_wrap h6 {color: #034287;}
+#IHS_Scotland.show_wrap a:last-child {background-color: #034287;}
+/* IHS Manchester */
+#IHS_Manchester.show_wrap h6 {color: #0A663A;}
+#IHS_Manchester.show_wrap a:last-child {background-color: #0A663A;}
+/* Share this page */
+.b2jsocial_parent{margin: 40px 15px 20px;}
+.b2jsocial_parent span.one {display: inline-block;height: 32px;vertical-align: top;padding-top: 10px;margin-right: 15px;}
+/* Share Bare */
+.sharebar{}
+.sharebar .cw-social-mod {display: block;margin: 10px 20px;min-height: 37px;}
+.sharebar .white{background-color: #fff; margin-bottom: 20px;}
+.sharebar .cw-social-mod-bookmark{margin: 0; padding: 0; width: 270px;}
+.sharebar .cw-social-mod-bookmark #sblk{float: right; margin-top: 8px;}
+.sharebar .cw-social-mod-icon-al{float: left}
+/* Highlights */
+.highbox{}
+.highbox .teaser-title span{font-size: 12px;}
+.highbox .module-ct div.teaser-text img{position: inherit !important;}
+.highbox .module-ct .boxcaption div.teaser-text{padding: 0 20px 0 10px !important; text-align: left !important;}
+/* ideal room sets */
+#scgalleryidealroomsets{}
+#scgalleryidealroomsets .captionfull .boxcaption{background: #fff url('../images/Corner4_General.jpg') top right no-repeat !important;}
+/* VIP Lounge */
+#scgalleryviplounge .captionfull .boxcaption{background: #fff url('../images/Corner4_General.jpg') top right no-repeat !important;}
+/* Ideal show Gardens */
+#scgalleryidealshowgardens .captionfull .boxcaption{background: #fff url('../images/Corner4_General.jpg') top right no-repeat !important;}
+/* Food & Drink */
+#scgalleryifdthigh .captionfull .boxcaption{background: #fff url('../images/Corner4_General.jpg') top right no-repeat !important;}
+/* Technology */
+#scgallerysmarthomes .captionfull .boxcaption{background: #fff url('../images/Corner4_General.jpg') top right no-repeat !important;}
+/* Fashion & Beauty */
+#scgalleryfbhighbox .captionfull .boxcaption{background: #fff url('../images/Corner4_General.jpg') top right no-repeat !important;}
+/* Shopping */
+#scgallerydhhighbox .captionfull .boxcaption{background: #fff url('../images/Corner4_General.jpg') top right no-repeat !important;}
+/* Book Tickets Bottom */
+.bottom.booktickets {margin-top: 30px;}
+/* JCE Editor Styles */
+a.jcemediabox-image {
+display: block;
+width: 100%;
+}
+a.jcemediabox-image span {
+width:100%;
+}
+/* JCE Newsletter Pop up */
+#jcemediabox-popup-body, #jcemediabox-popup-content { width: 400px !important; height:430px !important; max-width: 100%;max-height: 80vh;}
+#jcemediabox-popup-body {top: 40% !important;-webkit-transform: translateY(-50%);-ms-transform: translateY(-50%);transform: translateY(-50%);position: relative;}
+#jcemediabox-popup-content {}
+/* Sponsors *//*
+.sponsors .showsponsors .banneritem:first-of-type:before {
+content: "Headline Sponsor";
+display: block;
+font-weight: 100;
+margin-bottom: 5px;
+font-size: 14px;
+height: 1px;
+}
+.sponsors .showsponsors .banneritem:nth-child(2):before {
+content: "Show Sponsors";
+display: block;
+font-weight: 100;
+margin-bottom: 5px;
+font-size: 14px;
+height: 1px;
+margin-left: 10px;
+}
+.banneritem a {
+    font-weight: bold;
+    display: table-cell;
+    bottom: 0px;
+    width: auto;
+    vertical-align: middle;
+    height: 100px;
+}
+.sponsors .banneritem {
+    display: inline-block;
+    float: left;
+    height: 80px;
+}
+/* Media Partners *//*
+.sponsors .moduletable.mediapartners {
+display: inline-block;
+margin-top:15px;
+}
+.sponsors .mediapartners .banneritem:first-of-type:before {
+content: "Media Partners";
+display: inline-block;
+font-weight: 100;
+margin-bottom: 5px;
+font-size: 14px;
+height: 1px;
+}
+.sponsors .mediapartners .banneritem:nth-child(2):before {
+content: "";
+display: block;
+font-weight: 100;
+margin-bottom: 5px;
+font-size: 14px;
+height: 1px;
+margin-left: 10px;
+}
+/* Charity Partners *//*
+.sponsors .moduletable.charitypartners {
+display: inline-block;
+margin-top:15px;
+margin-left: 15px;
+}
+.sponsors .charitypartners .banneritem:first-of-type:before {
+content: "Charity Partner";
+display: inline-block;
+font-weight: 100;
+margin-bottom: 5px;
+font-size: 14px;
+height: 1px;
+}
+.sponsors .charitypartners .banneritem:nth-child(2):before {
+content: "";
+display: block;
+font-weight: 100;
+margin-bottom: 5px;
+font-size: 14px;
+height: 1px;
+margin-left: 10px;
+}
+/* Zoopla *//*
+.sponsors .banneritem img[alt="Zoopla"] {
+height: 50px !important;
+}
+#booknow_Zooplalogo {
+height: 40px !important;
+}
+*/
+/* Alert Messages */
+.alert {
+margin-bottom: 0px !important;
+border-radius: 0px !important;
+}
+/* Menu Fix */
+#t3-mainnav .nav li {
+background-color: #d71623 !important;
+}
+#t3-mainnav .nav li a {
+color:#FFF !important; font-size: 16px; letter-spacing: 1px;
+}
+#t3-mainnav .nav li:hover, .t3-mainnav .navbar .nav > li > a:hover {background: green !important;}
+.London .t3-mainnav .navbar .nav > .active > a {background: #c30d24 !important;}
+.Manchester .t3-mainnav .navbar .nav > .active > a {background: #c30d24 !important;}
+.t3-mainnav .navbar .nav .caret {
+color: #FFF !important;
+border-top-color: #FFF !important;
+border-bottom-color: #FFF !important;
+}
+/* Home */
+body .t3-mainnav .navbar .nav .item-101 > a {
+background-image: url("../images/MobHome.png") !important;
+background-size: 25px !important;
+background-position: center center !important;
+background-repeat: no-repeat !important;
+background-color: transparent !important;
+}
+#t3-mainnav .nav .item-101 a {
+color: transparent !important;
+width: 25px;
+}
+/* Book Tickets */
+#t3-mainnav .item-200 a:after {
+   font-family: FontAwesome;
+   content: "\f145";
+   padding-left:8px;
+   position: relative;
+   top:1px;
+}
+/* Login */
+#blocked{}
+#blocked .t3-mainbody .article table{margin: 0;}
+#blocked td{border: none; padding: 0;}
+#t3-content #jlex-login-form{padding: 10px 30px !important;}
+#t3-content .jlex-login-logo{display: none;}
+.London #jlex-login-form button[type="submit"] {background: #d71623 !important;text-shadow: none;}
+.Manchester #jlex-login-form button[type="submit"] {background: #d71623 !important;text-shadow: none;}
+.alert {display: none;}
+
+#login{}
+.moduletable_exlogin{padding: 10px 20px;}
+.moduletable_exlogin .input-block-level{}
+.moduletable_exlogin .sourcecoast form{margin: 0 0 10px;}
+.moduletable_exlogin .sclogin-joomla-login.vertical #form-sclogin-submitcreate .btn{margin: 0 !important; border: none !important;}
+.moduletable_exlogin .sourcecoast .input-append, .moduletable_exlogin .sourcecoast .input-prepend{width: 90%; margin: 0;}
+.moduletable_exlogin .sourcecoast .control-group{margin: 0; width: 33.3333333333%; float: left;}
+#Mod235{padding: 0 45px;}
+.moduletable_exlogin .sclogin-joomla-login.vertical input#sclogin-username.input-block-level, .moduletable_exlogin .sclogin-joomla-login.vertical input#sclogin-passwd.input-block-level{width: 100% !important; border-radius: 3px;}
+/* Sponsors & Ones to watch img fix */
+.itemid-387 .articleBody, .itemid-387 .articleBody img {
+padding-bottom:0px;
+}
+ul.cw-social-mod-icons-cws-square-fadein {
+white-space: nowrap;
+}
+
+
+
+
+/* Splash Page */
+/* ---------- SPLASH PAGE ---------- */
+.mainbanner.showbanner {
+	width: 100%;
+	height: 100%;
+}
+.splash-wrap {
+	overflow : hidden;
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+.splash-content {
+	position: relative;
+    z-index: 9;
+    width: 100%;
+    height: 100%;
+    background-image: url('/images/splash-page/landingpage.jpg');
+    background-position: center center;
+	background-size: cover;
+	background-color: #fff;
+}
+.splash-content > .inner, .splash-content > .inner > div {
+    top: 0%;
+    height: 100%;
+}
+.splash-block.main-logo {
+	text-align: center;
+    height: 60%;
+}
+.splash-block.main-logo .custom, .splash-block.main-logo .custom p {
+	height: 100%;
+}
+.splash-block.main-logo img {
+	width: auto;
+	max-height: 100%;
+}
+.splash-block > .inner {
+
+}
+.splash-block > .inner .custom {
+	display: inline-block;
+	text-shadow: 0px 3px 5px rgba(0,0,0,0.1);
+}
+.splash-block {
+	text-align: center;
+	position: relative;
+/*
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+*/
+}
+.splash-block > .inner {
+	text-decoration: none;
+	color: inherit;
+}
+.splash-block > .inner:hover span {
+	color: inherit;
+	background-color: #fff;
+}
+.splash-block h1, .splash-block h2, .splash-block h3, .splash-block a {
+	font-weight: 400;
+	line-height: 1.1 !important;
+	letter-spacing: 1px;
+}
+.splash-block h1 {
+	font-size: 55px;
+	font-weight: 600;
+	margin-bottom: 0px;
+}
+.splash-block h2 {
+	font-size: 50px;
+	font-weight: 400;
+	margin-bottom: 0px;
+}
+.splash-block h3 {
+	font-size: 30px;
+	font-weight: 300;
+	margin-bottom: 0px;
+}
+.mainbanner .splash-block span {
+	display: inline-block;
+	color: #fff;
+	font-size: 20px;
+	font-weight: 400;
+	margin:-10px 0 0 0;
+	padding:7px 20px;
+	border-radius: 0px;
+}
+.splash-block.london-message p img, .splash-block.manchester-message p img,
+.splash-block.london-message h1 img, .splash-block.manchester-message h1 img,
+.splash-block.london-message h2 img, .splash-block.manchester-message h2 img {
+    width: 360px;
+    margin-top: 10px;
+}
+.splash-block.london-message span {
+	background-color: #8c0710;
+}
+.splash-block.manchester-message span {
+	background-color: #2a6c36;
+}
+.splash-block.london-message {
+	color: #b73276;
+
+}
+.splash-block.london-message {
+	left: 50%;
+}
+.splash-block.manchester-message:after {
+	content: '';
+    width: 3px;
+    position: absolute;
+    right: 0;
+    bottom: 20px;
+    top: 120px;
+    background-color: #fff;
+}
+.splash-block.manchester-message, .splash-block.london-message {
+	float: left;
+	width: 50%;
+	position: absolute;
+	bottom: 5%;
+}
+.splash-block.london-message > .inner .custom {
+	float: left;
+	margin-left: 50px;
+}
+.splash-block.london-message > .inner .custom > * {
+	color: #8c0710;
+}
+.splash-block.manchester-message > .inner .custom {
+    float: right;
+    margin-right: 50px;
+
+}
+.splash-block.manchester-message > .inner .custom > * {
+	color: #2a6c36;
+}
+.splash-inner .bg-img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.splash-inner .bg-img {
+	-webkit-transition: 	all 1.3s;
+    -moz-transition: 		all 1.3s;
+    -o-transition: 			all 1.3s;
+    transition: 			all 1.3s;
+}
+.splash-inner .bg-img.zoom {
+	-webkit-transform:  scale(1.03);
+    -moz-transform: 	scale(1.03);
+    -o-transform: 		scale(1.03);
+    transform: 			scale(1.03);
+}
+
+body section.splash-img-right.second {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  height: 100%;
+  width: 50%;
+  background: #ddd;
+  overflow: hidden;
+}
+
+body section.splash-img-left.first {
+  border-bottom: 2px solid rgb(255, 255, 255);
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  height: 100%;
+  width: 50.5%;
+  background: #ccc;
+  overflow: hidden;
+}
+.first-img {
+  width: 100%;
+  height: 100%;
+}
+ .first-img .bg-img {
+  background-image: url(/images/splash-page/london_olympia_creative-V2.jpg);
+  background-size: cover;
+  background-position: right center;
+}
+.second-img {
+  width: 100%;
+  height: 100%;
+}
+.second-img .bg-img {
+  background-image: url(/images/splash-page/manchester_eventcity_creative-V2.jpg);
+  background-size: cover;
+  background-position: left center;
+}
+/*
+
+
+button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: rgba(0, 0, 0, 0.0);
+  border: 3px solid #fff;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 15px 30px;
+  cursor: pointer;
+  z-index: 20;
+  transform: translateY(-50%) translateX(-50%);
+}
+
+button:hover {
+  background: #fff;
+  color: #111;
+}
+
+button:focus {
+  outline: none;
+}
+*/
+
