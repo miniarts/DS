@@ -1756,6 +1756,7 @@ body #t3-mainbody .mnwall_container.news-list .mnwall-item .mnwall-item-img a {
   margin: 0;
   display: inline-block;
   position: relative;
+  overflow: hidden;
 }
 .news-list .mnwall_iso_filters_cont:after {
   font-family: fontawesome;
@@ -1924,6 +1925,21 @@ body #t3-mainbody .mnwall_container.subpage-list .mnwall-item-inner .mnwall-titl
   line-height: 150%;
   color: #777;
   text-decoration: none;
+}
+/* search box */
+.mnwall_iso_filters .search_filter #txtsearch {
+  background-color: #000;
+  font-weight: 300;
+  color: #777;
+  border: none;
+  border-radius: 0;
+  margin-bottom: -2px;
+  min-width: 97%;
+  border: 1px solid #777;
+  padding: .5rem;
+}
+.mnwall_iso_filters .search_filter #txtsearch:focus {
+  border-bottom: #d1043b solid 1px;
 }
 /* VIDEO LIST
 -------------------- */

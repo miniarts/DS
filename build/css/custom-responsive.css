@@ -614,6 +614,9 @@
   .mnwall_container.news-list .mnwall-item-inner .mnwall-title a {
     width: 100%;
   }
+  .mnwall_container .scroll-wrapper:after {
+    top: 44%;
+  }
 }
 /* SMALL MOBILE
 ============================== */

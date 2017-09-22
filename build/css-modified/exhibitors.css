@@ -49,17 +49,6 @@
   float: left;
   padding: 16px 0px;
 }
-.search_filter #txtsearch {
-  background-color: #000;
-  font-weight: 300;
-  color: #777;
-  border: none;
-  border-radius: 0;
-  margin-bottom: -2px;
-  min-width: 97%;
-  border: 1px solid #777;
-  padding: .5rem;
-}
 .search_filter #txtsearch::-webkit-input-placeholder,
 .search_filter #txtsearch::-moz-placeholder,
 .search_filter #txtsearch::-ms-placeholder,
@@ -441,106 +430,6 @@ h6.noResults {
   margin-left: -1px;
 }
 
-/* QUIX sub pages */
-.quix_subpage .qx-row {
-  margin: 0;
-}
-.quix_subpage .qx-column {
-  padding: 0;
-}
-.quix_subpage .qx-column .qx-element {
-  position: relative;
-  overflow: hidden;
-}
-.quix_subpage .qx-column .qx-element:hover {
-  cursor: pointer;
-}
-.quix_subpage .qx-column .qx-element:hover .qx-image-wrapper .qx-img {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-  opacity: .4;
-}
-.quix_subpage .qx-column .qx-element:hover a,
-.quix_subpage .qx-column .qx-element:active a,
-.quix_subpage .qx-column .qx-element:focus a {
-  text-decoration: none;
-}
-.quix_subpage .qx-column .qx-element:hover .qx-page-link-wrap:after,
-.quix_subpage .qx-column .qx-element:active .qx-page-link-wrap:after,
-.quix_subpage .qx-column .qx-element:focus .qx-page-link-wrap:after {
-  bottom: 7%;
-  right: 3.5%;
-}
-.quix_subpage .qx-column .qx-element .qx-image-wrapper {
-  background-color: #000;
-}
-.quix_subpage .qx-column .qx-element .qx-image-wrapper .qx-img {
-  min-height: 320px;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  -webkit-transition: opacity .5s, -webkit-transform 18s;
-  transition: opacity .5s, -webkit-transform 18s;
-  transition: opacity .5s, transform 18s;
-  transition: opacity .5s, transform 18s, -webkit-transform 18s;
-  opacity: .6;
-}
-.quix_subpage .qx-column .qx-element .qx-page-link-wrap {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  left: 0;
-  color: #fff;
-  height: 100%;
-  z-index: 1;
-}
-.quix_subpage .qx-column .qx-element .qx-page-link-wrap .qx-image-title {
-  width: 100%;
-  display: table;
-  height: 100%;
-}
-.quix_subpage .qx-column .qx-element .qx-page-link-wrap .qx-image-title h4 {
-  display: table-cell;
-  vertical-align: middle;
-  text-shadow: 2px 1px 2px rgba(0, 0, 0, 0.45);
-  padding: 14%;
-  text-align: left;
-  line-height: 1;
-}
-.quix_subpage .qx-column .qx-element .qx-page-link-wrap:after {
-  content: "\f106";
-  font-family: fontAwesome;
-  position: absolute;
-  bottom: -10%;
-  right: -10%;
-  -webkit-transform: rotate(134deg);
-          transform: rotate(134deg);
-  font-size: 2.5rem;
-  -webkit-transition: all .3s;
-  transition: all .3s;
-}
-.quix_subpage .qx-column .qx-element .qx-page-content {
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding: 0;
-  height: 100%;
-  width: 100%;
-}
-.quix_subpage .qx-column .qx-element .qx-page-content .rounded-btn-view {
-  width: 100%;
-  background: none;
-  margin: 0;
-  height: 100%;
-  top: 44%;
-  position: absolute;
-  left: 0;
-  text-indent: -2000px;
-  overflow: hidden;
-}
-.quix_subpage .qx-column .qx-element .qx-page-content .rounded-btn-view:hover {
-  background-color: none !important;
-}
 
 
 @media (max-width: 600px) {
