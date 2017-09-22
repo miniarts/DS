@@ -1,0 +1,449 @@
+/* INFO
+==============================
+  - Module: Exhibitors
+  - Css by:   Joe Thom / Ankur Cadabra
+  - Version:  1.0.0
+*/
+/* FILTERS
+============================== */
+.mnwall_iso_reset {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+}
+.mnwall_iso_filters_cont {
+  display: block;
+  margin: 0px 4%;
+  position: relative;
+}
+.mnwall_filters_sortings {
+  margin: 0px !important;
+}
+.mnwall_iso_filters {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+.mnwall_iso_filters:after {
+  content: '';
+  position: absolute;
+  width: 50px;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f5f5f5+0,f5f5f5+100&0+0,1+100 */
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), to(#000000));
+  background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, #000000 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#000000', GradientType=1);
+  /* IE6-9 */
+  right: 0;
+  bottom: 10px;
+  top: auto;
+  z-index: 1;
+  height: 45px;
+
+}
+/* SEARCH
+-------------------- */
+.search_filter {
+  float: left;
+  padding: 16px 0px;
+}
+.search_filter #txtsearch {
+  background-color: #000;
+  font-weight: 300;
+  color: #777;
+  border: none;
+  border-radius: 0;
+  margin-bottom: -2px;
+  min-width: 97%;
+  border: 1px solid #777;
+  padding: .5rem;
+}
+.search_filter #txtsearch::-webkit-input-placeholder,
+.search_filter #txtsearch::-moz-placeholder,
+.search_filter #txtsearch::-ms-placeholder,
+.search_filter #txtsearch::-webkit-input-placeholder,
+.search_filter #txtsearch:-ms-input-placeholder,
+.search_filter #txtsearch::placeholder {
+  color: #777;
+}
+.search_filter #txtsearch:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-bottom: #d1043b solid 2px;
+}
+.mnwall_container .letterdiv {
+  display: inline-block;
+  margin-right: 0;
+  margin-left: 1%;
+}
+.mnwall_container .letterdiv input.alpha_btn {
+  padding: 8px;
+  background: transparent;
+  border: 0 none;
+  font-size: 1.4em;
+  color: #777;
+}
+.mnwall_container .letterdiv .alpha_btn.active {
+  color: #d0043c;
+}
+.mnwall_container .alphalist {
+  white-space: nowrap;
+  overflow-x: scroll;
+  padding-bottom: 20px;
+}
+.mnwall_container  div.phrases {
+  display: inline-block;
+  padding: 16px 0 10px;
+}
+.mnwall_container  div.only {
+  text-align: right;
+  margin: 0 4% 2%;
+  padding: 0;
+  max-width: 93%;
+  height: 30px;
+  overflow: hidden;
+}
+.mnwall_container  div.phrases select#country {
+  width: 250px;
+  padding: 16px 0 0;
+}
+
+/* DROP DOWN */
+.mnwall_container .chzn-container-single .chzn-single {
+  background: black;
+  color: #d0043c;
+  padding: 5px 10px;
+  height: auto;
+  border-radius: 0;
+  font-size: 1rem;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-color: #777;
+}
+.mnwall_container .chzn-container.chzn-container-active.chzn-with-drop .chzn-single,
+.mnwall_container .chzn-container .chzn-drop {
+  background: black;
+  color: #777;
+}
+.mnwall_container .chzn-container .chzn-drop {
+  padding: 1rem;
+  border-top: 1px solid #aaa;
+}
+.mnwall_container .chzn-container .chzn-results {
+  color: #777;
+}
+.mnwall_container .chzn-container .chzn-results li.highlighted {
+  background: #333;
+  color: #d0043c;
+}
+.mnwall_container .chzn-container .chzn-results li.active-result {
+  padding: .5rem;
+}
+.mnwall_container .chzn-container-active.chzn-with-drop .chzn-single div b {
+  background-position: -18px 6px;
+}
+.mnwall_container .chzn-container-single {
+  width: 100% !important;
+}
+.mnwall_container .chzn-container-single .chzn-search input[type="text"] {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background-position: 100% -16px;
+}
+.mnwall_container .chzn-container-single .chzn-single div b {
+  background-position: 0 6px;
+}
+
+
+/* CATEGORIES
+-------------------- */
+.mnwall_iso_filters .button-group-category {
+  float: right;
+  overflow-x: scroll;
+  -ms-overflow-style: none;
+  overflow: -moz-scrollbars-none;
+  margin-right: 0;
+  max-width: 100%;
+  padding: .5% 1%;
+  text-align: right;
+}
+.mnwall_iso_filters .button-group-category::-webkit-scrollbar {
+  display: none;
+}
+.button-group-category > ul {
+  display: inline-block;
+  margin: 0px 0px 0px 0px !important;
+  white-space: nowrap;
+}
+.button-group-category > ul li {
+  display: inline-block;
+}
+.button-group-category > ul li a {
+  display: inline-block;
+  padding: 13px 19px 0px 5px;
+  margin: 0px;
+  border: none !important;
+  height: auto;
+  font-size: 1.6em;
+  line-height: 150%;
+  color: #777;
+  text-decoration: none;
+}
+.button-group-category > ul li:first-of-type a {
+  padding-left: 0px;
+}
+.button-group-category > ul li a:hover {
+  opacity: 0.7;
+}
+.button-group-category > ul li a.mnw_filter_active {
+  color: #d0043c;
+}
+/* EXHIBITOR OUTPUT
+============================== */
+/* LIST
+-------------------- */
+.ExhibitorsOutput {
+  width: 100%;
+  overflow: hidden;
+}
+.ExhibitorsOutput .mnwall-item {
+  opacity: 0;
+  -webkit-animation: itemloadin 0.5s forwards;
+  animation: itemloadin 0.5s forwards;
+}
+.mnwall_container.loading .ExhibitorsOutput {
+  min-height: 500px;
+}
+.mnwall_container.loading .ExhibitorsOutput .mnwall-item {
+  -webkit-animation: itemloadout 0.5s forwards;
+  animation: itemloadout 0.5s forwards;
+}
+/* exhibitor list
+--------------- */
+body #t3-mainbody .mnwall_container.exhibitor-list {
+  background-color: #000;
+}
+body #t3-mainbody .mnwall_container.exhibitor-list .mnwall-item {
+  width: 25% !important;
+  padding-top: 300px !important;
+  position: relative !important;
+}
+body #t3-mainbody .mnwall_container.exhibitor-list .mnwall-item .mnwall-item-outer-cont {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+body #t3-mainbody .mnwall_container.exhibitor-list .mnwall-cover,
+body #t3-mainbody .mnwall_container.exhibitor-list .mnwall-cover * {
+  height: 100%;
+}
+body #t3-mainbody .mnwall_container.exhibitor-list .mnwall-item-inner {
+  padding: 19px !important;
+  display: table;
+}
+body #t3-mainbody .mnwall_container.exhibitor-list .mnwall-item-inner * {
+  height: auto;
+  display: table-row-group;
+  vertical-align: bottom;
+  line-height: 1;
+}
+body #t3-mainbody .mnwall_container.exhibitor-list .mnwall-item-inner .mnwall-title {
+  padding: 0px;
+}
+body #t3-mainbody .mnwall_container.exhibitor-list .mnwall-item-inner .mnwall-title a {
+  text-transform: capitalize !important;
+  font-size: 2em !important;
+  line-height: 1 !important;
+  color: #fff !important;
+  font-weight: 300;
+  display: block;
+  padding-bottom: 5px;
+}
+body #t3-mainbody .mnwall_container.exhibitor-list .mnwall-item-inner .mnwall-item-category a {
+  color: rgba(255, 255, 255, 0.4) !important;
+  font-size: 1.4em !important;
+}
+/* LOADER
+-------------------- */
+.mnwall_container .ajaxwait {
+  display: block;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+}
+.mnwall_container .loader {
+  margin: 200px 0px;
+  display: inline-block;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  border: 0.2rem solid #141414;
+  border-top-color: white;
+  opacity: 0;
+}
+.mnwall_container.loaded .loader {
+  display: none;
+}
+.mnwall_container.loading .loader {
+  opacity: 1;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+  -webkit-animation: preloader 1.6s infinite cubic-bezier(0.785, 0.135, 0.15, 0.86) forwards;
+  animation: preloader 1.6s infinite cubic-bezier(0.785, 0.135, 0.15, 0.86) forwards;
+}
+/* LOADER
+-------------------- */
+.ExhibitorsOutput .ExhibitorsOutput .noResults {
+  opacity: 0;
+  -webkit-animation: itemloadin 0.5s forwards;
+  animation: itemloadin 0.5s forwards;
+}
+.mnwall_container.loading .ExhibitorsOutput .noResults {
+  -webkit-animation: itemloadout 0.5s forwards;
+  animation: itemloadout 0.5s forwards;
+}
+h6.noResults {
+  margin: 150px 0px;
+  text-align: center;
+  color: #555;
+}
+/* ANIMATIONS
+-------------------- */
+@-webkit-keyframes itemloadin {
+  0 {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+  }
+}
+@keyframes itemloadin {
+  0 {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+@-webkit-keyframes itemloadout {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+  }
+}
+@keyframes itemloadout {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+}
+@-webkit-keyframes preloader {
+  0% {
+    -webkit-transform: rotate(0deg);
+    display: block;
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes preloader {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    display: block;
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+/* PAGINATION
+============================== */
+.paginationList {
+  text-align: center;
+  float: left;
+  width: 100%;
+  font-size: 12px;
+}
+.pagination {
+  display: inline-block;
+  float: none !important;
+}
+.pagination > li {
+  display: inline-block;
+  background-color: #bababa;
+  margin: 0px 5px !important;
+  float: left;
+  border: none !important;
+  border-radius: 0px !important;
+  color: #333;
+}
+.pagination > li.active {
+  background-color: #000;
+  color: #FFF;
+}
+.pagination > li a {
+  border: none !important;
+  color: #333;
+  border-radius: 0px !important;
+}
+.pagination > li > a:hover,
+.pagination > li > span:hover,
+.pagination > li > a:focus,
+.pagination > li > span:focus {
+  color: #FFF;
+  background-color: #bababa;
+}
+.pagination li.active {
+  background: #d0043c;
+  color: #fff;
+  float: left;
+}
+.pagination li.active {
+  position: relative;
+  padding: 6px 12px;
+  line-height: 1.42857143;
+  text-decoration: none;
+  background: #d0043c;
+  color: #fff;
+  border: 1px solid #dddddd;
+  margin-left: -1px;
+}
+
+
+@media (max-width: 600px) {
+  .search_filter {
+    padding-bottom: 0px;
+  }
+  .button-group-category > ul li a {
+    padding: 25px 9px;
+  }
+}
+
+
