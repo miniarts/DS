@@ -1298,6 +1298,11 @@ html body #t3-content .item-page .page-header {
 .t3-content .item-page-fullwidth .item-page-fullwidth-inner,
 .t3-content .blog .blog-inner {
   padding: 110px 0px 60px;
+  background-color: #fff;
+}
+.t3-content .item-page-fullwidth .item-page-fullwidth-inner.dark,
+.t3-content .blog .blog-inner.dark {
+  background-color: #141414;
 }
 .t3-content .page-header {
   padding: 0px 50px 0px;
