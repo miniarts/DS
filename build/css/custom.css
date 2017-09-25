@@ -1111,13 +1111,9 @@ html.banner-flip.view-category .t3-content .blog.banner .page-header {
 -------------------- */
 .view-article .t3-mainbody {
   min-height: 100%;
-  display: table;
-  padding-left: 0px;
-  padding-right: 0px;
 }
 .view-article .t3-mainbody .content-main {
   height: 100%;
-  display: table-row;
 }
 .view-article .t3-mainbody .content-footer {
   background-color: #fff;
@@ -1175,7 +1171,6 @@ html.banner-flip.view-category .t3-content .blog.banner .page-header {
 .t3-content .item-page .page-split.page-header .header-inner .exhibitor-details p {
   font-size: 1.6em;
   margin-top: 5px;
-  display: inline-block;
   margin-right: 15px;
 }
 .t3-content .item-page .page-split.page-header .header-inner .exhibitor-details span {
