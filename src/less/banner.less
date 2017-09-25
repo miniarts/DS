@@ -10,67 +10,47 @@
   overflow: hidden;
   position: relative;
 }
-.itemid-101 .banner-img { 
-  position: absolute;
-    top: 0px;;
-    left: 0px;
-    right: 0;
-    bottom: 0;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 .banner-img { 
   position: absolute;
-    top: 0px;;
-    left: 0px;
-    right: 0;
-    bottom: 200px;
+  top: 0px;;
+  left: 0px;
+  right: 0;
+  bottom: 200px;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 }
+// .home{
+//   .banner-img{
+//     bottom: 0;
+//   }
+// }
 .banner-video {
   position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: transparent;
-}
-.banner-video video {
+  top: 0;
+  bottom: 0;
+  width: 100%;
   background-color: transparent;
+  video {
+    background-color: transparent;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform:  translate(-50%, -50%);
-    -moz-transform:   translate(-50%, -50%);
-    -o-transform:     translate(-50%, -50%);
-    transform:      translate(-50%, -50%);
-}
-.banner-video video::-webkit-media-controls-panel {
-  display: none!important;
-  -webkit-appearance: none;
-}
-.banner-video video::--webkit-media-controls-play-button {
-  display: none!important;
-  -webkit-appearance: none;
-}
-.banner-video video::-webkit-media-controls-start-playback-button {
-  display: none!important;
-  -webkit-appearance: none;
-}
-@media (min-aspect-ratio: 14/9) {
-  .itemid-101 .banner-video video {
-    min-width: 100%;
-  }
-}
-@media (max-aspect-ratio: 14/9) {
-  .itemid-101 .banner-video video {
-    height: 100%;
-  }
-}
-.banner-video .video-backup {
-  position: absolute;
+    top: 0;
+    left: 0;
+    // top: 50%;
+    // left: 50%;
+    // -webkit-transform:  translate(-50%, -50%);
+    // -moz-transform:   translate(-50%, -50%);
+    // -o-transform:     translate(-50%, -50%);
+    // transform:      translate(-50%, -50%);
+    &::-webkit-media-controls-panel,
+    &::--webkit-media-controls-play-button,
+    &::-webkit-media-controls-start-playback-button {
+      display: none!important;
+      -webkit-appearance: none;
+    }
+  }  
+  .video-backup {
+    position: absolute;
     opacity: 0;
     top: 0;
     bottom: 0;
@@ -84,7 +64,27 @@
     -moz-animation:     4s videoDelay 0.6s forwards;
     -o-animation:       4s videoDelay 0.6s forwards;
     animation:          4s videoDelay 0.6s forwards;
+  }
+  .video-bg {
+    position: absolute;
+    top:0;
+    bottom: 0;
+    width: 100%;
+    background-color: #000;
+    z-index: -2;
+  }
 }
+@media (min-aspect-ratio: 14/9) {
+  .home .banner-video video {
+    min-width: 100%;
+  }
+}
+@media (max-aspect-ratio: 14/9) {
+  .home .banner-video video {
+    height: 100%;
+  }
+}
+
 @-webkit-keyframes videoDelay {
     0% {
         opacity:0;
@@ -117,19 +117,26 @@
         opacity:1;
     }
 }
-.banner-video .video-bg {
+
+.banner-content {
+  display: table;
+  width: 100%;
+  height: 100%;
+  padding:0px 50px;
+  &:after {
+    content: '';
     position: absolute;
     top:0;
+    left: 0;
+    right: 0;
     bottom: 0;
-    width: 100%;
-    background-color: #000;
-    z-index: -2;
-}
-.banner-content {
-    display: table;
-    width: 100%;
-    height: 100%;
-    padding:0px 50px;
+    z-index: 1;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+50,000000+100&1+0,0+100 */
+    background: -moz-linear-gradient(left,  rgba(0,0,0,1) 0%, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  rgba(0,0,0,1) 0%,rgba(0,0,0,0.5) 50%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  rgba(0,0,0,1) 0%,rgba(0,0,0,0.5) 50%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#00000000',GradientType=1 ); /* IE6-9 */
+  }
 }
 .banner-content-inner {
   display: table-cell;
@@ -140,53 +147,40 @@
   position: relative;
   z-index: 2;
 }
-.banner-content:after {
-  content: '';
-  position: absolute;
-  top:0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 1;
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+50,000000+100&1+0,0+100 */
-  background: -moz-linear-gradient(left,  rgba(0,0,0,1) 0%, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(left,  rgba(0,0,0,1) 0%,rgba(0,0,0,0.5) 50%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to right,  rgba(0,0,0,1) 0%,rgba(0,0,0,0.5) 50%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#00000000',GradientType=1 ); /* IE6-9 */
-}
 
-@-webkit-keyframes bannerZoom {
-    0% {
-        -webkit-transform:  translate3d(0px, 0px, 0px);
-    }
-    100% {
-        -webkit-transform:  translate3d(100px, 100px, 0px);
-    }
-}
-@-moz-keyframes bannerZoom {
-    0% {
-        -moz-transform:   scale(1);
-    }
-    100% {
-        -moz-transform:   scale(1.1);
-    }
-}
-@-o-keyframes bannerZoom {
-    0% {
-        -o-transform:     scale(1);
-    }
-    100% {
-        -o-transform:     scale(1.1);
-    }
-}
-@keyframes bannerZoom {
-    0% {
-        transform:      scale(1);
-    }
-    100% {
-        transform:      scale(1.1);
-    }
-}
+
+// @-webkit-keyframes bannerZoom {
+//     0% {
+//         -webkit-transform:  translate3d(0px, 0px, 0px);
+//     }
+//     100% {
+//         -webkit-transform:  translate3d(100px, 100px, 0px);
+//     }
+// }
+// @-moz-keyframes bannerZoom {
+//     0% {
+//         -moz-transform:   scale(1);
+//     }
+//     100% {
+//         -moz-transform:   scale(1.1);
+//     }
+// }
+// @-o-keyframes bannerZoom {
+//     0% {
+//         -o-transform:     scale(1);
+//     }
+//     100% {
+//         -o-transform:     scale(1.1);
+//     }
+// }
+// @keyframes bannerZoom {
+//     0% {
+//         transform:      scale(1);
+//     }
+//     100% {
+//         transform:      scale(1.1);
+//     }
+// }
 
 .nobanner {
   height: 110px;
@@ -194,14 +188,15 @@
 
 /* more arrow
 --------------- */
-.itemid-101 .banner:after, .banner-titleonly .banner.showbanner:after {
+.home .banner:after, 
+.banner-titleonly .banner.showbanner:after {
   content: "\f107";
   font-family: fontAwesome;
   color: #fff;
   position: absolute;
   font-size: 2.8em;
   margin-bottom: 20px;
-  margin-left: -10px;
+  // margin-left: -10px;
   right:40px;
   opacity: 1;
   -webkit-transition: 0.5s opacity;
@@ -209,10 +204,10 @@
   -o-transition: 0.5s opacity;
   transition: 0.5s opacity;
   -webkit-animation:  homeScrollDown 0.6s ease infinite alternate;
-    -moz-animation:   homeScrollDown 0.6s ease infinite alternate;
-    -o-animation:     homeScrollDown 0.6s ease infinite alternate;
-    animation:      homeScrollDown 0.6s ease infinite alternate;
-    z-index: 9;
+  -moz-animation:   homeScrollDown 0.6s ease infinite alternate;
+  -o-animation:     homeScrollDown 0.6s ease infinite alternate;
+  animation:      homeScrollDown 0.6s ease infinite alternate;
+  z-index: 9;
 }
 .banner-titleonly.invertarrow .banner.showbanner:after {
   color: @background-dark;
@@ -257,7 +252,7 @@
   opacity: 0;
 }
 
-/* banner
+/* category banner
 --------------- */
 html.view-category .banner {
   height: 100%;

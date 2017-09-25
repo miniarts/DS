@@ -471,16 +471,6 @@ body.headerShow #logo {
   overflow: hidden;
   position: relative;
 }
-.itemid-101 .banner-img {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  right: 0;
-  bottom: 0;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 .banner-img {
   position: absolute;
   top: 0px;
@@ -501,32 +491,14 @@ body.headerShow #logo {
 .banner-video video {
   background-color: transparent;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  top: 0;
+  left: 0;
 }
-.banner-video video::-webkit-media-controls-panel {
-  display: none!important;
-  -webkit-appearance: none;
-}
-.banner-video video::--webkit-media-controls-play-button {
-  display: none!important;
-  -webkit-appearance: none;
-}
+.banner-video video::-webkit-media-controls-panel,
+.banner-video video::--webkit-media-controls-play-button,
 .banner-video video::-webkit-media-controls-start-playback-button {
   display: none!important;
   -webkit-appearance: none;
-}
-@media (min-aspect-ratio: 14/9) {
-  .itemid-101 .banner-video video {
-    min-width: 100%;
-  }
-}
-@media (max-aspect-ratio: 14/9) {
-  .itemid-101 .banner-video video {
-    height: 100%;
-  }
 }
 .banner-video .video-backup {
   position: absolute;
@@ -541,6 +513,24 @@ body.headerShow #logo {
   z-index: -1;
   -webkit-animation: 4s videoDelay 0.6s forwards;
   animation: 4s videoDelay 0.6s forwards;
+}
+.banner-video .video-bg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #000;
+  z-index: -2;
+}
+@media (min-aspect-ratio: 14/9) {
+  .home .banner-video video {
+    min-width: 100%;
+  }
+}
+@media (max-aspect-ratio: 14/9) {
+  .home .banner-video video {
+    height: 100%;
+  }
 }
 @-webkit-keyframes videoDelay {
   0% {
@@ -558,28 +548,11 @@ body.headerShow #logo {
     opacity: 1;
   }
 }
-.banner-video .video-bg {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: #000;
-  z-index: -2;
-}
 .banner-content {
   display: table;
   width: 100%;
   height: 100%;
   padding: 0px 50px;
-}
-.banner-content-inner {
-  display: table-cell;
-  vertical-align: middle;
-  color: #fff;
-  padding: 120px 50px 0;
-  font-weight: 100;
-  position: relative;
-  z-index: 2;
 }
 .banner-content:after {
   content: '';
@@ -598,30 +571,21 @@ body.headerShow #logo {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#00000000', GradientType=1);
   /* IE6-9 */
 }
-@-webkit-keyframes bannerZoom {
-  0% {
-    -webkit-transform: translate3d(0px, 0px, 0px);
-  }
-  100% {
-    -webkit-transform: translate3d(100px, 100px, 0px);
-  }
-}
-@keyframes bannerZoom {
-  0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  100% {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-  }
+.banner-content-inner {
+  display: table-cell;
+  vertical-align: middle;
+  color: #fff;
+  padding: 120px 50px 0;
+  font-weight: 100;
+  position: relative;
+  z-index: 2;
 }
 .nobanner {
   height: 110px;
 }
 /* more arrow
 --------------- */
-.itemid-101 .banner:after,
+.home .banner:after,
 .banner-titleonly .banner.showbanner:after {
   content: "\f107";
   font-family: fontAwesome;
@@ -629,7 +593,6 @@ body.headerShow #logo {
   position: absolute;
   font-size: 2.8em;
   margin-bottom: 20px;
-  margin-left: -10px;
   right: 40px;
   opacity: 1;
   -webkit-transition: 0.5s opacity;
@@ -660,7 +623,7 @@ body.headerShow #logo {
 .scrolled .banner.showbanner:after {
   opacity: 0;
 }
-/* banner
+/* category banner
 --------------- */
 html.view-category .banner {
   height: 100%;
@@ -2148,6 +2111,8 @@ body #t3-mainbody .mnwall_container.subpage-list .mnwall-item .mnwall-item-outer
   right: 0;
   bottom: 0;
 }
+body #t3-mainbody .mnwall_container.home-sections .mnwall-cover,
+body #t3-mainbody .mnwall_container.home-sections .mnwall-cover *,
 body #t3-mainbody .mnwall_container.subpage-list .mnwall-cover,
 body #t3-mainbody .mnwall_container.subpage-list .mnwall-cover * {
   height: 100%;
