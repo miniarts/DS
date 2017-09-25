@@ -353,6 +353,13 @@
     width: 14%;
     padding-top: 14%;
   }
+  .footer-copyright-wrap .custom > div > ul li,
+  .footer-copyright-wrap .custom > p {
+    display: block;
+  }
+  .footer-copyright-wrap .custom > div > * {
+    width: 100%;
+  }
 }
 /* IPAD > MOBILE
 ============================== */
