@@ -1,5 +1,6 @@
 /*
     author: kaori
+	
 
     edit this file and compile/minimise it
 */
@@ -12,36 +13,39 @@
             "use strict";
  
             $(document).ready(function () { 
-                var isMobile = {
-                    Android: function() {
-                        return navigator.userAgent.match(/Android/i);
-                    },
-                    BlackBerry: function() {
-                        return navigator.userAgent.match(/BlackBerry/i);
-                    },
-                    iOS: function() {
-                        return navigator.userAgent.match(/iPhone|iPad|iPod/i);
-                    },
-                    Opera: function() {
-                        return navigator.userAgent.match(/Opera Mini/i);
-                    },
-                    Windows: function() {
-                        return navigator.userAgent.match(/IEMobile/i);
-                    },
-                    any: function() {
-                        return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
-                    }
-                };
+                // var isMobile = { //NOT USED
+                //     Android: function() {
+                //         return navigator.userAgent.match(/Android/i);
+                //     },
+                //     BlackBerry: function() {
+                //         return navigator.userAgent.match(/BlackBerry/i);
+                //     },
+                //     iOS: function() {
+                //         return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+                //     },
+                //     Opera: function() {
+                //         return navigator.userAgent.match(/Opera Mini/i);
+                //     },
+                //     Windows: function() {
+                //         return navigator.userAgent.match(/IEMobile/i);
+                //     },
+                //     any: function() {
+                //         return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+                //     }
+                // };
                  
-                if(!isMobile.any()){
-                }else{
-                    //desktop onlhy
-                }
+                // if(!isMobile.any()){
+                // }else{
+                //     //desktop onlhy
+                // }
 
                 app.wechatSocial();
                 app.burgerIcon();
                 app.setDrawer();
-               	app.onDemandNav();
+               	
+            });
+            $(window).on('load', function() {
+				app.onDemandNav();
             });
  
             return false;
@@ -87,26 +91,24 @@
                     $(this).css(transitionProp + 'Delay', i*speed + 'ms');
                 });      
         },
-        setLineHeight: function(el){
-            var height = ($('.navbar-inner').height() - 110)/ el.length; //set the line-height, not sure about the -110 but copied from the old one
-            
-            $.each(el, function(){
-               $(this).css("line-height", height + "px"); 
-            });    
-        },
+        
         setDrawer: function(){
             var $items = $('#mob-navbar .navbar-inner .navbar-nav > li');
+            var height = ($('.navbar-inner').height() - 110)/ $items.length;
+            	//set the line-height, not sure about the -110 but copied from the old one
+
+            var setLineHeight = function(){
+	            $.each($items, function(){
+	               $(this).css("line-height", height + "px"); 
+	            });    
+        	};
 
             app.transitionDelay($items, 25);
-           	app.setLineHeight($items);
+           	setLineHeight();
 
-            $(window).on( "orientationchange", function(event) { 
-                app.setLineHeight($items);
-            });
+            $(window).on( "orientationchange", setLineHeight);
 
-            // $(window).on("resize", function($items){
-            //     app.setLineHeight($items);
-            // });
+            $(window).resize(setLineHeight);
 
         },
         scrollToTop: function(){
@@ -116,145 +118,86 @@
             });
         },
 		onDemandNav :function(){    
+			//NOTE: modified to make it understandable but needs more work 
 			var paused = false,
 				lastScrollTop = 0,
 				onLoaded = true,
-				$document = $(document);
+				$document = $(document),
+				$window = $(window),
+				$body = $('body'),
+				titleSticky = 0,
+				contentBottom = 0,
+				titleHeight = 0 ;
 
-// Detect IE version
-var iev=0;
-var ieold = (/MSIE (\d+\.\d+);/.test(navigator.userAgent));
-var trident = !!navigator.userAgent.match(/Trident\/7.0/);
-var rv=navigator.userAgent.indexOf("rv:11.0");
-if($('.t3-wrapper').hasClass('mobnav-closed')){var isMobNavOpen = false;} else{var isMobNavOpen =true;} 
+			// Detect IE version
+			var iev=0;
+			var ieold = (/MSIE (\d+\.\d+);/.test(navigator.userAgent));
+			var trident = !!navigator.userAgent.match(/Trident\/7.0/);
+			var rv=navigator.userAgent.indexOf("rv:11.0");
 
-if (ieold) iev=new Number(RegExp.$1);
-if (navigator.appVersion.indexOf("MSIE 10") != -1) iev=10;
-if (trident&&rv!=-1) iev=11;
+			if (ieold) iev=new Number(RegExp.$1);
+			if (navigator.appVersion.indexOf("MSIE 10") != -1) iev=10;
+			if (trident&&rv!=-1) iev=11;
+			
+   			//only article page
+		    if ($('html').hasClass('view-article') && ($('.content-main .page-header').length == 1)) {
+		        titleSticky = 1;
+		        contentBottom = $('.content-main').height();
+		        titleHeight = $('.content-main .page-header').outerHeight();
+		    }
 
-//$(window).on('load', function() {
-    var $body = $('body');
-    //var titleSticky = 0;
+			var onDemand = function(){ 
+				//drawer opened - don't do anything
+				if ($('.t3-wrapper').hasClass('mobnav-open')) {
+		            return false;
+		        }
 
-    // if ($('html').hasClass('view-article') && ($('.content-main .page-header').length == 1)) {
-    //     titleSticky = 1;
-    //     var contentBottom = $('.content-main').height();
-    //     var titleHeight = $('.content-main .page-header').outerHeight();
-    // }
+		        var st = $document.scrollTop();     
 
-// Firefox or IE 11
-if(typeof InstallTrigger !== 'undefined' || iev == 11) {
+		        if (onLoaded === true || st <= 100) {
+		            onLoaded = false;
+		            $body.removeClass('headerHide');
+		            $body.removeClass('scrolled');
+		            $('.content-main .page-header').css({'opacity':'1'});
+		            return false;
+		        } else { 
+		            if ($window.width() > 991) {
+		                $body.addClass('scrolled');
+		            }
+		        }
 
-    $(window).on('scroll', function() {
-        if (isMobNavOpen === true) {
-            return false;
-        }
-        st = $document.scrollTop();//$(this).scrollTop();   
-                    
-        if (onLoaded === true || st <= 100) {
-            onLoaded = false;
-            $body.removeClass('headerHide');
-            $body.removeClass('scrolled');
-            return false;
-        } else {
-            if ($window.width() > 991) {
-                $body.addClass('scrolled');
-            }
-        }
+		        if (titleSticky == 1) {
+		            var tt = $('.content-main .page-header').offset().top + titleHeight;
+		            if (tt > contentBottom) {
+		                $('.content-main .page-header').css({'opacity':'0'});
+		            } else {
+		                $('.content-main .page-header').css({'opacity':'1'});
+		            }
+		        }
 
-        // if (titleSticky == 1) {
-        //     tt = $('.content-main .page-header').offset().top + titleHeight;
-        //     if (tt > contentBottom) {
-        //         titleHide();
-        //     } else {
-        //         titleShow();
-        //     }
-        // }
+		        if( st < lastScrollTop ) {
+		             if(paused){
+		                $body.removeClass('headerHide');
+		                paused = false;
+		            }       
+		        } else {
+		            if( !paused ){
+		                $body.addClass('headerHide');
+		                paused = true;
+		            }
+		        }           
+		        lastScrollTop = st;
+			}
 
-        if(st < lastScrollTop) {
-            if( paused ){
-                //headerShow();
-                $body.removeClass('headerHide');
-                paused = false;
-            }  
-        }
-        else if(st > lastScrollTop) {
-            if( !paused ){
-                //headerHide();
-                $body.addClass('headerHide');
-                paused = true;
-            }
-        }
-        lastScrollTop = st;
-    });
-} 
-// Other browsers
-else {
-    $(window).scroll(function(){    
-        if (isMobNavOpen === true) {
-            return false;
-        }
-        var st = $document.scrollTop();//$(this).scrollTop();       
-
-        if (onLoaded === true || st <= 100) {
-            onLoaded = false;
-            $body.removeClass('headerHide');
-            $body.removeClass('scrolled');
-            titleShow();
-            return false;
-        } else {
-            if ($window.width() > 991) {
-                $body.addClass('scrolled');
-            }
-        }
-
-        // if (titleSticky == 1) {
-        //     var tt = $('.content-main .page-header').offset().top + titleHeight;
-        //     if (tt > contentBottom) {
-        //         titleHide();
-        //     } else {
-        //         titleShow();
-        //     }
-        // }
-
-        if( st < lastScrollTop ) {
-             if( paused ){
-                //headerShow();
-                $body.removeClass('headerHide');
-                paused = false;
-            }       
-        } else {
-            if( !paused ){
-                //headerHide();
-                $body.addClass('headerHide');
-                paused = true;
-            }
-        }           
-        lastScrollTop = st;
-    });
-}
-
-    // function headerHide() { 
-    //     $body.removeClass('headerShow');
-    //     $body.addClass('headerHide');
-    // }
-    // function headerShow()  {
-    //     $body.removeClass('headerHide');
-    //     $body.addClass('headerShow');
-    // }
-    // function titleHide() {
-    //     $('.content-main .page-header').css({'opacity':'0'});
-    // }
-    // function titleShow() {
-    //     $('.content-main .page-header').css({'opacity':'1'});
-    // }
-
-
-//});
-
-//})( jQuery );
-
-        },
+		// Firefox or IE 11
+		if(typeof InstallTrigger !== 'undefined' || iev == 11) {
+		    $(window).on('scroll', function() {
+		    	onDemand();
+			});
+		}else{
+			$(window).scroll(onDemand);
+		}
+    },
 
 
 
@@ -297,29 +240,29 @@ else {
     //     },
         
         //set boxes in equal size - not used
-        setHeight : function(el){
-            var maxHeight = 0;
+        // setHeight : function(el){
+        //     var maxHeight = 0;
  
-            $(el).css({
-                'height':''
-            });
+        //     $(el).css({
+        //         'height':''
+        //     });
  
-            $(el).each(function() {
-                maxHeight = maxHeight > $(this).outerHeight() ? maxHeight : $(this).outerHeight();
-            });
+        //     $(el).each(function() {
+        //         maxHeight = maxHeight > $(this).outerHeight() ? maxHeight : $(this).outerHeight();
+        //     });
              
-            $(el).height(maxHeight);    
-            return false;       
-        },
-        heightFix : function(){
-            if($('.img-thumbnail').length){              
-                $(window).resize(function(){ 
-                   app.setHeight($('.img-thumbnail'));
-                }); 
+        //     $(el).height(maxHeight);    
+        //     return false;       
+        // },
+        // heightFix : function(){
+        //     if($('.img-thumbnail').length){              
+        //         $(window).resize(function(){ 
+        //            app.setHeight($('.img-thumbnail'));
+        //         }); 
  
-                $(window).trigger('resize');
-            }
-        }
+        //         $(window).trigger('resize');
+        //     }
+        // }
     };
   
     app.cache = ns.cache || {};
