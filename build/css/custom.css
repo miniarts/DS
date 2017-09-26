@@ -1,7 +1,8 @@
-/* INFO
-==============================
+/* 
 	Show:		Design Shanghai	
     Author:     Kaori
+
+    Modified plain css to less and sprit it into smaller files :-)
 */
 /* RESET
 ============================== */
@@ -234,51 +235,39 @@ body .banner .site-btn {
 }
 /* ANIMATIONS
 -------------------- */
-body.headerHide #t3-header {
-  height: 90px;
-  -webkit-transform: translateY(-100%);
-  transform: translateY(-100%);
-  opacity: 0.6;
-  -webkit-transition: 0.3s height, 0.3s -webkit-transform, 0.4s opacity;
-  -webkit-transition: 0.3s height, 0.4s opacity, 0.3s -webkit-transform;
-  transition: 0.3s height, 0.4s opacity, 0.3s -webkit-transform;
-  transition: 0.3s height, 0.3s transform, 			0.4s opacity;
-  transition: 0.3s height, 0.3s transform, 			0.4s opacity, 0.3s -webkit-transform;
-  -webkit-transition-delay: 0.25s;
-  transition-delay: 0.25s;
-}
-body.headerHide #logo {
-  -webkit-transform: translateY(-80px);
-  transform: translateY(-80px);
-  opacity: 0.6;
-  -webkit-transition: 0.5s -webkit-transform, 0.3s opacity;
-  -webkit-transition: 0.3s opacity, 0.5s -webkit-transform;
-  transition: 0.3s opacity, 0.5s -webkit-transform;
-  transition: 0.5s transform, 0.3s opacity;
-  transition: 0.5s transform, 0.3s opacity, 0.5s -webkit-transform;
-  -webkit-transition-delay: 0.1s;
-  transition-delay: 0.1s;
-}
-body.headerShow #t3-header {
+#t3-header {
   height: 110px;
   -webkit-transform: translateY(0);
           transform: translateY(0);
   opacity: 1;
-  -webkit-transition: 0.3s height, 0.5s -webkit-transform, 0.4s opacity;
   -webkit-transition: 0.3s height, 0.4s opacity, 0.5s -webkit-transform;
   transition: 0.3s height, 0.4s opacity, 0.5s -webkit-transform;
   transition: 0.3s height, 0.5s transform, 0.4s opacity;
   transition: 0.3s height, 0.5s transform, 0.4s opacity, 0.5s -webkit-transform;
 }
-body.headerShow #logo {
+#logo {
   -webkit-transform: translateY(0);
           transform: translateY(0);
   opacity: 1;
-  -webkit-transition: 0.5s -webkit-transform 0.2s, 0.3s opacity 0.2s;
   -webkit-transition: 0.3s opacity 0.2s, 0.5s -webkit-transform 0.2s;
   transition: 0.3s opacity 0.2s, 0.5s -webkit-transform 0.2s;
   transition: 0.5s transform 0.2s, 0.3s opacity 0.2s;
   transition: 0.5s transform 0.2s, 0.3s opacity 0.2s, 0.5s -webkit-transform 0.2s;
+}
+.headerHide #t3-header {
+  height: 90px;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  opacity: 0.6;
+  -webkit-transition-delay: 0.25s;
+          transition-delay: 0.25s;
+}
+.headerHide #logo {
+  -webkit-transform: translateY(-80px);
+          transform: translateY(-80px);
+  opacity: 0.6;
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
 }
 /* LOGO
 -------------------- */
