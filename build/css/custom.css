@@ -799,6 +799,8 @@ html.banner-flip.view-category .t3-content .blog.banner .page-header {
   padding: 0px;
   font-weight: 300;
 }
+#mob-navbar .navbar-inner .navbar-nav > li a.active,
+#mob-navbar .navbar-inner .navbar-nav > li a.focus,
 #mob-navbar .navbar-inner .navbar-nav > li a:hover {
   background-color: transparent;
 }
