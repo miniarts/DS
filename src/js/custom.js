@@ -139,12 +139,12 @@
 			if (navigator.appVersion.indexOf("MSIE 10") != -1) iev=10;
 			if (trident&&rv!=-1) iev=11;
 			
-   			//only article page
-		    if ($('html').hasClass('view-article') && ($('.content-main .page-header').length == 1)) {
-		        titleSticky = 1;
-		        contentBottom = $('.content-main').height();
-		        titleHeight = $('.content-main .page-header').outerHeight();
-		    }
+   			//only article/exhibitor page
+            if (($('html').hasClass('view-article')||$('html').hasClass('view-exhibitor')) && ($('.content-main .page-header').length == 1)) {
+                titleSticky = 1;
+                contentBottom = $('.content-main').height();
+                titleHeight = $('.content-main .page-header').outerHeight();
+            }
 
 			var onDemand = function(){ 
 				//drawer opened - don't do anything
