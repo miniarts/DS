@@ -2001,48 +2001,6 @@ body #t3-mainbody .mnwall_container.home-sections .mnwall-item-inner .mnwall-tit
 }
 /* speakers list
 --------------- */
-body #t3-mainbody .mnwall_container.speakers-list .mnwall-item {
-  width: 25%;
-  padding-top: 300px !important;
-  position: relative !important;
-}
-body #t3-mainbody .mnwall_container.speakers-list .mnwall-item .mnwall-item-outer-cont {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
-body #t3-mainbody .mnwall_container.speakers-list .mnwall-cover,
-body #t3-mainbody .mnwall_container.speakers-list .mnwall-cover * {
-  height: 100%;
-}
-body #t3-mainbody .mnwall_container.speakers-list .mnwall-item-inner {
-  padding: 19px !important;
-  display: table;
-}
-body #t3-mainbody .mnwall_container.speakers-list .mnwall-item-inner * {
-  height: auto;
-  display: table-row-group;
-  vertical-align: bottom;
-  line-height: 1;
-}
-body #t3-mainbody .mnwall_container.speakers-list .mnwall-item-inner .mnwall-title {
-  padding: 0px;
-}
-body #t3-mainbody .mnwall_container.speakers-list .mnwall-item-inner .mnwall-title span {
-  text-transform: capitalize !important;
-  font-size: 2em;
-  color: #fff !important;
-  font-weight: 300;
-  display: table-cell;
-  padding-bottom: 5px;
-  vertical-align: bottom;
-}
-body #t3-mainbody .mnwall_container.speakers-list .mnwall-item-inner .mnwall-item-category a {
-  color: rgba(255, 255, 255, 0.4) !important;
-  font-size: 1.4em !important;
-}
 /* hide link through
 --------------- */
 .mnwall_container.speakers-list .mnwall-photo-link {
@@ -2051,10 +2009,6 @@ body #t3-mainbody .mnwall_container.speakers-list .mnwall-item-inner .mnwall-ite
 }
 /* news list
 --------------- */
-body #t3-mainbody .mnwall_container.news-list .mnwall-item {
-  width: 33.33333% !important;
-  position: relative !important;
-}
 body #t3-mainbody .mnwall_container.news-list .mnwall-cover,
 body #t3-mainbody .mnwall_container.news-list .mnwall-cover * {
   height: 325px;
@@ -2122,10 +2076,13 @@ body #t3-mainbody .mnwall_container.news-list .mnwall-item .mnwall-item-img a {
 }
 /* subpage list
 --------------- */
-body #t3-mainbody .mnwall_container.subpage-list .mnwall-item {
+body #t3-mainbody .mnwall_container.subpage-list .mnwall-item,
+body #t3-mainbody .mnwall_container.news-list .mnwall-item {
   width: 33.333333% !important;
-  padding-top: 360px !important;
   position: relative !important;
+}
+body #t3-mainbody .mnwall_container.subpage-list .mnwall-item {
+  padding-top: 360px !important;
 }
 body #t3-mainbody .mnwall_container.subpage-list .mnwall-item .mnwall-item-outer-cont {
   position: absolute;
@@ -2135,8 +2092,10 @@ body #t3-mainbody .mnwall_container.subpage-list .mnwall-item .mnwall-item-outer
   bottom: 0;
 }
 body #t3-mainbody .mnwall_container.home-sections .mnwall-cover,
+body #t3-mainbody .mnwall_container.subpage-list .mnwall-cover {
+  height: 100%;
+}
 body #t3-mainbody .mnwall_container.home-sections .mnwall-cover *,
-body #t3-mainbody .mnwall_container.subpage-list .mnwall-cover,
 body #t3-mainbody .mnwall_container.subpage-list .mnwall-cover * {
   height: 100%;
 }

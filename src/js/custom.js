@@ -87,8 +87,8 @@
             var docElemStyle = document.documentElement.style,
                 transitionProp = typeof docElemStyle.transition == 'string' ? 'transition' : 'WebkitTransition';
 
-                $.each(el, function(){
-                    $(this).css(transitionProp + 'Delay', i*speed + 'ms');
+                $.each(el, function(index){
+                    $(this).css(transitionProp + 'Delay', index*speed + 'ms');
                 });      
         },
         
