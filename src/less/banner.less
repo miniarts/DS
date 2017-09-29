@@ -20,11 +20,6 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
-// .home{
-//   .banner-img{
-//     bottom: 0;
-//   }
-// }
 .banner-video {
   position: absolute;
   top: 0;
@@ -36,12 +31,6 @@
     position: absolute;
     top: 0;
     left: 0;
-    // top: 50%;
-    // left: 50%;
-    // -webkit-transform:  translate(-50%, -50%);
-    // -moz-transform:   translate(-50%, -50%);
-    // -o-transform:     translate(-50%, -50%);
-    // transform:      translate(-50%, -50%);
     &::-webkit-media-controls-panel,
     &::--webkit-media-controls-play-button,
     &::-webkit-media-controls-start-playback-button {
@@ -148,40 +137,6 @@
   z-index: 2;
 }
 
-
-// @-webkit-keyframes bannerZoom {
-//     0% {
-//         -webkit-transform:  translate3d(0px, 0px, 0px);
-//     }
-//     100% {
-//         -webkit-transform:  translate3d(100px, 100px, 0px);
-//     }
-// }
-// @-moz-keyframes bannerZoom {
-//     0% {
-//         -moz-transform:   scale(1);
-//     }
-//     100% {
-//         -moz-transform:   scale(1.1);
-//     }
-// }
-// @-o-keyframes bannerZoom {
-//     0% {
-//         -o-transform:     scale(1);
-//     }
-//     100% {
-//         -o-transform:     scale(1.1);
-//     }
-// }
-// @keyframes bannerZoom {
-//     0% {
-//         transform:      scale(1);
-//     }
-//     100% {
-//         transform:      scale(1.1);
-//     }
-// }
-
 .nobanner {
   height: 110px;
 }
@@ -268,17 +223,14 @@ html.view-category .banner .banner-img {
 .t3-content .blog.banner .blog-inner {
   position: absolute;
   width: 100%;
-  -webkit-transform: translateY(-100%);
-  -moz-transform: translateY(-100%);
-  -o-transform: translateY(-100%);
   transform: translateY(-100%);
 }
 
 /* banner flip
 --------------- */
 html.view-category.banner-flip .t3-content .blog.banner {
-    position: absolute;
-    top: 148px;
+  position: absolute;
+  top: 148px;
 }    
 html.view-category.banner-flip .banner .banner-img {
   top: 220px;

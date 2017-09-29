@@ -38,6 +38,10 @@
                     right: 0;
                 }
             }
+            &[href="/search"]{
+                &:extend(.icon-search all);
+                font-size: 0;
+            }
         }
         &:not(:last-of-type).active a:not(.home-icon) {
             color:@red;
