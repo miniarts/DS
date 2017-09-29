@@ -1329,14 +1329,13 @@ html.banner-flip.view-category .t3-content .blog.banner .page-header {
   z-index: 9;
   line-height: 0;
 }
-.mainbody-topblocks .block,
-.mainbody-bottomblocks .block {
+.mainbody-topblocks .block[class$="-md-6"],
+.mainbody-bottomblocks .block[class$="-md-6"] {
   display: inline-block;
   float: none !important;
   height: auto;
   vertical-align: middle;
   padding: 0px;
-  width: 100%;
 }
 .mainbody-topblocks .block-inner,
 .mainbody-bottomblocks .block-inner {
