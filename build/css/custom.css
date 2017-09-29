@@ -1923,7 +1923,7 @@ body #t3-mainbody .mnwall_iso_container .mnwall-item {
 .mnwall_iso_container .mnwall-item:hover .mnwall-item-img a {
   opacity: 0.4;
   -webkit-transform: scale(1.1);
-  transform: scale(1.1);
+          transform: scale(1.1);
 }
 .mnwall_iso_container .mnwall-item .mnwall-item-img a img {
   height: auto;
@@ -1957,7 +1957,7 @@ body #t3-mainbody .mnwall_iso_container .mnwall-item .mnwall-item-img .corner-ic
 }
 body #t3-mainbody .mnwall_iso_container .mnwall-item:hover .mnwall-item-img .corner-icon {
   -webkit-transform: translate(-19px, -19px);
-  transform: translate(-19px, -19px);
+          transform: translate(-19px, -19px);
   opacity: 0.9;
 }
 .mnwall_iso_buttons a {
@@ -2083,7 +2083,7 @@ body #t3-mainbody .mnwall_container.home-sections .mnwall-item-inner .mnwall-tit
   max-width: 100%;
   max-height: 100%;
   -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 .mainbody-bottomblocks .bannergroup {
   padding: 19px 50px;
@@ -2118,7 +2118,7 @@ body #t3-mainbody .mnwall_container.home-sections .mnwall-item-inner .mnwall-tit
   line-height: 150%;
   text-decoration: none;
   -webkit-box-shadow: none !important;
-  box-shadow: none !important;
+          box-shadow: none !important;
 }
 .schedule-list .nav-tabs li:first-of-type a {
   padding-left: 0px;
