@@ -235,6 +235,16 @@
     color: #777;
   }
 }
+@media (min-width: 992px) {
+  .scrolled #t3-content .item-page .page-split.page-header {
+    position: fixed !important;
+    padding-top: 0px;
+    margin-top: 50px;
+  }
+  .titleHide .t3-content .item-page .page-split.page-header .header-inner {
+    opacity: 0;
+  }
+}
 /* IPAD PORTAIT
 ============================== */
 @media (max-width: 991px) {
