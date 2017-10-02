@@ -17,6 +17,7 @@
                     app.wechatSocial();
                     app.burgerIcon();
                     app.setDrawer();
+                    app.backToTop();
                     
                 });
                 $(window).on('load', function() {
@@ -87,6 +88,16 @@
                 $("#back-to-top").click(function (e) {
                     e.preventDefault();
                     $("html, body").animate({scrollTop: 0}, 500);
+                });
+            },
+            backToTop: function(){
+                var $backToTop = $('#back-to-top'),
+                    $body = $("html, body");
+
+                $backToTop.on('click', function(e){
+                    e.preventDefault();
+
+                    $body.stop().animate({scrollTop:0}, 500, 'swing');
                 });
             },
             onDemandNav :function(){    
