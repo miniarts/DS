@@ -1252,7 +1252,7 @@ html.banner-flip.view-category .t3-content .blog.banner .page-header {
   height: auto;
 }
 #t3-content .item-page.exhib_page .page-header {
-  top: 0 !important;
+  top: auto !important;
   position: relative !important;
   padding-bottom: 40px !important;
   padding-top: 110px;
@@ -2216,9 +2216,6 @@ body #t3-mainbody .mnwall_container.news-list .mnwall-item-inner .mnwall-desc {
   font-size: 1.6em;
   color: rgba(184, 184, 184, 0.6) !important;
   line-height: 1.4em;
-}
-body #t3-mainbody .mnwall_container.news-list .mnwall-item .mnwall-item-img a {
-  opacity: 0.6;
 }
 .news-list .mnwall_iso_filters_cont {
   width: 100%;
