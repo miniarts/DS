@@ -1904,6 +1904,7 @@ body #t3-mainbody .mainbody-bottomblocks .block-header.carousel h3 {
   z-index: 1;
   display: block;
   width: 100%;
+  height: 100%;
   opacity: 0.9;
   -webkit-transition: 0.5s opacity, 8s -webkit-transform;
   transition: 0.5s opacity, 8s -webkit-transform;
@@ -1926,14 +1927,6 @@ body #t3-mainbody .mainbody-bottomblocks .block-header.carousel h3 {
   bottom: 0;
   width: 100%;
   max-height: 100%;
-}
-body #t3-mainbody .mnwall_iso_container {
-  /* home sections
---------------- */
-  /* subpage list
---------------- */
-  /* news list
---------------- */
 }
 body #t3-mainbody .mnwall_iso_container .mnwall-item {
   float: left !important;
@@ -1974,33 +1967,35 @@ body #t3-mainbody .mnwall_iso_container .mnwall-item:hover .mnwall-item-img .cor
           transform: translate(-19px, -19px);
   opacity: 0.9;
 }
-body #t3-mainbody .mnwall_iso_container.home-sections .mnwall-item {
+/* home sections
+--------------- */
+body #t3-mainbody .mnwall_container.home-sections .mnwall-item {
   width: 50% !important;
   padding-top: 250px !important;
   position: relative !important;
 }
-body #t3-mainbody .mnwall_iso_container.home-sections .mnwall-item:first-of-type {
+body #t3-mainbody .mnwall_container.home-sections .mnwall-item:first-of-type {
   width: 100% !important;
 }
-body #t3-mainbody .mnwall_iso_container.home-sections .mnwall-item:first-of-type .mnwall-item-img a {
+body #t3-mainbody .mnwall_container.home-sections .mnwall-item:first-of-type .mnwall-item-img a {
   background-position: 0 80%;
 }
-body #t3-mainbody .mnwall_iso_container.home-sections .mnwall-item .mnwall-item-outer-cont {
+body #t3-mainbody .mnwall_container.home-sections .mnwall-item .mnwall-item-outer-cont {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
 }
-body #t3-mainbody .mnwall_iso_container.home-sections .mnwall-item-inner {
+body #t3-mainbody .mnwall_container.home-sections .mnwall-item-inner {
   display: table;
 }
-body #t3-mainbody .mnwall_iso_container.home-sections .mnwall-item-inner .mnwall-title {
+body #t3-mainbody .mnwall_container.home-sections .mnwall-item-inner .mnwall-title {
   display: table-cell;
   vertical-align: middle;
   padding: 0px 00px;
 }
-body #t3-mainbody .mnwall_iso_container.home-sections .mnwall-item-inner .mnwall-title a {
+body #t3-mainbody .mnwall_container.home-sections .mnwall-item-inner .mnwall-title a {
   text-transform: capitalize !important;
   font-size: 3em;
   color: #fff !important;
@@ -2010,7 +2005,7 @@ body #t3-mainbody .mnwall_iso_container.home-sections .mnwall-item-inner .mnwall
   margin-right: 50px;
   height: auto;
 }
-body #t3-mainbody .mnwall_iso_container.home-sections .pano_link {
+body #t3-mainbody .mnwall_container.home-sections .pano_link {
   position: absolute;
   left: 55px;
   bottom: 20px;
@@ -2019,40 +2014,42 @@ body #t3-mainbody .mnwall_iso_container.home-sections .pano_link {
   font-size: 1.8em;
   font-weight: 100;
 }
-body #t3-mainbody .mnwall_iso_container.subpage-list .mnwall-item,
-body #t3-mainbody .mnwall_iso_container.news-list .mnwall-item {
+/* subpage list
+--------------- */
+body #t3-mainbody .mnwall_container.subpage-list .mnwall-item,
+body #t3-mainbody .mnwall_container.news-list .mnwall-item {
   width: 33.333333% !important;
   position: relative !important;
 }
-body #t3-mainbody .mnwall_iso_container.subpage-list .mnwall-item {
+body #t3-mainbody .mnwall_container.subpage-list .mnwall-item {
   padding-top: 360px !important;
 }
-body #t3-mainbody .mnwall_iso_container.subpage-list .mnwall-item .mnwall-item-outer-cont {
+body #t3-mainbody .mnwall_container.subpage-list .mnwall-item .mnwall-item-outer-cont {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
 }
-body #t3-mainbody .mnwall_iso_container.home-sections .mnwall-cover,
-body #t3-mainbody .mnwall_iso_container.subpage-list .mnwall-cover {
+body #t3-mainbody .mnwall_container.home-sections .mnwall-cover,
+body #t3-mainbody .mnwall_container.subpage-list .mnwall-cover {
   height: 100%;
 }
-body #t3-mainbody .mnwall_iso_container.home-sections .mnwall-cover div,
-body #t3-mainbody .mnwall_iso_container.subpage-list .mnwall-cover div {
+body #t3-mainbody .mnwall_container.home-sections .mnwall-cover div,
+body #t3-mainbody .mnwall_container.subpage-list .mnwall-cover div {
   height: 100%;
 }
-body #t3-mainbody .mnwall_iso_container.subpage-list .mnwall-item-inner {
+body #t3-mainbody .mnwall_container.subpage-list .mnwall-item-inner {
   display: table !important;
 }
-body #t3-mainbody .mnwall_iso_container.subpage-list .mnwall-item-inner .mnwall-title {
+body #t3-mainbody .mnwall_container.subpage-list .mnwall-item-inner .mnwall-title {
   display: table-cell !important;
   vertical-align: middle;
   padding: 0px 50px;
   line-height: 150%;
   text-shadow: 1px 1px 1px black;
 }
-body #t3-mainbody .mnwall_iso_container.subpage-list .mnwall-item-inner .mnwall-title a {
+body #t3-mainbody .mnwall_container.subpage-list .mnwall-item-inner .mnwall-title a {
   text-transform: capitalize !important;
   font-size: 3em !important;
   line-height: 1em !important;
@@ -2061,23 +2058,25 @@ body #t3-mainbody .mnwall_iso_container.subpage-list .mnwall-item-inner .mnwall-
   display: inline-block;
   height: auto;
 }
-body #t3-mainbody .mnwall_iso_container.news-list .mnwall-cover,
-body #t3-mainbody .mnwall_iso_container.news-list .mnwall-cover div {
+/* news list
+--------------- */
+#t3-mainbody .mnwall_container.news-list .mnwall-cover,
+#t3-mainbody .mnwall_container.news-list .mnwall-cover div {
   height: 325px;
 }
-body #t3-mainbody .mnwall_iso_container.news-list .mnwall_iso_container .mnwall-item .mnwall-item-inner {
+#t3-mainbody .mnwall_container.news-list .mnwall_iso_container .mnwall-item .mnwall-item-inner {
   background-color: rgba(255, 255, 255, 0);
   -webkit-transition: 0.5s background-color;
   transition: 0.5s background-color;
 }
-body #t3-mainbody .mnwall_iso_container.news-list .mnwall_iso_container .mnwall-item:hover .mnwall-item-inner {
+#t3-mainbody .mnwall_container.news-list .mnwall_iso_container .mnwall-item:hover .mnwall-item-inner {
   background-color: rgba(255, 255, 255, 0.05) !important;
 }
-body #t3-mainbody .mnwall_iso_container.news-list .mnwall-item-inner .mnwall-title {
+#t3-mainbody .mnwall_container.news-list .mnwall-item-inner .mnwall-title {
   padding: 19px 19px 10px;
   position: relative;
 }
-body #t3-mainbody .mnwall_iso_container.news-list .mnwall-item-inner .mnwall-title a {
+#t3-mainbody .mnwall_container.news-list .mnwall-item-inner .mnwall-title a {
   text-transform: capitalize !important;
   font-size: 2em;
   color: #fff !important;
@@ -2089,7 +2088,7 @@ body #t3-mainbody .mnwall_iso_container.news-list .mnwall-item-inner .mnwall-tit
   white-space: nowrap;
   line-height: 24px;
 }
-body #t3-mainbody .mnwall_iso_container.news-list .mnwall-item-inner .mnwall-title .mnwall-date {
+#t3-mainbody .mnwall_container.news-list .mnwall-item-inner .mnwall-title .mnwall-date {
   position: absolute;
   right: 0px;
   top: 10px;
@@ -2099,7 +2098,7 @@ body #t3-mainbody .mnwall_iso_container.news-list .mnwall-item-inner .mnwall-tit
   padding: 10px 15px 0;
   line-height: 24px;
 }
-body #t3-mainbody .mnwall_iso_container.news-list .mnwall-item-inner .mnwall-desc {
+#t3-mainbody .mnwall_container.news-list .mnwall-item-inner .mnwall-desc {
   padding: 0px 19px 50px;
   font-size: 1.6em;
   color: rgba(184, 184, 184, 0.6) !important;
@@ -2204,8 +2203,6 @@ body #t3-mainbody .mnwall_iso_container.news-list .mnwall-item-inner .mnwall-des
 .mainbody-bottomblocks .bannergroup {
   padding: 19px 50px;
 }
-/* SCHEDULE
--------------------- */
 /* exhibitor list
 --------------- */
 .exhibitor-list {
@@ -2225,10 +2222,6 @@ body #t3-mainbody .mnwall_iso_container.news-list .mnwall-item-inner .mnwall-des
   z-index: 2;
   color: #777;
 }
-/* speakers list
---------------- */
-/* hide link through
---------------- */
 /* halls subpage list
 --------------- */
 .itemid-130 body #t3-mainbody .mnwall_container.subpage-list .mnwall-item:nth-child(1),

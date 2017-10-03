@@ -53,9 +53,10 @@
             background-color: #000;
             margin: 0% -1%;
             a {
-                 z-index: 1;
+                z-index: 1;
                 display: block;
                 width: 100%; 
+                height: 100%;
                 opacity: 0.9;
                 transition: 0.5s opacity, 8s transform;
                 background-size: cover;
@@ -119,10 +120,11 @@ body #t3-mainbody .mnwall_iso_container{
             opacity: 0.9;
         }
     }
+}
 
 /* home sections
 --------------- */
-
+body #t3-mainbody .mnwall_container{
     &.home-sections{
         .mnwall-item {
             width: 50% !important;
@@ -170,10 +172,12 @@ body #t3-mainbody .mnwall_iso_container{
             font-weight: 100;
         }
     }
+}
 
 /* subpage list
 --------------- */
 
+body #t3-mainbody .mnwall_container{
     &.subpage-list,
     &.news-list{
         .mnwall-item {
@@ -200,29 +204,32 @@ body #t3-mainbody .mnwall_iso_container{
             }
         }
     }
-    &.subpage-list .mnwall-item-inner {
-        display: table !important;
-        .mnwall-title {
-            display: table-cell !important;
-            vertical-align: middle;
-            padding:0px 50px;
-            line-height: 150%;
-            text-shadow: 1px 1px 1px black;
-            a {
-                text-transform: capitalize !important;
-                font-size: 3em !important;
-                line-height: 1em !important;
-                color: #fff !important;
-                font-weight: 300;
-                display: inline-block;
-                height: auto;
+    &.subpage-list{
+        .mnwall-item-inner {
+            display: table !important;
+            .mnwall-title {
+                display: table-cell !important;
+                vertical-align: middle;
+                padding:0px 50px;
+                line-height: 150%;
+                text-shadow: 1px 1px 1px black;
+                a {
+                    text-transform: capitalize !important;
+                    font-size: 3em !important;
+                    line-height: 1em !important;
+                    color: #fff !important;
+                    font-weight: 300;
+                    display: inline-block;
+                    height: auto;
+                }
             }
         }
     }
+}
 
 /* news list
 --------------- */
-
+#t3-mainbody .mnwall_container{
     &.news-list{
         .mnwall-cover, 
         .mnwall-cover div {
@@ -299,20 +306,9 @@ body #t3-mainbody .mnwall_iso_container{
     }
 }
 
-
 .mnwall_iso_buttons a {
     font-size: 1.4em;
 }
-
-// .mnwall_container.home-sections .pano_link {
-//     position: absolute;
-//     left: 55px;
-//     bottom: 20px;
-//     height: auto;
-//     color: #fff;
-//     font-size: 1.8em;
-//     font-weight: 100;
-// }
 
 /* VIDEO LIST
 -------------------- */
@@ -395,69 +391,6 @@ body #t3-mainbody .mnwall_iso_container{
     padding: 19px 50px;	
 }
 
-/* SCHEDULE
--------------------- */
-// .rl_tabs-responsive, .rl_tabs, .rl_tabs>ul.nav-tabs>li {
-// 	margin-bottom: 0px !important;
-//     background-color: #fff;
-// }
-// .mainbody-bottomblocks .block-inner > .schedule-list {
-// /* 	padding-right:50px; */
-// 	padding-top:0px;
-// }
-// .schedule-list .nav-tabs {
-// 	background-color: #fff;
-//  	padding:0px 50px; 
-// 	border:none !important;
-// }
-// .schedule-list .nav-tabs li {
-//     text-align: left;
-// }
-// .schedule-list .nav-tabs li a {
-//     display: inline-block;
-//     padding: 25px 19px;
-//     margin: 0px;
-//     border: none !important;
-//     height: auto;
-//     font-size: 1.6em;
-//     line-height: 150%;
-//     text-decoration: none;
-//     box-shadow: none !important;
-// }
-// .schedule-list .nav-tabs li:first-of-type a {
-// 	padding-left: 0px;
-// }
-// .schedule-list .nav-tabs li a span {
-//     color: #000;
-// }
-// .schedule-list .nav-tabs li.active a span {
-//     color: @red;
-// }
-// .schedule-list .tab-content {
-// 	border: none !important;
-// }
-// .schedule-list .tab-content .tab-pane {
-// 	padding:0px !important;
-// 	border-top: 1px solid #e4e4e4;
-// }
-// .schedule-list .tab-content .jux-tl-item { 
-//     border-bottom: 1px solid #e4e4e4;
-//     padding: 19px 50px;
-//     background-color: #fff;
-// }
-// .schedule-list .tab-content .jux-tl-item .jux-tl-time {
-// 	margin-bottom: 5px;
-// }
-// .schedule-list .tab-content .jux-tl-item .jux-tl-title {
-// 	color: #000;
-// }
-// .schedule-list .tab-content .jux-tl-item .jux-tl-desc strong {
-//     color: @red;	
-//     margin-top: 19px;
-//     display: inline-block;
-// }
-
-
 
 /* exhibitor list
 --------------- */
@@ -480,57 +413,25 @@ body #t3-mainbody .mnwall_iso_container{
     }
 }
 
+// exhibitor overlay idea
+// body #t3-mainbody .mnwall_container.exhibitor-list .mnwall-item-inner{
+//     min-height: 30px;
+//     height: 10%;
+//     background-color: rgba(4, 4, 4, 0.51) !important;
+//     transition: all .5s;
+//     .mnwall-item-img a{
+//         opacity: 1;
+//     }
+// }
+// body #t3-mainbody .mnwall_container.exhibitor-list .mnwall-item:hover{
+//     .mnwall-item-inner{
+//         height: 100%;
+//         //background-color: rgba(4, 4, 4, 0) !important;
+//     }
+//     .mnwall-item-img a{
+//         opacity: .9;
+//     }
 
-/* speakers list
---------------- */
-
-// body #t3-mainbody .mnwall_container.speakers-list .mnwall-item {
-//     width: 25%;
-//     padding-top: 300px !important;
-//     position: relative !important;
-// }
-// body #t3-mainbody .mnwall_container.speakers-list .mnwall-item .mnwall-item-outer-cont {
-//     position: absolute;
-//     top:0;
-//     left: 0;
-//     right: 0;
-//     bottom: 0;
-// }
-// body #t3-mainbody .mnwall_container.speakers-list .mnwall-cover, body #t3-mainbody .mnwall_container.speakers-list .mnwall-cover * {
-//     height: 100%;
-// }
-// body #t3-mainbody .mnwall_container.speakers-list .mnwall-item-inner {
-//     padding:19px !important;
-//     display: table;
-// }
-// body #t3-mainbody .mnwall_container.speakers-list .mnwall-item-inner * {
-//     height: auto;
-//     display: table-row-group;
-//     vertical-align: bottom;
-//     line-height: 1;
-// }
-// body #t3-mainbody .mnwall_container.speakers-list .mnwall-item-inner .mnwall-title {
-//     padding:0px;
-// }
-// body #t3-mainbody .mnwall_container.speakers-list .mnwall-item-inner .mnwall-title span {
-//     text-transform: capitalize !important;
-//     font-size: 2em;
-//     color: #fff !important;
-//     font-weight: 300;
-//     display: table-cell;
-//     padding-bottom: 5px;
-//     vertical-align: bottom;
-// }
-// body #t3-mainbody .mnwall_container.speakers-list .mnwall-item-inner .mnwall-item-category a {
-//     color: rgba(255,255,255,0.4) !important;
-//     font-size: 1.4em !important;
-// }
-
-/* hide link through
---------------- */
-// .mnwall_container.speakers-list .mnwall-photo-link {
-//     background-position: center center;
-//     background-size: cover;
 // }
 
 
