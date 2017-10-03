@@ -310,17 +310,6 @@ body .banner .site-btn {
   display: inline-block;
   vertical-align: top;
 }
-.t3-header .logo-image p {
-  line-height: 0;
-}
-.t3-header .logo-image img {
-  width: 135px;
-  height: auto;
-}
-.t3-header .logo-image .inthecity-logo img {
-  margin-top: 5px;
-  width: 235px;
-}
 .t3-header .logo .head-info {
   margin-left: 19px;
   position: absolute;
@@ -354,6 +343,17 @@ body .banner .site-btn {
 }
 .t3-header .logo .head-info .head-dates .date-word-break {
   display: none;
+}
+.t3-header .logo-image p {
+  line-height: 0;
+}
+.t3-header .logo-image img {
+  width: 135px;
+  height: auto;
+}
+.t3-header .logo-image .inthecity-logo img {
+  margin-top: 5px;
+  width: 235px;
 }
 /* SHOW SWITCH
 -------------------- */

@@ -51,61 +51,67 @@
 
 /* LOGO
 -------------------- */
-.t3-header .logo {
-	display: table;
-	top:20px;
-	left: 50px;
-    transition: 0.5s filter;
-    text-align: left;
-}
-.t3-header .logo > div {
-    display: inline-block;
-    vertical-align: top;
-}
-.t3-header .logo-image p {
-	line-height: 0;
-}
-.t3-header .logo-image img {
-	width: 135px;
-	height: auto;
-}
-.t3-header .logo-image .inthecity-logo img {
-	margin-top:5px;
-	width: 235px;
-}
-.t3-header .logo .head-info {
-    margin-left: 19px;
-    position: absolute;
-}
-.t3-header .logo .head-info > div {
-    display: table-cell;
-    vertical-align: middle;
-}
-.t3-header .logo .head-info .head-sponsor .custom {
-    text-align: center;	
-}
-.t3-header .logo .head-info .head-sponsor p {
-	font-size: 1em;
-    line-height: 1.2;
-    white-space: nowrap;
-}
-.t3-header .logo .head-info .head-sponsor p img {
-    width: 50px;
-    height: auto;
-    margin-top: 5px;	
-}
-.t3-header .logo .head-info .head-dates {
-    white-space: nowrap;
-}
-.t3-header .logo .head-info .head-dates p {
-    font-weight: 400;
-    line-height: 1.2;
-    color: #000;
-    font-size: 1.6em;
-    margin-top: 20px;
-}
-.t3-header .logo .head-info .head-dates .date-word-break { 
-	display: none;
+.t3-header{
+    .logo {
+    	display: table;
+    	top:20px;
+    	left: 50px;
+        transition: 0.5s filter;
+        text-align: left;
+        > div {
+            display: inline-block;
+            vertical-align: top;
+        }
+        .head-info {
+            margin-left: 19px;
+            position: absolute;
+            > div {
+                display: table-cell;
+                vertical-align: middle;
+            }
+            .head-sponsor{
+                .custom {
+                    text-align: center;	
+                }
+                p {
+                	font-size: 1em;
+                    line-height: 1.2;
+                    white-space: nowrap;
+                    img {
+                        width: 50px;
+                        height: auto;
+                        margin-top: 5px;	
+                    }
+                }
+            }
+            .head-dates {
+                white-space: nowrap;
+                p {
+                    font-weight: 400;
+                    line-height: 1.2;
+                    color: #000;
+                    font-size: 1.6em;
+                    margin-top: 20px;
+                }
+                .date-word-break { 
+            	   display: none;
+                }
+            }
+        }
+    }
+    .logo-image{
+        p {
+            line-height: 0;
+        }
+        img {
+            width: 135px;
+            height: auto;
+        }
+        .inthecity-logo img {
+            margin-top:5px;
+            width: 235px;
+        }
+    }
 }
 	
 /* SHOW SWITCH
