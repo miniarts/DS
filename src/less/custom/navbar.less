@@ -1,0 +1,74 @@
+/* MAIN NAV 
+-------------------- */
+.t3-header .main-navbar{
+    float: right;
+    top:35px;
+    right: 39px;
+    .t3-megamenu {
+    	display: inline-block;
+        .mega-nav > li a{
+            color: @background-dark;
+            &:hover{
+                color: @red;
+            }
+        }
+    }
+    .navbar-nav > li{
+        > a{
+            padding: 10px 18px;
+            color: @background-dark;
+            transition: 0.5s color;
+            font-size: 1.8em;
+            .caret{
+                border-top-color: @background-dark;
+                border-bottom-color: @background-dark;
+            }
+            &:hover,
+            &:focus{
+                color:@red;
+                background-color: transparent;
+                .caret{
+                    border-top-color: @red;
+                    border-bottom-color: @red;
+                }
+            }
+            &.home-icon {
+                text-indent: -999px;
+                overflow: hidden;
+                width: 20px;
+                text-align: center;
+                margin: 0px 15px;
+                &:after {
+                    content: "\f015";
+                    font: normal normal normal 1.2em FontAwesome;
+                    text-rendering: auto;
+                    -webkit-font-smoothing: antialiased;
+                    -moz-osx-font-smoothing: grayscale;
+                    text-indent: 0px;
+                    position: absolute;
+                    right: 0;
+                }
+            }
+            &[href="/search"]{
+                &:extend(.icon-search all);
+                font-size: 0;
+            }
+        }
+        &:not(:last-of-type).active a:not(.home-icon) {
+            color:@red;
+        }
+        &:last-of-type{
+            margin-left: 15px;
+            a{ 
+                font-weight: 300;
+                transition: 0.5s background-color;
+                color: #fff;
+                background-color: @red;
+                border-radius: 4px;
+                &:hover {
+                    background-color: @background-dark;
+                }
+            }
+        }
+    }
+}
