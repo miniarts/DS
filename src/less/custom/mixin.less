@@ -1,19 +1,13 @@
-/* BUTTONS 
--------------------- */
-body .site-btn {
-    padding: 15px 26px;
-    color: #fff;
-    border-radius: 4px;
-    background-color: @red;
-    font-weight: 300;
-    text-transform: capitalize;
-    display: inline-block;
-    transition: 0.3s background-color;
-}	
-body .site-btn:hover, body .site-btn:focus {
-	text-decoration: none;
-	background-color: #1f1f1f !important;
-}
-body .banner .site-btn {
-	font-size: 1.4em;
+/* MIXINS AND COMMON STYLES*/
+
+// .screen-xs-max(@rules) {
+//     @media (max-width: @screen-xs-max) { @rules(); }
+// }
+
+.icon-search{
+    &:after{
+        font-family: FontAwesome;
+        content: "\f002";
+        font-size: 1rem;
+    }   
 }

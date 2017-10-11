@@ -6,7 +6,7 @@
 @gray-light: #999;
 
 
-@background-dark: #141414;
+@gray-darkest: #141414;
 @border-color: #777;
 @footer-text-color: @gray-light;
 @footer-background:#000;
@@ -14,16 +14,3 @@
 @screen-xs-max: 599px;
 
 
-/* MIXINS AND COMMON STYLES*/
-
-.screen-xs-max(@rules) {
-    @media (max-width: @screen-xs-max) { @rules(); }
-}
-
-.icon-search{
-	&:after{
-	    font-family: FontAwesome;
-	    content: "\f002";
-	    font-size: 1rem;
-	}	
-}

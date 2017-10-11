@@ -22,6 +22,7 @@
 // Grays
 // -------------------------
 
+@gray-darkest:			 #1f1f1f;
 @gray-darker:            #222;
 @gray-dark:              #333;
 @gray:                   #555;
@@ -33,7 +34,7 @@
 // Brand colors
 // -------------------------
 
-@brand-primary:         #428bca;
+@brand-primary:         #d0043c;
 @brand-secondary:       #428bca; // T3 Note: Add secondary color
 @brand-success:         #5cb85c;
 @brand-warning:         #f0ad4e;
@@ -80,13 +81,13 @@
 @font-size-base:          16px;
 @font-size-large:         ceil(@font-size-base * 1.25); // ~18px
 @font-size-small:         ceil(@font-size-base * 0.85); // ~12px
-
-@font-size-h1:            floor(@font-size-base * 2.6); // ~36px
-@font-size-h2:            floor(@font-size-base * 2.15); // ~30px
-@font-size-h3:            ceil(@font-size-base * 1.7); // ~24px
-@font-size-h4:            ceil(@font-size-base * 1.25); // ~18px
-@font-size-h5:            @font-size-base;
-@font-size-h6:            ceil(@font-size-base * 0.85); // ~12px
+						//transferred from old css which changes the font ize based on the device size
+@font-size-h1:            5em;//floor(@font-size-base * 2.6); // ~36px
+@font-size-h2:            4.2em;//floor(@font-size-base * 2.15); // ~30px
+@font-size-h3:            3.6em;//ceil(@font-size-base * 1.7); // ~24px
+@font-size-h4:            3em;//ceil(@font-size-base * 1.25); // ~18px
+@font-size-h5:            2.4em;//@font-size-base;
+@font-size-h6:            2em;//ceil(@font-size-base * 0.85); // ~12px
 
 @line-height-base:        1.428571429; // 20/14
 @line-height-computed:    floor(@font-size-base * @line-height-base); // ~20px
@@ -115,8 +116,8 @@
 @padding-small-vertical:         5px;
 @padding-small-horizontal:       10px;
 
-@line-height-large:              1.33;
-@line-height-small:              1.5;
+@line-height-large:              1.5;
+@line-height-small:              1.33;
 
 @border-radius-base:             4px;
 @border-radius-large:            6px;
@@ -735,8 +736,8 @@
 
 // Footer Styles
 // -------------------------
-@t3-footer-background:              @navbar-default-bg;
-@t3-footer-text-color:              @gray;
+@t3-footer-background:              #141414;
+@t3-footer-text-color:              @gray-light;
 
 @t3-footer-module-background:       @t3-footer-background;
 @t3-footer-module-text-color:       @t3-footer-text-color;
@@ -771,11 +772,9 @@
 
 
 
+/* CUSTOM */
 
-
-@background-dark: #141414;
 @border-color: #777;
-@footer-text-color: @gray-light;
 @footer-background:#000;
 
 @screen-xxs-max: 374px; //exhibitor.css has this width and need to match
