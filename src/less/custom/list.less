@@ -368,8 +368,20 @@ body #t3-mainbody .mnwall_container{
     .banneritem {
         display: inline-block;
         position: relative;
-        width: 110px;
+        width: calc(100%/8);
         padding-top: 7.142%;
+        @media (max-width: @screen-sm-max) {    
+            width: calc(100%/6);
+            padding-top: calc(100%/6);
+        }
+        @media (max-width: @screen-xs-max) {    
+            width: calc(100%/4);
+            padding-top: calc(100%/4);
+        }
+        @media (max-width: @screen-xxs-max) {  
+            width: calc(100%/3);
+            padding-top: calc(100%/3);
+        }
         .bannerimg {
         	height: 100%;
             display: block;

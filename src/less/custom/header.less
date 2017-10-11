@@ -104,12 +104,18 @@
             line-height: 0;
         }
         img {
-            width: 135px;
             height: auto;
+            width: 135px;
+            @media (max-width: @screen-xs-max) {
+                width: 115px;
+            }
         }
         .inthecity-logo img {
             margin-top:5px;
             width: 235px;
+            @media (max-width: @screen-xs-max) {
+                width: 200px;
+            }
         }
     }
 }
