@@ -44,11 +44,11 @@
     .content-main {
         height: 100%;
     }  
-    .content-footer {
-    	background-color: #fff;
-        z-index: 2;
-        position: relative;
-    }
+    // .content-footer {
+    // 	background-color: #fff;
+    //     z-index: 2;
+    //     position: relative;
+    // }
 }
 .t3-content .item-page {
 	height: auto;
@@ -231,11 +231,6 @@
 -------------------- */
 .mainbody-topblocks, 
 .mainbody-bottomblocks {
-	// display: block;
- //    vertical-align: baseline;
- //    position: relative;
- //    z-index: 9;
- //    line-height: 0;
     .block {
         padding: 0px;
         &.col-md-6{
@@ -262,18 +257,21 @@
             font-size: 1.8em;
             font-weight: 300;
         }
-        a, 
-        #socialicons {
-            display: inline-block;
-            font-size: 2em;
-            vertical-align: middle;
+        a{
+            font-size: 1rem;
             float: right;
             color: inherit;
             font-weight: 300;
-            height: 0;
             position: relative;
             bottom: 40px;
         }
+        // #socialicons {
+        //     font-size: 1rem;
+        //     vertical-align: middle;
+        //     color: inherit;
+        //     position: relative;
+        //     bottom: 40px;
+        // }
     }
 }
 .mnw-results-empty-results{
@@ -293,24 +291,7 @@
 	padding-bottom: 0px;	
 }
 
-/* Home Social Block
---------------- */
-.block-inner .block-header #socialicons {
-	font-size: inherit !important;
-}
-.block-inner .block-header #socialicons ul {
-	white-space: nowrap;
-	text-align: right;
-}
-.block-inner .block-header #socialicons ul li {
-	float: none;
-	display: inline-block;
-	margin-left: 15px;
-}
-.block-inner .block-header #socialicons ul li span {
-	color: inherit;
-	font-size: 0.9em;
-}
+
 
 
 
@@ -364,23 +345,40 @@ body #t3-mainbody .mainbody-topblocks .block-header.carousel h3, body #t3-mainbo
 
 
 
-/* CONTENT FOOTER
-============================== */  
-/* PAGE SHARE
--------------------- */
-
-.content-footer .footer-inner > div {
-    display: table-cell;
-    vertical-align: middle;
-    width: auto;
+/* Home Social Block
+--------------- */
+.block-inner{
+     #socialicons {
+        font-size: 1rem;
+        vertical-align: middle;
+        color: inherit;
+        position: relative;
+        bottom: 40px;
+        ul {
+            text-align: right;
+            li {
+                margin-left: 15px;
+                span {
+                    color: inherit;
+                    font-size: 0.9em;
+                }
+                a{
+                    padding: .5rem;
+                }
+            }
+        }
+    }
 }
+
+/* PAGE SHARE - hide original svg icons to match the rest of icons 
+-------------------- */
 .content-footer .a2a-page-share {
     float: left;
     margin: 10px 0px;
-}
-.content-footer .a2a-page-share > * {
-	display: table-cell;
-    vertical-align: middle;
+    > * {
+    	display: table-cell;
+        vertical-align: middle;
+    }
 }    
 .a2a-page-share h6 {
 	padding:0px 19px 0px 50px;
@@ -388,21 +386,18 @@ body #t3-mainbody .mainbody-topblocks .block-header.carousel h3, body #t3-mainbo
 .a2a_kit a {
 	padding:19px !important;
 	text-align: center;
-	color: #b7b7b7;
+	color: @text-color;
 	font-size: 1.8em;
+    .a2a_svg {
+        width: auto !important;
+        height: auto !important;
+        background: none !important;
+        svg {
+            display: none;
+        }
+    }
 }
-.a2a_kit a .a2a_svg {
-	width: auto !important;
-	height: auto !important;
-	background-image: none !important;
-	background: none !important;
-}
-.a2a_kit a .a2a_label {
-	display: none;
-}
-.a2a_kit a .a2a_svg svg {
-	display: none;
-}
+
 
 /* BACK TO TOP
 -------------------- */
@@ -413,21 +408,54 @@ body #t3-mainbody .mainbody-topblocks .block-header.carousel h3, body #t3-mainbo
 	float: right;
 	display: table !important;
 	height: 82px;
+    a {
+        color: @text-color;
+        i {
+            padding-left: 19px;
+            font-size: 0.8em;
+            bottom: 1px;
+            position: relative;
+        }
+    }
 }
 .back-to-top-inner {
 	display: table-cell;
     vertical-align: middle;
 }
-.back-to-top-wrap a {
-	color: #b7b7b7;
-}
-.back-to-top-wrap a i {
-    padding-left: 19px;
-    font-size: 0.8em;
-    bottom: 1px;
-    position: relative;
-}
 
+/* SOCIAL - landing page
+-------------------- */
+.block-inner .post-inner {
+    padding: 130px 200px 70px;
+    text-align: center;
+    h3 {
+        margin-bottom: 30px;
+        a {
+            color: rgba(184, 184, 184, 0.6) !important;
+            transition: 0.5s color;
+            &:hover,
+            &:focus {
+                color: rgba(184, 184, 184, 1) !important;
+            }
+        }
+    }
+    .post-text {
+        color: @gray-darkest;
+    }
+    .post-date {
+        margin-top: 50px;
+        display: block;
+        color: rgba(184, 184, 184, 0.6) !important;
+        p a {
+            display: block;
+            margin-top: 10px;
+        }
+    }
+    .post-text .red, 
+    .post-date a {
+        color: @red;
+    }
+}
 
 /* ARTICLE NAVIGATION
 -------------------- */

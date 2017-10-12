@@ -1,10 +1,12 @@
 
 /* ---------- *//* ---------- SOCIAL ICON OVERRIDE ---------- *//* ---------- */
-body [class*="foundicon-"]:before, .a2a_kit a .a2a_svg:before {
+body [class*="foundicon-"]:before,
+.a2a_kit a .a2a_svg:before {
   font-family: "FontAwesome";
   font-weight: normal;
   font-style: normal;
   text-decoration: inherit;
+  color: @text-color;
 }
 
 /* icons */
@@ -17,19 +19,23 @@ body .a2a_s_sina_weibo:before {
 body .a2a_s_wechat:before {
 	content: "\f1d7";
 }
+
 body .foundicon-rss:before {
   content: "\f002";
 }
 
-body .foundicon-facebook:before, .a2a_s_facebook:before {
+body .foundicon-facebook:before,
+.a2a_s_facebook:before {
   content: "\f09a";
 }
 
-body .foundicon-twitter:before, .a2a_s_twitter:before {
+body .foundicon-twitter:before,
+.a2a_s_twitter:before {
   content: "\f099";
 }
 
-body .foundicon-pinterest:before, .a2a_s_pinterest:before {
+body .foundicon-pinterest:before
+.a2a_s_pinterest:before{
   content: "\f0d2";
 }
 
@@ -41,7 +47,8 @@ body .foundicon-path:before {
   content: "\f007";
 }
 
-body .foundicon-linkedin:before, .a2a_s_linkedin:before {
+body .foundicon-linkedin:before,
+ .a2a_s_linkedin:before {
   content: "\f0e1";
 }
 
@@ -61,7 +68,8 @@ body .foundicon-reddit:before {
   content: "\f00c";
 }
 
-body .foundicon-google-plus:before, .a2a_s_google_plus:before {
+body .foundicon-google-plus:before{
+// .a2a_s_google_plus:before {
   content: "\f0d5";
 }
 
