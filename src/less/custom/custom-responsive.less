@@ -52,9 +52,9 @@
 		position: relative;
 		bottom: 5px;
 	}
-	.content-footer .a2a_kit {
-		padding-left: 50px;
-	}
+	// .content-footer .a2a_kit {
+	// 	padding-left: 50px;
+	// }
 	.content-footer .a2a_kit a { 
 		padding-left: 0px !important;
 	    padding-top: 5px !important;
@@ -121,10 +121,6 @@
 	.inthecity .breadcrumb {
 	    padding-left: 230px;
 	}
-	// .t3-content .item-page .page-split.page-header {
-	// 	// padding-top: 60px;
-	// 	padding-bottom: 40px;
-	// }
 	
  	/* BODY
 -------------------- */ 
@@ -145,15 +141,17 @@
     .mainbody-bottomblocks .block-inner > .custom {
 	    padding-top: 60px;
     }
-    .a2a-page-share h6, .mainbody-topblocks .block-header, 
+    //.a2a-page-share h6, 
+    .mainbody-topblocks .block-header, 
     .mainbody-bottomblocks .block-header, 
-    // .t3-content .item-page .page-split.page-header, 
     .t3-content .item-page .page-split.page-content > div[itemprop="articleBody"], 
     .mainbody-topblocks .block-inner > .custom, .mainbody-bottomblocks .block-inner > .custom, .t3-content .blog .category-desc, 
-    .t3-content .blog .page-header, .content-footer .a2a_kit, .back-to-top-wrap, .footer-copyright-wrap, .mainbody-bottomblocks .bannergroup, 
+    .a2a-page-share,
+    .mnw-results-empty-results,
+    .back-to-top-wrap, .footer-copyright-wrap, .mainbody-bottomblocks .bannergroup, 
     .schedule-list .tab-content .jux-tl-item, .schedule-list .nav-tabs  {
-	    padding-left: 30px;
-	    padding-right: 30px;
+	    padding-left: 4%;
+	    padding-right: 4%;
     }
     .navigation.post-navigation .nav-links .nav .links {
     	padding: 0px 30px;
@@ -174,18 +172,20 @@
     	width: 50% !important;
     	padding-top: 260px !important;
     }
+	body #t3-mainbody .mnwall_container.news-list .mnwall-item {
+    	width: 50% !important;
+    }
+    //what's this?
     body #t3-mainbody .mnwall_container.exhibitor-list:not(.article_list) .mnwall-item:nth-child(5), 
     body #t3-mainbody .mnwall_container.exhibitor-list:not(.article_list) .mnwall-item:nth-child(6), 
     body #t3-mainbody .mnwall_container.exhibitor-list:not(.article_list) .mnwall-item:nth-child(7), 
     body #t3-mainbody .mnwall_container.exhibitor-list:not(.article_list) .mnwall-item:nth-child(8) {
 	    display: none;
     }
-    body #t3-mainbody .mnwall_container.news-list .mnwall-item {
-    	width: 50% !important;
-    }
     body #t3-mainbody .mnwall_container.news-list:not(.article_list) .mnwall-item:nth-child(3) {
 	    display: none;
     }
+   
     
    /* FOOTER
 -------------------- */	
@@ -339,8 +339,6 @@
 	.t3-content .blog.banner .page-header {
 		position: static !important;
 		padding-top: 0px !important;
-	    // transform: translateY(0);
-	    // padding-bottom: 0;
 	}
 
 	.page-title-wrap h1, 
@@ -348,18 +346,6 @@
 	.t3-content .item-page .page-split.page-header .header-inner h1 {
 		font-size: 3em !important;
 	}    
-	.a2a-page-share h6, .mainbody-topblocks .block-header, 
-	.mainbody-bottomblocks .block-header, 
-	.t3-content .item-page .page-split.page-header, 
-	.t3-content .item-page .page-split.page-content > div[itemprop="articleBody"], 
-	.mainbody-topblocks .block-inner > .custom, 
-	.mainbody-bottomblocks .block-inner > .custom, 
-	.t3-content .blog .category-desc, .t3-content .blog .page-header, 
-	.content-footer .a2a_kit, .back-to-top-wrap, .footer-copyright-wrap, 
-	.mainbody-bottomblocks .bannergroup, .schedule-list .tab-content .jux-tl-item, .schedule-list .nav-tabs  {
-	    padding-left: 25px;
-	    padding-right: 25px;
-	}
 	
 	.content-footer .a2a_kit a {
     	padding-right: 15px !important;
@@ -459,26 +445,6 @@
     	padding: 15px 0px 0;
     	font-size: 80%;
     }
-	// .page-title-wrap h1 {
-	//     margin: 60px 20px 40px !important;
-	// }	 
-	.a2a-page-share h6, .mainbody-topblocks .block-header, 
-	.mainbody-bottomblocks .block-header, 
-	.t3-content .item-page .page-split.page-header, 
-	.t3-content .item-page .page-split.page-content > div[itemprop="articleBody"], 
-	.mainbody-topblocks .block-inner > .custom, 
-	.mainbody-bottomblocks .block-inner > .custom, 
-	.t3-content .blog .category-desc, 
-	.t3-content .blog .page-header, 
-	.content-footer .a2a_kit, 
-	.back-to-top-wrap, 
-	.footer-copyright-wrap, 
-	.mainbody-bottomblocks .bannergroup, 
-	.schedule-list .tab-content .jux-tl-item, 
-	.schedule-list .nav-tabs  {
-	    padding-left: 20px;
-	    padding-right: 20px;
-	}   
 	.schedule-list .nav-tabs li a {
     	padding: 25px 10px;
     }
