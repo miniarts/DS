@@ -121,10 +121,10 @@
 	.inthecity .breadcrumb {
 	    padding-left: 230px;
 	}
-	.t3-content .item-page .page-split.page-header {
-		padding-top: 60px;
-		padding-bottom: 40px;
-	}
+	// .t3-content .item-page .page-split.page-header {
+	// 	// padding-top: 60px;
+	// 	padding-bottom: 40px;
+	// }
 	
  	/* BODY
 -------------------- */ 
@@ -140,14 +140,14 @@
 	
 	html body #t3-content .item-page .page-header, /*override buyerform.css*/
     .mainbody-topblocks .block-header, .mainbody-bottomblocks .block-header, 
-    .t3-content .item-page .page-split.page-header, 
+    // .t3-content .item-page .page-split.page-header, 
     .mainbody-topblocks .block-inner > .custom, 
     .mainbody-bottomblocks .block-inner > .custom {
 	    padding-top: 60px;
     }
     .a2a-page-share h6, .mainbody-topblocks .block-header, 
     .mainbody-bottomblocks .block-header, 
-    .t3-content .item-page .page-split.page-header, 
+    // .t3-content .item-page .page-split.page-header, 
     .t3-content .item-page .page-split.page-content > div[itemprop="articleBody"], 
     .mainbody-topblocks .block-inner > .custom, .mainbody-bottomblocks .block-inner > .custom, .t3-content .blog .category-desc, 
     .t3-content .blog .page-header, .content-footer .a2a_kit, .back-to-top-wrap, .footer-copyright-wrap, .mainbody-bottomblocks .bannergroup, 
@@ -328,9 +328,10 @@
 	
  	/* BODY
 -------------------- */ 
+	.view-category .banner {height: 85%}
 	html.view-category.banner-flip .banner .banner-img, html.view-category .banner .banner-img {
 		top:0px;
-		bottom: 120px !important;
+		bottom: 15% !important;
 	}
 	html.view-category.banner-flip .t3-content .blog.banner {
 		position: static !important;
@@ -338,19 +339,10 @@
 	.t3-content .blog.banner .page-header {
 		position: static !important;
 		padding-top: 0px !important;
-	    transform: translateY(0);
+	    // transform: translateY(0);
+	    // padding-bottom: 0;
 	}
-	.page-title-wrap {
-		display: block;
-	    position: absolute;
-	    transform: translateY(-100%);
-	    background: inherit;
-	    left: 0;
-	    right: 0;
-	}
-	.page-title-wrap h1 {
-	    margin: 60px 25px 40px !important;
-	}
+
 	.page-title-wrap h1, 
 	.block-header h3, 
 	.t3-content .item-page .page-split.page-header .header-inner h1 {
@@ -467,9 +459,9 @@
     	padding: 15px 0px 0;
     	font-size: 80%;
     }
-	.page-title-wrap h1 {
-	    margin: 60px 20px 40px !important;
-	}	 
+	// .page-title-wrap h1 {
+	//     margin: 60px 20px 40px !important;
+	// }	 
 	.a2a-page-share h6, .mainbody-topblocks .block-header, 
 	.mainbody-bottomblocks .block-header, 
 	.t3-content .item-page .page-split.page-header, 

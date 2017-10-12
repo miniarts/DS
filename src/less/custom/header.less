@@ -106,6 +106,10 @@
         img {
             height: auto;
             width: 135px;
+            //not happy with this
+            @media (max-width: @screen-sm-max) {    
+                width: 120px;
+            }
             @media (max-width: @screen-xs-max) {
                 width: 115px;
             }

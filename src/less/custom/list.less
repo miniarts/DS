@@ -176,9 +176,9 @@ body #t3-mainbody .mnwall_container{
 
 /* subpage list
 --------------- */
-
+                                
 body #t3-mainbody .mnwall_container{
-    &.subpage-list,
+    &.subpage-list,         
     &.news-list{
         .mnwall-item {
             width: 33.333333% !important;
@@ -217,7 +217,7 @@ body #t3-mainbody .mnwall_container{
                     text-transform: capitalize !important;
                     font-size: 3em !important;
                     line-height: 1em !important;
-                    color: #fff !important;
+                    color: @white;
                     font-weight: 300;
                     display: inline-block;
                     height: auto;
@@ -253,7 +253,7 @@ body #t3-mainbody .mnwall_container{
                 a {
                     text-transform: capitalize !important;
                     font-size: 2em;
-                    color: #fff !important;
+                    color: @white;
                     font-weight: 300;
                     display: block;
                     overflow: hidden;
@@ -276,13 +276,29 @@ body #t3-mainbody .mnwall_container{
             .mnwall-desc {
                 padding: 0px 19px 50px;
                 font-size: 1.6em;
-                color: rgba(184, 184, 184, 0.6) !important;
+                color: rgba(184, 184, 184, 0.6);
                 line-height: 1.4em;
+                max-height: 100px;
             }    
         }
-        // .mnwall-item .mnwall-item-img a {
-        //     opacity: 0.6;
-        // }
+        .cat-Workplace-News{
+            .mnwall-desc{
+                color: @gray-light;
+            }
+            .mnwall-title{
+                a{
+                    color: @gray;
+                }
+            }
+            .mnwall-item-outer-cont{
+                background-color:  @gray-lightest;
+                &:hover{
+                    .mnwall-item-inner{
+                        background-color: rgba(255, 255, 255, 0.6) !important;
+                    }
+                }
+            }
+        }
     }
 }
 .news-list{
@@ -425,32 +441,11 @@ body #t3-mainbody .mnwall_container{
     }
 }
 
-// exhibitor overlay idea
-// body #t3-mainbody .mnwall_container.exhibitor-list .mnwall-item-inner{
-//     min-height: 30px;
-//     height: 10%;
-//     background-color: rgba(4, 4, 4, 0.51) !important;
-//     transition: all .5s;
-//     .mnwall-item-img a{
-//         opacity: 1;
-//     }
-// }
-// body #t3-mainbody .mnwall_container.exhibitor-list .mnwall-item:hover{
-//     .mnwall-item-inner{
-//         height: 100%;
-//         //background-color: rgba(4, 4, 4, 0) !important;
-//     }
-//     .mnwall-item-img a{
-//         opacity: .9;
-//     }
-
-// }
-
-
 
 /* halls subpage list
 --------------- */
-.itemid-130 body #t3-mainbody  .mnwall_container.subpage-list .mnwall-item:nth-child(1), .itemid-130 body #t3-mainbody  .mnwall_container.subpage-list .mnwall-item:nth-child(2) {
+.itemid-130 body #t3-mainbody  .mnwall_container.subpage-list .mnwall-item:nth-child(1), 
+.itemid-130 body #t3-mainbody  .mnwall_container.subpage-list .mnwall-item:nth-child(2) {
     width: 50% !important;
 }
 /* about subpage list
@@ -463,7 +458,8 @@ body #t3-mainbody .mnwall_container{
 // }
 /* press subpage list
 --------------- */
-.itemid-195 body #t3-mainbody  .mnwall_container.subpage-list .mnwall-item:nth-child(4), .itemid-195 body #t3-mainbody  .mnwall_container.subpage-list .mnwall-item:nth-child(5) {
+.itemid-195 body #t3-mainbody  .mnwall_container.subpage-list .mnwall-item:nth-child(4), 
+.itemid-195 body #t3-mainbody  .mnwall_container.subpage-list .mnwall-item:nth-child(5) {
     width: 50% !important;
 }
 .itemid-195 body #t3-mainbody  .mnwall_container.subpage-list .mnwall-item .mnwall-item-img a {
