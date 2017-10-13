@@ -54,8 +54,20 @@
                 font-size: 0;
             }
         }
+         &.open a{
+            background-color: transparent !important;
+            &:focus,
+            &:hover{
+                color: @red;
+            }
+        }
         &:not(:last-of-type).active a:not(.home-icon) {
             color:@red;
+            background-color: transparent;
+            .caret{
+                border-top-color: @red;
+                border-bottom-color: @red;
+            }
         }
         &:last-of-type{
             margin-left: 15px;

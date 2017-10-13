@@ -147,7 +147,7 @@
 --------------- */
 html.view-category {
   .banner {
-    height: 100%;
+    // height: 100%;
     .banner-img {
       bottom: 220px;
       background-position: center bottom;
@@ -160,7 +160,9 @@ html.view-category {
       position: absolute;
       top: 148px;
       .page-header  {
-        transform: translateY(0);
+        @media (min-width: @screen-sm-min) { 
+         transform: translateY(0);
+        }
       }
     }    
     .banner .banner-img {
@@ -179,12 +181,18 @@ html.view-category {
     transform: translateY(-100%);
   }
   .page-header {
-    padding-top: 110px;
     padding-bottom: 60px;
     background-color: inherit;
     position: absolute;
     width: 100%;
-    transform: translateY(-100%);
+    @media (min-width: @screen-sm-min) { 
+      padding-top: 110px;
+      transform: translateY(-100%);
+    }
+    @media (max-width: @screen-xs-max) { 
+      position: static !important;
+      transform: translateY(-20%);
+    }
   } 
   .blog-inner {
     position: static;

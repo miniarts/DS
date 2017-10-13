@@ -18,7 +18,7 @@
 }
 .t3-mainbody, 
 .t3-content {
-	padding-top: 0px;
+	padding-top: 0px;  
 	padding-bottom: 0px;
     width: 100%;
     display: inline-block;
@@ -74,6 +74,9 @@
                     margin-bottom: 5px;
                 }
                 .exhibitor-details {/* exhibitor profile*/
+                    a{
+                        color: @link-color;
+                    }
                     img {
                         margin-bottom: 20px;
                         display: block;
@@ -392,18 +395,22 @@ body #t3-mainbody .mainbody-bottomblocks .block-header.carousel h3 {
 -------------------- */
 .back-to-top-wrap {
 	text-align: right;
-	padding-right: 40px;
-	padding-left: 40px;
-	float: right;
-	display: table !important;
-	height: 82px;
+    @media (min-width: @screen-md-min) { 
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+    float: right;
+    display: table !important;
+    height: 82px;
     a {
         color: @text-color;
+        white-space: nowrap;
         i {
             padding-left: 19px;
             font-size: 0.8em;
             bottom: 1px;
             position: relative;
+            margin-right: 10px;
         }
     }
 }

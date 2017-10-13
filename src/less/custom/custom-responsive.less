@@ -1,3 +1,15 @@
+/* INFO
+==============================
+	- Show:		Design Shanghai	
+	- Css by:   Joe Thom
+	- Version:  1.0.0
+
+	NOTE by Kaori: 
+		differs from bootstrap definition
+		why max-width only?  
+*/
+
+
 @media (min-width: @screen-lg-min){
 	body {
 		font-size: 54%;
@@ -65,10 +77,10 @@
 
 	.exhibitor-list .mnwall_iso_filters:after{
 	    right: 0;
-	    bottom: -40px;
+	    bottom: -35px;
 	    top: auto;
 	    z-index: 1;
-	    height: 85px;
+	    height: 80px;
 	}
 	.exhibitor-list div.only:after{
 	    font-family: fontawesome;
@@ -145,11 +157,17 @@
     .mainbody-topblocks .block-header, 
     .mainbody-bottomblocks .block-header, 
     .t3-content .item-page .page-split.page-content > div[itemprop="articleBody"], 
-    .mainbody-topblocks .block-inner > .custom, .mainbody-bottomblocks .block-inner > .custom, .t3-content .blog .category-desc, 
+    .mainbody-topblocks .block-inner > .custom, 
+    .mainbody-bottomblocks .block-inner > .custom, 
+    .t3-content .blog .category-desc, 
     .a2a-page-share,
     .mnw-results-empty-results,
-    .back-to-top-wrap, .footer-copyright-wrap, .mainbody-bottomblocks .bannergroup, 
-    .schedule-list .tab-content .jux-tl-item, .schedule-list .nav-tabs  {
+    .back-to-top-wrap, 
+    // .page-navigation,
+    .footer-copyright-wrap, 
+    .mainbody-bottomblocks .bannergroup, 
+    .schedule-list .tab-content .jux-tl-item, 
+    .schedule-list .nav-tabs  {
 	    padding-left: 4%;
 	    padding-right: 4%;
     }
@@ -179,9 +197,7 @@
     body #t3-mainbody .mnwall_container.exhibitor-list:not(.article_list) .mnwall-item:nth-child(5), 
     body #t3-mainbody .mnwall_container.exhibitor-list:not(.article_list) .mnwall-item:nth-child(6), 
     body #t3-mainbody .mnwall_container.exhibitor-list:not(.article_list) .mnwall-item:nth-child(7), 
-    body #t3-mainbody .mnwall_container.exhibitor-list:not(.article_list) .mnwall-item:nth-child(8) {
-	    display: none;
-    }
+    body #t3-mainbody .mnwall_container.exhibitor-list:not(.article_list) .mnwall-item:nth-child(8),
     body #t3-mainbody .mnwall_container.news-list:not(.article_list) .mnwall-item:nth-child(3) {
 	    display: none;
     }
@@ -336,10 +352,10 @@
 	html.view-category.banner-flip .t3-content .blog.banner {
 		position: static !important;
 	}
-	.t3-content .blog.banner .page-header {
-		position: static !important;
-		padding-top: 0px !important;
-	}
+	// .t3-content .blog.banner .page-header {
+	// 	position: static !important;
+	// 	// padding-top: 0px !important;
+	// }
 
 	.page-title-wrap h1, 
 	.block-header h3, 
@@ -431,7 +447,7 @@
 /* SMALL MOBILE. -- iphone 5 
 	exhibitor.css has this width and need to match
 ============================== */
-@media (max-width: 374px) {	
+@media (max-width: @screen-xxs-max) {	
 	.t3-header .logo .head-info .head-dates p {
 	    font-size: 1.6em;
 	}
