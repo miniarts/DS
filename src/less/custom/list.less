@@ -46,9 +46,6 @@
     margin:0px !important;
     height: auto !important;
     .mnwall-item{
-        // h3.mnwall-title  {
-        //     font-size: 1em !important;   
-        // }
         .mnwall-item-img {
             background-color: #000;
             margin: 0% -1%;
@@ -251,10 +248,11 @@ body #t3-mainbody .mnwall_container{
             .mnwall-title {
                 padding:19px 19px 10px;
                 position: relative;
+                font-size: 2em;
                 a {
                     text-transform: capitalize !important;
                     // font-size: 2em;
-                    color: @white;
+                    color: @gray;
                     font-weight: 300;
                     display: block;
                     overflow: hidden;
@@ -267,8 +265,7 @@ body #t3-mainbody .mnwall_container{
                     position: absolute;
                     right: 0px;
                     top: 10px;
-                    color: #b7b7b7;
-                    // font-size: 1.6em;
+                    color: @gray-light;
                     text-transform: uppercase;
                     padding: 10px 15px 0;
                     line-height: 24px;
@@ -277,31 +274,36 @@ body #t3-mainbody .mnwall_container{
             .mnwall-desc {
                 padding: 0px 19px 50px;
                 font-size: 1.6em;
-                color: rgba(184, 184, 184, 0.6);
+                color: @gray-light;
                 line-height: 1.4em;
                 max-height: 100px;
             }    
         }
-        .cat-Workplace-News{
-            .mnwall-desc{
-                color: @gray-light;
-            }
-            .mnwall-title{
-                a{
-                    color: @gray;
-                }
-            }
-            .mnwall-item-outer-cont{
-                background-color:  @gray-lightest;
-                &:hover{
-                    .mnwall-item-inner{
-                        background-color: rgba(255, 255, 255, 0.6) !important;
-                    }
-                }
-            }
+        // .cat-Workplace-News{
+        //     .mnwall-item-outer-cont{
+        //         background-color:  @gray-lightest;
+        //         &:hover{
+        //             .mnwall-item-inner{
+        //                 background-color: rgba(255, 255, 255, 0.6) !important;
+        //             }
+        //         }
+        //     }
+        // }
+    }
+}
+.itemid-177,
+.home{ 
+    #t3-mainbody .mnwall_container.news-list .mnwall-item-inner {
+        .mnwall-title a{
+            color: @white;
+        }
+        .mnwall-desc {
+            color: rgba(184, 184, 184, 0.6);
         }
     }
 }
+
+
 .news-list{
     .mnwall_iso_filters_cont{
         width: 100%;

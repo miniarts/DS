@@ -1,7 +1,5 @@
-/* BODY
-============================== */
-/* GENERAL
--------------------- */
+/* Transferred from the CSS file and a lot of things don't make any sense */
+
 .home .item-page {
 	display: none !important;
 }
@@ -115,44 +113,46 @@
             float: right;
             padding:0px;
             margin-bottom: 50px;
-        }
-        &.page-content .item-image {
-            width: 100%;
-        }
-        &.page-content .item-image img {
-            width: 100%;
-            height: auto;
-        }
-        &.page-content > div[itemprop="articleBody"] {
-            margin-top: 19px;
-            padding-right: 19px;
-            float: left;
-            width: 100%;
-            h1, 
-            h2, 
-            h3, 
-            h4, 
-            h5, 
-            h6, 
-            p, 
-            ol, 
-            ul {
-                margin-bottom: 0.2em ;
-                ol li, 
-                ul li {
-                    font-size: 1.6em;
-                    line-height: 150%;
-                    font-weight: 300;
-                    margin-bottom: 0.6em;
-                    list-style-type:decimal;
-                    list-style-position: outside;
-                    margin-left: 15px;
+            .item-image {
+                width: 100%;
+                img {
+                    width: 100%;
+                    height: auto;
                 }
             }
-            img {
-                margin-top:10px;
-                max-width: 100%;
-                height: auto;
+            > div[itemprop="articleBody"] { // The person who wrote this didn't know what itemprop is!!  Make sure to keep the SEO tool!
+                margin-top: 19px;
+                padding-right: 19px;
+                float: left;
+                width: 100%;
+                h1, 
+                h2, 
+                h3, 
+                h4, 
+                h5, 
+                h6, 
+                p, 
+                ol, 
+                ul {
+                    margin-bottom: 0.2em ;
+                }
+                ol,
+                ul{
+                    li{
+                        font-size: 1.6em;
+                        line-height: 150%;
+                        font-weight: 300;
+                        margin-bottom: 0.6em;
+                        list-style-type:decimal;
+                        list-style-position: outside;
+                        margin-left: 15px;
+                    }
+                }
+                img {
+                    margin-top:10px;
+                    max-width: 100%;
+                    height: auto;
+                }
             }
         }
     }
@@ -173,13 +173,6 @@
 }
 .exhbpage-navigation{
     clear:both;
-}
-
-.t3-content .blog .category-desc,
-.t3-content .item-page-fullwidth .page-desc{
-    h1, h2, h3, h4, h5, h6, p {
-        margin-bottom: 0.2em;
-    }
 }
 
 
@@ -209,13 +202,20 @@
             padding:0 4%;
         }
     }
-    // .item-page-fullwidth .item-page-fullwidth-inner,
-    // .blog .blog-inner {
-    //     padding: 110px 0px 60px;
-    // }
-    .blog .category-desc p img {
-        max-width: 100%;
-        height: auto;
+    .blog .category-desc,
+    .item-page-fullwidth .page-desc{
+        h1, h2, h3, h4, h5, h6, p {
+            margin-bottom: 0.2em;
+        }
+    }
+    .blog{
+        .blog-inner{
+            padding-bottom: 50px;
+        }
+        .category-desc p img {
+            max-width: 100%;
+            height: auto;
+        }
     }
 } 
 
@@ -292,13 +292,13 @@
 
 
 
-/* Text colours for dark/light background colours - won't work in ie and will keep all the hacks as I'm not sure where these are applied */
+/* Text colours for dark/light background colours - won't work in ie and will keep all the hacks as I'm not sure sure about the intention */
 .t3-content .header-inner,
 .t3-content .item-page-fullwidth-inner,
 .t3-content .blog .blog-inner{
     h1{   
         font-weight: 300;
-        font-size: 3.3em;
+        font-size: 3.3em;   
         margin-bottom: 30px;
     }
     &[style="background-color:#fff;"]{
@@ -315,11 +315,10 @@
         }
     }
 }
-/* light header #fff news module
---------------- */
 
 // why????????
-// body #t3-mainbody .t3-content .mainbody-bottomblocks .block-inner[style="background-color:none;"] h3 {
+// and I think he meant background-color: transparent; or background: none;
+// body #t3-mainbody .t3-content .mainbody-bottomblocks .block-inner[style="background-color:none;"] h3 { 
 //     font-weight: 100;   
 // }
 // body #t3-mainbody .t3-content .mainbody-bottomblocks .block-inner[style="background-color:none;"] .mnwall_container.news-list .mnwall-item-inner .mnwall-title a {

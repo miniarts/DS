@@ -4,9 +4,11 @@
 	- Css by:   Joe Thom
 	- Version:  1.0.0
 
-	NOTE by Kaori: 
-		differs from bootstrap definition
-		why max-width only?  
+	NOTES by Kaori: 
+		- differs from bootstrap definition
+		- why only max-width is used?  
+
+		I corrected as much as I could, but still loads of stuff left
 */
 
 
@@ -115,9 +117,9 @@
 	.view-article .t3-mainbody, .view-article .t3-mainbody .content-main {
 		display: block;
 	}
-	.t3-wrapper {
-	    padding-top: 137px;
-	}
+	// .t3-wrapper {
+	//     padding-top: 137px;
+	// }
 	
 	/* HEADER
 -------------------- */	
@@ -344,18 +346,15 @@
 	
  	/* BODY
 -------------------- */ 
-	.view-category .banner {height: 85%}
-	html.view-category.banner-flip .banner .banner-img, html.view-category .banner .banner-img {
+//	.view-category .banner {height: 85%}
+	html.view-category.banner-flip .banner .banner-img, 
+	html.view-category .banner .banner-img {
 		top:0px;
-		bottom: 15% !important;
+		bottom: 13% !important;
 	}
 	html.view-category.banner-flip .t3-content .blog.banner {
 		position: static !important;
 	}
-	// .t3-content .blog.banner .page-header {
-	// 	position: static !important;
-	// 	// padding-top: 0px !important;
-	// }
 
 	.page-title-wrap h1, 
 	.block-header h3, 
