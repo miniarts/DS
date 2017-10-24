@@ -50,7 +50,6 @@
             background-color: #000;
             margin: 0% -1%;
             a {
-                // z-index: 1;
                 display: block;
                 width: 100%; 
                 height: 100%;
@@ -173,7 +172,6 @@ body #t3-mainbody .mnwall_container{
 
 /* subpage list
 --------------- */
-                                
 body #t3-mainbody .mnwall_container{
     &.subpage-list,         
     &.news-list{
@@ -251,7 +249,6 @@ body #t3-mainbody .mnwall_container{
                 font-size: 2em;
                 a {
                     text-transform: capitalize !important;
-                    // font-size: 2em;
                     color: @gray;
                     font-weight: 300;
                     display: block;
@@ -279,16 +276,6 @@ body #t3-mainbody .mnwall_container{
                 max-height: 100px;
             }    
         }
-        // .cat-Workplace-News{
-        //     .mnwall-item-outer-cont{
-        //         background-color:  @gray-lightest;
-        //         &:hover{
-        //             .mnwall-item-inner{
-        //                 background-color: rgba(255, 255, 255, 0.6) !important;
-        //             }
-        //         }
-        //     }
-        // }
     }
 }
 .itemid-177,
@@ -302,7 +289,6 @@ body #t3-mainbody .mnwall_container{
         }
     }
 }
-
 
 .news-list{
     .mnwall_iso_filters_cont{
@@ -329,52 +315,88 @@ body #t3-mainbody .mnwall_container{
     font-size: 1.4em;
 }
 
-/* VIDEO LIST
+/* VIDEO LIST -- have lots of !important to override the original :-(
 -------------------- */
-.video-list .ug-theme-tilesfixed .ug-thumb-wrapper {
-	width: 25% !important;
-	position: relative !important;
-    float: left !important;
-    left: 0px !important;
-    top: 0px !important;
-    padding-top: 19% !important;
-    height: auto !important;
-}
-.ug-tile .ug-textpanel-title {
-    position: static !important;
-    padding: 19px;
-}
-.video-list .ug-tile .ug-textpanel-title {
-    padding: 19px;
-    font-size: 16px;
-}    
-.ug-tile .ug-textpanel {
-    height: auto !important;
-}
-.video-list .ug-textpanel.ug-trans-enabled *, .video-list .ug-textpanel.ug-trans-enabled {
-    bottom: -2px !important;
-    display: inline-block !important;
-    height: auto !important;
-    left: 0px !important;
-    top: initial !important;
-    line-height: normal;
-    font-weight: 400;
-    opacity: 1 !important;
-    overflow: visible !important;
-    background: none !important;
+.video-list{
+    .ug-theme-tilesfixed .ug-thumb-wrapper {
+    	width: 25% !important;
+        @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max){
+            width:50% !important;
+        }
+        @media (max-width: @screen-sm-max){
+            height: 200px !important;
+        }
+        @media (max-width: @screen-xs-max){
+            width: 100% !important;
+        }
+    }
+    .ug-tile{
+        .ug-textpanel-title {
+            position: static !important;
+            padding: 1rem;
+            font-size: 1rem;
+            line-height: @line-height-base;
+            text-align: center;
+            font-weight: 400;
+        }    
+    }
+    .ug-textpanel-bg{
+        background-color: rgba(0, 0, 0, 0.5) !important;
+    }
+    .ug-thumb-wrapper.ug-tile .ug-tile-icon{
+        top: 30% !important;
+    }
 }
 
+/* COMMON STYLES: PRESS COVERAGE LIST &  VIDEO LIST
+-------------------- */
+.video-list,
+.press-coverage-list{
+    .ug-thumb-wrapper .ug-thumb-overlay{
+        height: 100% !important;
+        width: 100% !important;
+    }
+    .ug-thumb-wrapper.ug-tile .ug-tile-icon,
+    .ug-textpanel-title,
+    .ug-textpanel-textwrapper.ug-trans-enabled, 
+    .ug-textpanel.ug-trans-enabled,
+    .ug-gallery-wrapper .ug-textpanel-bg{
+        width: 100% !important;
+    }
+    img.ug-thumb-image{
+        left: 0 !important;
+        height: 100% !important;
+        width: 100% !important;
+        top: 0 !important;
+        object-fit:cover;
+    }
+    .ug-textpanel-textwrapper.ug-trans-enabled, 
+    .ug-textpanel.ug-trans-enabled {
+        left: 0px !important;
+        top: initial !important;
+        overflow: visible !important;
+        z-index: 2;
+    }
+    .ug-thumb-wrapper.ug-tile .ug-tile-icon{
+        background-position: center top !important;
+        left: 0 !important;
+    }
+}
 
 /* PRESS COVERAGE LIST
 -------------------- */
 .press-coverage-list .ug-theme-tilesfixed .ug-thumb-wrapper {
-	width: 16.66666666% !important;
-	position: relative !important;
-    float: left !important;
-    left: 0px !important;
-    top: 0px !important;
+	width: calc(100%/6) !important;
     padding-top: 23% !important;
-    height: auto !important;
+    background: @black !important;
+    
+    @media (max-width: (@screen-xs-min - 1)){
+        width: 50% !important;
+        height: 200px !important;
+        img.ug-thumb-image{
+            object-fit: contain;
+        }
+    }
 } 
 
 /* BANNERS 
@@ -477,14 +499,7 @@ body #t3-mainbody .ExhibitorsOutput{
 .itemid-130 body #t3-mainbody  .mnwall_container.subpage-list .mnwall-item:nth-child(2) {
     width: 50% !important;
 }
-/* about subpage list
---------------- */
-// .itemid-179 body #t3-mainbody  .mnwall_container.subpage-list .mnwall-item {
-//  width: 25% !important;
-// }
-// .itemid-179 body #t3-mainbody  .mnwall_container.subpage-list .mnwall-item .mnwall-item-img a {
-//  opacity: 0.6;
-// }
+
 /* press subpage list
 --------------- */
 .itemid-195 body #t3-mainbody  .mnwall_container.subpage-list .mnwall-item:nth-child(4), 
@@ -494,11 +509,7 @@ body #t3-mainbody .ExhibitorsOutput{
 .itemid-195 body #t3-mainbody  .mnwall_container.subpage-list .mnwall-item .mnwall-item-img a {
     opacity: 0.6;
 }
-/* design in the city subpage list
---------------- */
-// .itemid-182 body #t3-mainbody  .mnwall_container.subpage-list .mnwall-item {
-//     width: 33.333% !important;
-// }
+
 /* features subpage list
 --------------- */
 .itemid-176 body #t3-mainbody  .mnwall_container.subpage-list .mnwall-item {
@@ -509,8 +520,3 @@ body #t3-mainbody .ExhibitorsOutput{
 .itemid-250 body #t3-mainbody  .mnwall_container.subpage-list .mnwall-item {
     width: 50% !important;
 }
-/* Forum subpage list
---------------- */
-// .itemid-175 body #t3-mainbody  .mnwall_container.subpage-list .mnwall-item {
-//  width: 25% !important;
-// }
